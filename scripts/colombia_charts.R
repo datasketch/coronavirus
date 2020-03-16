@@ -84,7 +84,8 @@ file.rename(filename, file.path("docs/viz", filename))
 thm3 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#ff9d28', '#ff9d28')))
 d <- cases %>%
-  select(Total = department)
+  select(Total = department) %>%
+  mutate(Total = stringr::str_to_title(Total, locale = "es"))
 h <- hgch_bar_Cat(d, title = glue("Casos confirmados por departamento"),
                   ver_label = "", hor_label = "",
                   orientation = "hor", sort = "desc",
@@ -140,10 +141,13 @@ d3 <- d2 %>%
   mutate(cumcases = ifelse(is.na(cumcases), 0, cumcases)) %>%
   select(2,1,Casos = cumcases)
 
-h <- hgch_area_CatCatNum(d3, graph_type = "stacked", agg = "sum",
+d4 <- d3 %>%
+  mutate(department = stringr::str_to_title(department, locale = "es"))
+
+h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
                          title = "Casos acumulados por departamento",
                          ver_label = "", hor_label = "",
-                         label_wrap = 40) %>%
+                         label_wrap = 40, spline = TRUE) %>%
   hc_xAxis(tickWidth = 0,
            labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
@@ -198,7 +202,7 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
                          title = "Casos acumulados por sexo",
                          ver_label = "", hor_label = "",
                          agg_text = "Total",
-                         label_wrap = 40) %>%
+                         label_wrap = 40, spline = TRUE) %>%
   hc_xAxis(tickWidth = 0,
            labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
