@@ -33,8 +33,11 @@ h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
   hc_plotOptions(
     treemap = list(dataLabels = list(style = list(fontFamily = "Roboto Condensed",
                                                   fontSize = "16px",
-                                                  align = "center",
-                                                  textOutline = "none")))) %>%
+                                                  align = "right",
+                                                  textOutline = "none",
+                                                  fontWeight = "regular"),
+                                     allowHTML = TRUE,
+                                     format = "<b>{point.name}s</b><br>{point.value}"))) %>%
   hc_add_theme(thm)
 h
 
@@ -55,9 +58,10 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                   colors = c('#f03f4e','#a0f0da'),
                   caption = "Fuente: INS. Gráficos http://datasketch.co") %>%
   hc_xAxis(tickWidth = 0,
-           labels = list( style = list( fontSize = "14px",
+           labels = list(style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
-                                        color = "#3a4454"))
+                                        color = "#3a4454"),
+                         format = "{value} años")
   ) %>%
   hc_yAxis(gridLineWidth = 1,
            gridLineDashStyle = "dot",
@@ -66,7 +70,7 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                         style = list(color = '#3a4454',
                                      fontSize = "16px",
                                      fontFamily = "Roboto Condensed")),
-           labels = list( style = list( color = '#3a4454',
+           labels = list(style = list( color = '#3a4454',
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
   hc_add_theme(thm2)
@@ -89,7 +93,7 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por departamento"),
                   caption = "Fuente: INS. Gráficos http://datasketch.co") %>%
   hc_xAxis(tickWidth = 0,
            lineWidth = 0,
-           labels = list( style = list( fontSize = "14px",
+           labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
                                         color = "#3a4454"))
   ) %>%
@@ -141,7 +145,7 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked", agg = "sum",
                          ver_label = "", hor_label = "",
                          label_wrap = 40) %>%
   hc_xAxis(tickWidth = 0,
-           labels = list( style = list( fontSize = "14px",
+           labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
                                         color = "#3a4454"))
   ) %>%
@@ -156,9 +160,9 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked", agg = "sum",
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
   hc_plotOptions(
-    area = list(fillOpacity = 1,
-                lineWidth = 1.5,
-                marker = list(radius = 3.5))
+    area = list(lineWidth = 2.5,
+                marker = list(radius = 3.5,
+                              symbol = "circle"))
   ) %>%
   hc_add_theme(thm4)
 h
@@ -196,7 +200,7 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
                          agg_text = "Total",
                          label_wrap = 40) %>%
   hc_xAxis(tickWidth = 0,
-           labels = list( style = list( fontSize = "14px",
+           labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
                                         color = "#3a4454"))
   ) %>%
@@ -211,9 +215,9 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
   hc_plotOptions(
-    area = list(fillOpacity = 1,
-                lineWidth = 1.5,
-                marker = list(radius = 3.5))
+    area = list(lineWidth = 2.5,
+                marker = list(radius = 3.5,
+                              symbol = "circle"))
   ) %>%
   hc_add_theme(thm5)
 h
