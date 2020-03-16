@@ -164,9 +164,9 @@ h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
   hc_plotOptions(
-    area = list(lineWidth = 2.5,
-                marker = list(radius = 3.5,
-                              symbol = "circle"))
+    areaspline = list(lineWidth = 2.5,
+                      marker = list(radius = 3.5,
+                                    symbol = "circle"))
   ) %>%
   hc_add_theme(thm4)
 h
@@ -215,13 +215,14 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
                         style = list(color = '#3a4454',
                                      fontSize = "16px",
                                      fontFamily = "Roboto Condensed")),
-           labels = list( style = list( color = '#3a4454',
-                                        fontSize = "13px",
-                                        fontFamily = "Roboto Condensed"))) %>%
+           labels = list(style = list(color = '#3a4454',
+                                      fontSize = "13px",
+                                      fontFamily = "Roboto Condensed"))) %>%
   hc_plotOptions(
-    area = list(lineWidth = 2.5,
-                marker = list(radius = 3.5,
-                              symbol = "circle"))
+    areaspline = list(lineWidth = 2.5,
+                      fillOpacity = 1,
+                      marker = list(radius = 3.5,
+                                    symbol = "circle"))
   ) %>%
   hc_add_theme(thm5)
 h
