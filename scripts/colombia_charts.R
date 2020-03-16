@@ -122,9 +122,22 @@ thm4 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                                 '#93bedf', '#62356d','#af2276')))
 
 # Casos acumulados por departamento
-d <- cases %>% select(department,fecha) %>%
+
+d0 <- cases %>% select(department,fecha)
+
+other_threshold <- 3
+other_cats <- d0 %>% group_by(department) %>%
+  summarise(total_cases = n()) %>%
+  filter(total_cases < other_threshold) %>%
+  pull(department)
+dother <- d0 %>%
+  mutate(department = ifelse(department %in% other_cats, "OTROS", department))
+
+d <- dother %>%
   mutate(cases = 1, cumcases = cumsum(cases)) %>%
   select(department, fecha, cases = cases, cumcases = cumcases)
+
+
 dates <- full_seq(d$fecha, 1)
 d1 <- d %>% group_by(department, fecha) %>%
   summarise(cases = sum(cases)) %>%
@@ -143,6 +156,8 @@ d3 <- d2 %>%
 
 d4 <- d3 %>%
   mutate(department = stringr::str_to_title(department, locale = "es"))
+
+
 
 h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
                          title = "Casos acumulados por departamento",
