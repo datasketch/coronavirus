@@ -11,8 +11,9 @@ n_cases <- nrow(cases)
 
 # Casos confirmados
 d <- cases %>%
-  select(Total = tipo_contagio)
-h <- hgch_treemap_Cat(d, title = glue("{n_cases} casos confirmados"),
+  select(`Tipo contagio` = tipo_contagio) %>%
+  count(`Tipo contagio`) %>% select(`Tipo contagio`, Total = n)
+h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
                       agg_text = "",
                       caption = "Fuente: INS. Gráficos http://datasketch.co")
 h

@@ -9,13 +9,17 @@ gsheet_ins <- Sys.getenv("GSHEET_URL_INS")
 tabs <- sheets_sheets(gsheet_ins)
 
 tests <- read_sheet(gsheet_ins, sheet = "tests")
-
 colombia_cases <- tests %>% select(fecha = informe, confirmed = positivas)
 write_csv(colombia_cases, "data/colombia_cases.csv")
 
-latest <- sort(tabs[grepl("rep_*[^v]*$", tabs)], decreasing = TRUE)[1]
+cases_tabs <- tabs[grepl("rep_*[^v]*$", tabs)]
+#latest <- sort(tabs[grepl("rep_*[^v]*$", tabs)], decreasing = TRUE)[1]
+latest <- cases_tabs[1]
+message("\nLatest: ", latest)
+
 cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
                     col_types = "???????????????????")
+age_group_vars <- names(cases)[grepl("[0-9]", names(cases))]
 
 # Clean data
 x <- pivot_longer(cases, all_of(age_group_vars),
