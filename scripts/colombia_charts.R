@@ -18,7 +18,7 @@ h <- hgch_treemap_Cat(d, title = glue("{n_cases} casos confirmados"),
 h
 filename <- "col_confirmados_tipo.html"
 save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("viz", filename))
+file.rename(filename, file.path("docs/viz", filename))
 
 
 # Casos por grupo de edad
@@ -32,7 +32,7 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
 h
 filename <- "col_confirmados_edad.html"
 save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("viz", filename))
+file.rename(filename, file.path("docs/viz", filename))
 
 # Casos por departamento
 d <- cases %>%
@@ -47,7 +47,7 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por departamento"),
 h
 filename <- "col_confirmados_departamento.html"
 save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("viz", filename))
+file.rename(filename, file.path("docs/viz", filename))
 
 
 # Casos acumulados por departamento
@@ -77,7 +77,7 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked", agg = "sum",
 h
 filename <- "col_confirmados_acu_departamento.html"
 save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("viz", filename))
+file.rename(filename, file.path("docs/viz", filename))
 
 
 # Casos acumulados por sexo
@@ -108,7 +108,7 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
 h
 filename <- "col_confirmados_acu_sexo.html"
 save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("viz", filename))
+file.rename(filename, file.path("docs/viz", filename))
 
 
 
