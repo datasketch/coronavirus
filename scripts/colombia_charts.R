@@ -192,7 +192,7 @@ d4 <- d3 %>%
 h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
                          title = "Casos acumulados por departamento",
                          ver_label = "", hor_label = "",
-                         label_wrap = 40, spline = TRUE) %>%
+                         label_wrap = 40, spline = FALSE) %>%
   hc_xAxis(tickWidth = 0,
            labels = list( style = list( fontSize = "13px",
                                         fontFamily = "Roboto Condensed",
@@ -208,11 +208,11 @@ h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
            labels = list( style = list( color = '#3a4454',
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
-  hc_plotOptions(
-    areaspline = list(lineWidth = 2.5,
-                      marker = list(radius = 3.5,
-                                    symbol = "circle"))
-  ) %>%
+  # hc_plotOptions(
+  #   areaspline = list(lineWidth = 2.5,
+  #                     marker = list(radius = 3.5,
+  #                                   symbol = "circle"))
+  # ) %>%
   hc_add_theme(thm4)
 h
 filename <- "col_confirmados_acu_departamento.html"
@@ -274,6 +274,73 @@ h
 filename <- "col_confirmados_acu_sexo.html"
 save_hgchmagic(h, filename, height = 100)
 file.rename(filename, file.path("docs/viz", filename))
+
+
+## Casos acumulados
+
+# Casos acumulados por tipo líneas
+
+thm5 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
+                                     colors = c('#a0f0da', '#f03f4e')))
+d <- cases %>% select(tipo_contagio,fecha) %>%
+  mutate(cases = 1, cumcases = cumsum(cases)) %>%
+  select(tipo_contagio, fecha, cases = cases, cumcases = cumcases)
+dates <- full_seq(d$fecha, 1)
+d1 <- d %>% group_by(tipo_contagio, fecha) %>%
+  summarise(cases = sum(cases)) %>%
+  ungroup()
+d2 <- d1 %>%
+  group_by(tipo_contagio) %>%
+  mutate(cumcases = cumsum(cases)) %>% ungroup() %>%
+  select(-cases)
+d3 <- d2 %>%
+  complete(fecha = dates, tipo_contagio, fill = list(cumcases = NA)) %>%
+  group_by(tipo_contagio) %>%
+  fill(cumcases) %>%
+  ungroup() %>%
+  mutate(cumcases = ifelse(is.na(cumcases), 0, cumcases)) %>%
+  select(`Tipo contagio` = tipo_contagio, Fecha = fecha, Casos = cumcases)
+h <- hgch_line_CatCatNum(d3,
+                         #graph_type = "stacked",
+                         colors = c("#45dcdc", "#dcdc45"),
+                         title = "Casos acumulados por tipo de contagio",
+                         ver_label = "", hor_label = "",
+                         agg_text = "Total",
+                         label_wrap = 40,
+                         spline = FALSE) %>%
+  hc_xAxis(tickWidth = 0,
+           labels = list( style = list( fontSize = "13px",
+                                        fontFamily = "Roboto Condensed",
+                                        color = "#3a4454"))
+  ) %>%
+  hc_yAxis(gridLineWidth = 1,
+           gridLineDashStyle = "dot",
+           gridLineColor = "#c7d7e5",
+           title = list(text = "Número de casos",
+                        style = list(color = '#3a4454',
+                                     fontSize = "16px",
+                                     fontFamily = "Roboto Condensed")),
+           labels = list(style = list(color = '#3a4454',
+                                      fontSize = "13px",
+                                      fontFamily = "Roboto Condensed"))) %>%
+  # hc_plotOptions(
+  #   areaspline = list(lineWidth = 2.5,
+  #                     fillOpacity = 1,
+  #                     marker = list(radius = 3.5,
+  #                                   symbol = "circle"))
+  # ) %>%
+  hc_add_theme(thm5)
+h
+filename <- "col_confirmados_acu_tipo_linea.html"
+save_hgchmagic(h, filename, height = 100)
+file.rename(filename, file.path("docs/viz", filename))
+
+
+
+
+
+
+
 
 
 

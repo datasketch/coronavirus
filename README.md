@@ -14,5 +14,7 @@ Datos sobre el coronavirus relevante para Colombia y América Latina.
 - Confirmados por edad [link](https://datasketch.github.io/coronavirus/viz/col_confirmados_edad.html)
 - Confirmados por tipo de contagio
 [link](https://datasketch.github.io/coronavirus/viz/col_confirmados_tipo.html)
+- Confirmados por fecha y tipo de contagio - líneas
+[link](https://datasketch.github.io/coronavirus/viz/col_confirmados_acu_tipo_linea.html
 
 
