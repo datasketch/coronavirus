@@ -6,6 +6,8 @@ Datos sobre el coronavirus relevante para Colombia y América Latina.
 
 # Visualizaciones Coronavirus Colombia
 
+- Confirmados por sexo
+[link](https://datasketch.github.io/coronavirus/viz/col_confirmados_sexo.html)
 - Acumulados por departamento [link](https://datasketch.github.io/coronavirus/viz/col_confirmados_acu_departamento.html)
 - Acumulados por sexo [link](https://datasketch.github.io/coronavirus/viz/col_confirmados_acu_sexo.html)
 - Confirmados por departamento [link](https://datasketch.github.io/coronavirus/viz/col_confirmados_departamento.html)

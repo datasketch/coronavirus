@@ -21,6 +21,36 @@ thm <- hc_theme(chart = list(backgroundColor = NULL),
                                             fontSize = "12px",
                                             color = "#a9b8c9")))
 
+
+# Casos género
+d <- cases %>%
+  select(`Sexo` = sexo) %>%
+  count(Sexo) %>% select(Sexo, Total = n)
+d$Sexo[d$Sexo == "Masculino"] <- "Hombre"
+d$Sexo[d$Sexo == "Femenino"] <- "Mujere"
+
+h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
+                         agg_text = "",
+                         caption = "Fuente: INS. Gráficos http://datasketch.co",
+                         colors = c('#f03f4e','#a0f0da')) %>%
+  hc_plotOptions(
+    treemap = list(dataLabels = list(style = list(fontFamily = "Roboto Condensed",
+                                                  fontSize = "16px",
+                                                  align = "right",
+                                                  textOutline = "none",
+                                                  fontWeight = "regular"),
+                                     allowHTML = TRUE,
+                                     format = "<b>{point.name}s</b><br>{point.value}"))) %>%
+  hc_add_theme(thm)
+h
+
+filename <- "col_confirmados_sexo.html"
+save_hgchmagic(h, filename, height = 100)
+file.rename(filename, file.path("docs/viz", filename))
+
+
+
+
 # Casos confirmados
 d <- cases %>%
   select(`Tipo contagio` = tipo_contagio) %>%
