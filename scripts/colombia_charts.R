@@ -89,8 +89,8 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                   caption = "Fuente: INS. Gráficos http://datasketch.co") %>%
   hc_xAxis(tickWidth = 0,
            labels = list(style = list( fontSize = "13px",
-                                        fontFamily = "Roboto Condensed",
-                                        color = "#3a4454"),
+                                       fontFamily = "Roboto Condensed",
+                                       color = "#3a4454"),
                          format = "{value} años")
   ) %>%
   hc_yAxis(gridLineWidth = 1,
@@ -101,8 +101,8 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                                      fontSize = "16px",
                                      fontFamily = "Roboto Condensed")),
            labels = list(style = list( color = '#3a4454',
-                                        fontSize = "13px",
-                                        fontFamily = "Roboto Condensed"))) %>%
+                                       fontSize = "13px",
+                                       fontFamily = "Roboto Condensed"))) %>%
   hc_add_theme(thm2)
 h
 filename <- "col_confirmados_edad.html"
@@ -334,6 +334,52 @@ h
 filename <- "col_confirmados_acu_tipo_linea.html"
 save_hgchmagic(h, filename, height = 100)
 file.rename(filename, file.path("docs/viz", filename))
+
+
+# Leaflet map
+
+d <- cases %>%
+  group_by(ciudad, lat, lon) %>%
+  summarise(Casos = n(),
+            Hombres = sum(sexo == "Masculino"),
+            Mujeres = sum(sexo == "Femenino")) %>%
+  mutate(popup = glue("<strong>{ciudad}</strong><br>{Hombres} Hombres <br>{Mujeres} Mujeres")) %>%
+  ungroup()
+
+pal <- colorNumeric(c('#f0f05a','#f03f4e'), domain = c(0, max(d$Casos)))
+# pal(c(1:10)*5)
+previewColors(colorNumeric(c('#f0f05a','#f03f4e'), domain = NULL), d$Casos)
+
+# library(lfltmagic)
+# lflt_bubbles_GlnGltNum(d %>% select(lon, lat, Casos))
+
+topoData <- geodata::geodataTopojsonPath("col_municipalities")
+topoData <- readLines(topoData) %>% paste(collapse = "\n")
+
+
+lf <- leaflet(d) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  #addProviderTiles(providers$CartoDB.Positron) %>%
+  # addProviderTiles(providers$Stadia.AlidadeSmoothDark) %>%
+  addProviderTiles(providers$Thunderforest.Neighbourhood) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addTopoJSON(topoData, weight = 1, color = "#444444", fill = FALSE) %>%
+  #addMarkers(lng=d$lon, lat = d$lat, popup=d$popup)
+  addCircleMarkers(
+    lng=d$lon, lat = d$lat,
+    radius = 5 * sqrt(d$Casos),
+    color = pal(d$Casos),
+    stroke = TRUE, fillOpacity = 0.9,
+    popup = d$popup
+  ) %>%
+  addLegend(pal = pal, values = ~Casos, opacity = 0.7, title = NULL,
+                position = "bottomright")
+lf
+filename <- "col_mapa_casos.html"
+save_lfltmagic(lf, filename, height = 100)
+file.rename(filename, file.path("docs/viz", filename))
+
+
 
 
 
