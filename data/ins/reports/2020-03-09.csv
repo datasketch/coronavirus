@@ -1,0 +1,13 @@
+updated,updated_date,updated_time,Casos Confirmados en Colombia,Casos Descartados en Colombia,Casos Confirmados en América,Casos Confirmados en el Mundo,Paises con casos confirmados,Casos Importados,Casos Relacionados,muestras_procesadas,muestras_en_proceso,total_reacciones_pcr
+,2020-03-06,,1,,,,,,,,,
+,2020-03-07,,1,,,,,,,,,
+,2020-03-08,,1,,,,,,,,,
+,2020-03-09,,1,,,,,,,,,
+,2020-03-10,,3,,,,,,,,,
+,2020-03-11,,9,,,,,,,,,
+,2020-03-12,,9,,,,,,,,,
+2020-03-13 17:00,2020-03-13,17:00,16,1158,,,,,,1263,89,
+2020-03-14 18:00,2020-03-14,18:00,24,1243,3277,142539,125,,,,,2256
+2020-03-15 06:00,2020-03-15,06:00,34,1532,3663,142539,125,,,,,
+2020-03-15 20:00,2020-03-15,20:00,45,1676,3663,153517,125,,,,,
+2020-03-16 08:00,2020-03-16,08:00,54,1676,3663,153517,127,,,,,

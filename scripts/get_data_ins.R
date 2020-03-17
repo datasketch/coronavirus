@@ -5,20 +5,20 @@ library(lubridate)
 dotenv::load_dot_env()
 sheets_deauth()
 # INS
-gsheet_ins <- Sys.getenv("GSHEET_URL_INS")
-tabs <- sheets_sheets(gsheet_ins)
+# gsheet_ins <- Sys.getenv("GSHEET_URL_INS")
+# tabs <- sheets_sheets(gsheet_ins)
+#
+# tests <- read_sheet(gsheet_ins, sheet = "tests")
+# colombia_cases <- tests %>% select(fecha = informe, confirmed = positivas)
+# write_csv(colombia_cases, "data/colombia_cases.csv")
 
-tests <- read_sheet(gsheet_ins, sheet = "tests")
-colombia_cases <- tests %>% select(fecha = informe, confirmed = positivas)
-write_csv(colombia_cases, "data/colombia_cases.csv")
-
-cases_tabs <- tabs[grepl("rep_*[^v]*$", tabs)]
-#latest <- sort(tabs[grepl("rep_*[^v]*$", tabs)], decreasing = TRUE)[1]
-latest <- cases_tabs[1]
-message("\nLatest: ", latest)
-
-cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
-                    col_types = "???????????????????")
+# cases_tabs <- tabs[grepl("rep_*[^v]*$", tabs)]
+# #latest <- sort(tabs[grepl("rep_*[^v]*$", tabs)], decreasing = TRUE)[1]
+# latest <- cases_tabs[1]
+# message("\nLatest: ", latest)
+#
+# cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
+#                     col_types = "???????????????????")
 
 ### Load local cases
 # latest <- list.files("data/ins", full.names = TRUE)
@@ -42,7 +42,7 @@ x$ciudad[x$ciudad == "Meta"] <- "Villavicencio"
 
 xgeo <- geocode(x, col = "ciudad", "col_municipalities")
 
-write_csv(xgeo, "data/cases_colombia_detail.csv")
+write_csv(xgeo, "data/ins/cases_colombia_detail.csv")
 
 
 

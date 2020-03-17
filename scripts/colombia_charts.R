@@ -2,8 +2,8 @@ library(tidyverse)
 library(hgchmagic)
 library(glue)
 
-cases <- read_csv("data/cases_colombia_detail.csv")
-cases_col <- read_csv("data/colombia_cases.csv")
+cases <- read_csv("data/ins/cases_colombia_detail.csv")
+cases_col <- read_csv("data/csse/colombia_cases.csv")
 n_cases <- nrow(cases)
 
 

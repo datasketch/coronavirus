@@ -21,7 +21,7 @@ con <- conf %>%
   filter(value > 0) %>%
   rename(country = `Country/Region`, confirmed = value)
 
-colombia <- read_csv("data/colombia_cases.csv") %>%
+colombia <- read_csv("data/csse/colombia_cases.csv") %>%
   mutate(country = "Colombia")
 
 cases <- con %>%
@@ -29,6 +29,6 @@ cases <- con %>%
   group_by(country) %>%
   mutate(day = 1:n())
 
-write_csv(cases, "data/cases_countries.csv")
+write_csv(cases, "data/csse/cases_countries.csv")
 
 
