@@ -19,6 +19,12 @@ message("\nLatest: ", latest)
 
 cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
                     col_types = "???????????????????")
+
+### Load local cases
+# latest <- list.files("data/ins", full.names = TRUE)
+cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
+names(cases)
+
 age_group_vars <- names(cases)[grepl("[0-9]", names(cases))]
 
 # Clean data

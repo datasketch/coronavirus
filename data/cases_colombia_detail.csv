@@ -1,4 +1,4 @@
-idx,fecha,ciudad,atencion,En estudio,age_group,sexo,tipo_contagio,id,name,lat,lon,department,municipality,dept_code
+idx,fecha,ciudad,Atención,En estudio,age_group,sexo,tipo_contagio,id,name,lat,lon,department,municipality,dept_code
 1,2020-03-06,Bogotá,En casa,NA,10 a 19,Femenino,Importado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
 2,2020-03-09,Buga,Hospital,NA,30 a 39,Masculino,Importado,76111,GUADALAJARA DE BUGA - VALLE DEL CAUCA,3.8896650761284213,-76.26588829272106,VALLE DEL CAUCA,GUADALAJARA DE BUGA,76
 3,2020-03-09,Medellín,En casa,NA,50 a 59,Femenino,Importado,05001,MEDELLÍN - ANTIOQUIA,6.25644386238998,-75.61172523487957,ANTIOQUIA,MEDELLÍN,05

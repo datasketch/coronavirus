@@ -25,3 +25,6 @@ vignettes/*.pdf
 .~lock*
 .env
 
+
+node_modules/*
+

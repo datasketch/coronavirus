@@ -1,4 +1,30 @@
+library(RSelenium)
+appURL <- "http://infogram.com/3a4c9dd3-fbb8-4f59-8d82-eb1edc01604b"
+RSelenium::startServer()
+remDr <- remoteDriver()
+remDr$open()
+remDr$navigate(appURL)
+tblSource <- remDr$executeScript("return tbls[0].outerHTML;")[[1]]
+readHTMLTable(tblSource)
+
+
+
+
 library(rvest)
+library(tidyverse)
+
+url <- "data/web/ins.html"
+css <- "igc-table __fixed __dynamic"
+
+h <- read_html(url) %>%
+  rvest::html_table()
+table <- h[[2]]
+#html_nodes(css = css)
+
+
+
+library(rvest)
+
 library(tidyverse)
 
 # Reportes página
@@ -17,7 +43,7 @@ infogram_id <- infogram %>% html_attr("id")
 
 infogram_url <- paste0("http://infogram.com/",
                        gsub("infogram_0_", "", infogram_id, fixed = TRUE)
-                       )
+)
 
 inf <- read_html(infogram_url)
 
