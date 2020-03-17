@@ -363,11 +363,12 @@ lf <- leaflet(d) %>%
   # addProviderTiles(providers$Stadia.AlidadeSmoothDark) %>%
   addProviderTiles(providers$Thunderforest.Neighbourhood) %>%
   addProviderTiles(providers$Stamen.TonerLite) %>%
-  addTopoJSON(topoData, weight = 1, color = "#444444", fill = FALSE) %>%
+  addTopoJSON(topoData, weight = 1, color = "#cccccc", fill = FALSE) %>%
   #addMarkers(lng=d$lon, lat = d$lat, popup=d$popup)
   addCircleMarkers(
     lng=d$lon, lat = d$lat,
-    radius = 5 * sqrt(d$Casos),
+    #radius = 5 * sqrt(d$Casos),
+    radius = 8,
     color = pal(d$Casos),
     stroke = TRUE, fillOpacity = 0.9,
     popup = d$popup
