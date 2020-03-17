@@ -53,3 +53,6 @@ idx,fecha,ciudad,atencion,En estudio,age_group,sexo,tipo_contagio,id,name,lat,lo
 52,2020-03-16,Bogotá,En casa,NA,20 a 29,Masculino,Importado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
 53,2020-03-16,Bogotá,En casa,NA,60 a 69,Masculino,Importado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
 54,2020-03-16,Bogotá,En casa,NA,40 a 49,Femenino,Importado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
+55,2020-03-16,Bogotá,En casa,NA,50 a 59,Femenino,Asociado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
+56,2020-03-16,Bogotá,En casa,NA,30 a 39,Masculino,Importado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
+57,2020-03-16,Bogotá,Hospital,NA,30 a 39,Masculino,Asociado,11001,"BOGOTÁ, D.C. - BOGOTÁ, D. C.",4.32664941085017,-74.18417790176304,"BOGOTÁ, D. C.","BOGOTÁ, D.C.",11
