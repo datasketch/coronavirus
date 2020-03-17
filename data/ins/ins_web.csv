@@ -56,3 +56,11 @@ idx,fecha,ciudad,Atención,0 a 9,10 a 19,20 a 29,30 a 39,40 a 49,50 a 59,60 a 69
 55,16/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,X,,,X,NA
 56,16/03/2020,Bogotá,En casa,NA,,,X,,,,,,NA,,X,X,,NA
 57,16/03/2020,Bogotá,Hospital,NA,,,X,,,,,,NA,,X,,X,NA
+58,17/03/2020,Cartagena,Casa,NA,,,X,,,,,,NA,,X,,X,NA
+59,17/03/2020,Barranquilla,Casa,NA,,X,,,,,,,NA,,X,X,,NA
+60,17/03/2020,Bucaramanga,Casa,NA,,X,,,,,,,NA,,X,X,,NA
+61,17/03/2020,Barranquilla,Casa,NA,,X,,,,,,,NA,,X,X,,NA
+62,17/03/2020,Cali,Casa,NA,,,X,,,,,,NA,,X,X,,NA
+63,17/03/2020,Cali,Casa,NA,,X,,,,,,,NA,X,,X,,NA
+64,17/03/2020,Bogotá,Casa,NA,,,X,,,,,,NA,,X,X,,NA
+65,17/03/2020,Bogotá,Casa,NA,,,,,,X,,,NA,,X,,X,NA

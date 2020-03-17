@@ -337,6 +337,7 @@ file.rename(filename, file.path("docs/viz", filename))
 
 
 # Leaflet map
+library(lfltmagic)
 
 d <- cases %>%
   group_by(ciudad, lat, lon) %>%
