@@ -47,6 +47,7 @@ jobs:
         sudo Rscript -e "devtools::install_github('datasketch/homodatum')"
         sudo Rscript -e "devtools::install_github('jpmarindiaz/datafringe')"
         sudo Rscript -e "devtools::install_github('randommonkey/lfltmagic')"
+        sudo Rscript -e "devtools::install_github('randommonkey/hgchmagic')"
     - name: Run script
       run: sudo Rscript source_files.R
     - name: Commit changes
