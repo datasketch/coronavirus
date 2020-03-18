@@ -19,20 +19,8 @@ jobs:
         sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
         sudo apt update
         sudo apt install -y r-base
-#    - name: Install protoc
-#     run: |
-#        sudo apt-get install -y autoconf automake libtool g++
-#       git clone https://github.com/protocolbuffers/protobuf.git
-#       cd protobuf
-#       git submodule update --init --recursive
-#       ./autogen.sh
-#       ./configure --prefix=/usr
-#       make
-#       make check
-#       sudo make install
-#       sudo ldconfig
     - name: Install base dependencies
-      run: sudo apt-get update && sudo apt-get install -y build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev libudunits2-dev libprotobuf-dev protobuf-compiler libjq-dev libv8-dev libgeos-dev libgdal-dev
+      run: sudo apt-get update && sudo apt-get install -y build-essential pandoc libcurl4-gnutls-dev libxml2-dev libssl-dev libudunits2-dev libprotobuf-dev protobuf-compiler libjq-dev libv8-dev libgeos-dev libgdal-dev
     - name: Download phantomjs
       run: wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
     - name: Install phantomjs

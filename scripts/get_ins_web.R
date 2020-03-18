@@ -47,7 +47,7 @@ reports <- transpose(x) %>%
   map("number") %>%
   set_names(x$info) %>%
   as_tibble()
-reports$updated <- parse_date_time(updated, orders = "dmyIp", tz = "America/Bogota")
+reports$updated <- lubridate::parse_date_time(updated, orders = "dmyIp", tz = "America/Bogota")
 reports$updated <- as.character(reports$updated)
 reports$updated_date <- substr(reports$updated,1,10)
 reports$updated_time <- substr(reports$updated,12,16)
