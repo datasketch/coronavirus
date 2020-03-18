@@ -1,76 +1,94 @@
 idx,fecha,ciudad,Atención,0 a 9,10 a 19,20 a 29,30 a 39,40 a 49,50 a 59,60 a 69,70 a 79,80 a 89,90 o más,Femenino,Masculino,Importado,Asociado
-1,6/3/2020,Bogotá,En casa,NA,X,,,,,,,,NA,X,,X,
-2,9/3/2020,Buga,Hospital,NA,,,X,,,,,,NA,,X,X,
-3,9/3/2020,Medellín,En casa,NA,,,,,X,,,,NA,X,,X,
-4,11/3/2020,Medellín,En casa,NA,,,,,X,,,,NA,,X,,X
-5,11/3/2020,Medellín,En casa,NA,,X,,,,,,,NA,,X,,X
-6,11/3/2020,Medellín,En casa,NA,,X,,,,,,,NA,X,,,X
-7,11/3/2020,Cartagena,Hospital,NA,,,,,,,,X,NA,X,,X,
-8,11/3/2020,Bogotá,En casa,NA,,X,,,,,,,NA,X,,X,
-9,11/3/2020,Bogotá,En casa,NA,,X,,,,,,,NA,X,,X,
-10,12/3/2020,Bogotá,En casa,NA,,,X,,,,,,NA,X,,X,
-11,12/3/2020,Bogotá,En casa,NA,,,X,,,,,,NA,X,,X,
-12,12/3/2020,Neiva,Hospital,NA,,,,,,X,,,NA,X,,,X
-13,12/3/2020,Neiva,Hospital,NA,,,,,,,X,,NA,X,,X,
-14,13/3/2020,Bogotá,Hospital,NA,,,,,,X,,,NA,X,,X,
-15,13/3/2020,Villavicencio,En casa,NA,,,X,,,,,,NA,X,,X,
-16,13/3/2020,Palmira,En casa,NA,,,,X,,,,,NA,,X,X,
-17,14/03/2020,Medellín,En casa,NA,,X,,,,,,,NA,X,,,X
-18,14/03/2020,Medellín,En casa,NA,,X,,,,,,,NA,,X,,X
-19,14/03/2020,Rionegro,Hospital,NA,,,X,,,,,,NA,,X,X,
-20,14/03/2020,Bogotá,En casa,NA,,,,,,,X,,NA,X,,X,
-21,14/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,,X,X,
-22,14/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,X,,,X
-23,14/03/2020,Bogotá,En casa,NA,X,,,,,,,,NA,X,,X,
-24,14/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,,X,,X
-25,15/03/2020,Cartagena,En casa,NA,,,X,,,,,,NA,X,,,X
-26,15/03/2020,Cartagena,En casa,NA,,X,,,,,,,NA,X,,,X
-27,15/03/2020,Cali,En casa,NA,,,,X,,,,,NA,,X,X,
-28,15/03/2020,Cúcuta,En casa,NA,,,,X,,,,,NA,X,,X,
-29,15/03/2020,Dosquebradas,En casa,NA,,X,,,,,,,NA,,X,X,
-30,15/03/2020,Manizales,En casa,NA,,,,,,X,,,NA,,X,X,
-31,15/03/2020,Neiva,En casa,NA,,,,,X,,,,NA,X,,,X
-32,15/03/2020,Medellín,En casa,NA,,,,,X,,,,NA,,X,X,
-33,15/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,,X,X,
-34,15/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,X,,X,
-35,15/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,,X,X,
-36,15/03/2020,Bogotá,En casa,NA,,,,,,,X,,NA,,X,X,
-37,15/03/2020,Bogotá,En casa,NA,,,,X,,,,,NA,X,,X,
-38,15/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,,X,X,
-39,15/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,,X,X,
-40,15/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,X,,X,
-41,15/03/2020,Neiva,En casa,NA,,,,,,,X,,NA,,X,,X
-42,15/03/2020,Neiva,En casa,NA,,,,,X,,,,NA,X,,,X
-43,15/03/2020,Neiva,En casa,NA,,,,,,,X,,NA,,X,,X
-44,15/03/2020,Neiva,En casa,NA,,X,,,,,,,NA,X,,,X
-45,15/03/2020,Facatativá,En casa,NA,,X,,,,,,,NA,,X,X,
-46,16/03/2020,Bogotá,En casa,NA,,,,X,,,,,NA,X,,,X
-47,16/03/2020,Bogotá,En casa,NA,,,X,,,,,,NA,,X,,X
-48,16/03/2020,Bogotá,En casa,NA,,,X,,,,,,NA,,X,,X
-49,16/03/2020,Bogotá,En casa,NA,,,,X,,,,,NA,X,,X,
-50,16/03/2020,Bogotá,En casa,NA,,,,,,X,,,NA,X,,X,
-51,16/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,,X,X,
-52,16/03/2020,Bogotá,En casa,NA,,X,,,,,,,NA,,X,X,
-53,16/03/2020,Bogotá,En casa,NA,,,,,,X,,,NA,,X,X,
-54,16/03/2020,Bogotá,En casa,NA,,,,X,,,,,NA,X,,X,
-55,16/03/2020,Bogotá,En casa,NA,,,,,X,,,,NA,X,,,X
-56,16/03/2020,Bogotá,En casa,NA,,,X,,,,,,NA,,X,X,
-57,16/03/2020,Bogotá,Hospital,NA,,,X,,,,,,NA,,X,,X
-58,17/03/2020,Cartagena,Casa,NA,,,X,,,,,,NA,,X,,X
-59,17/03/2020,Barranquilla,Casa,NA,,X,,,,,,,NA,,X,X,
-60,17/03/2020,Bucaramanga,Casa,NA,,X,,,,,,,NA,,X,X,
-61,17/03/2020,Barranquilla,Casa,NA,,X,,,,,,,NA,,X,X,
-62,17/03/2020,Cali,Casa,NA,,,X,,,,,,NA,,X,X,
-63,17/03/2020,Cali,Casa,NA,,X,,,,,,,NA,X,,X,
-64,17/03/2020,Bogotá,Casa,NA,,,X,,,,,,NA,,X,X,
-65,17/03/2020,Bogotá,Casa,NA,,,,,,X,,,NA,,X,,X
-66,17/03/2020,Bogotá,Casa,NA,,,,X,,,,,NA,X,,X,
-67,17/03/2020,Bogotá,Casa,NA,,X,,,,,,,NA,X,,X,
-68,17/03/2020,Bogotá,Casa,NA,,X,,,,,,,NA,,X,X,
-69,17/03/2020,Bogotá,Hospital,NA,,,,,,,X,,NA,,X,X,
-70,17/03/2020,Bogotá,Casa,NA,,,X,,,,,,NA,X,,X,
-71,17/03/2020,Cúcuta,Casa,NA,,,,,X,,,,NA,,X,X,
-72,17/03/2020,Cúcuta,Casa,NA,,X,,,,,,,NA,X,,,X
-73,17/03/2020,Cartagena,Casa,NA,,,,,X,,,,NA,X,,,X
-74,17/03/2020,Bogotá,Casa,NA,X,,,,,,,,NA,,X,,X
-75,17/03/2020,Bogotá,Casa,NA,,,,X,,,,,NA,X,,,X
+1,6/3/2020,Bogotá,En casa,,X,,,,,,,,NA,X,,X,
+2,9/3/2020,Buga,Hospital,,,,X,,,,,,NA,,X,X,
+3,9/3/2020,Medellín,En casa,,,,,,X,,,,NA,X,,X,
+4,11/3/2020,Medellín,En casa,,,,,,X,,,,NA,,X,,X
+5,11/3/2020,Medellín,En casa,,,X,,,,,,,NA,,X,,X
+6,11/3/2020,Medellín,En casa,,,X,,,,,,,NA,X,,,X
+7,11/3/2020,Cartagena,Hospital,,,,,,,,,X,NA,X,,X,
+8,11/3/2020,Bogotá,En casa,,,X,,,,,,,NA,X,,X,
+9,11/3/2020,Bogotá,En casa,,,X,,,,,,,NA,X,,X,
+10,12/3/2020,Bogotá,En casa,,,,X,,,,,,NA,X,,X,
+11,12/3/2020,Bogotá,En casa,,,,X,,,,,,NA,X,,X,
+12,12/3/2020,Neiva,Hospital,,,,,,,X,,,NA,X,,,X
+13,12/3/2020,Neiva,Hospital,,,,,,,,X,,NA,X,,X,
+14,13/3/2020,Bogotá,Hospital,,,,,,,X,,,NA,X,,X,
+15,13/3/2020,Villavicencio,En casa,,,,X,,,,,,NA,X,,X,
+16,13/3/2020,Palmira,En casa,,,,,X,,,,,NA,,X,X,
+17,14/03/2020,Medellín,En casa,,,X,,,,,,,NA,X,,,X
+18,14/03/2020,Medellín,En casa,,,X,,,,,,,NA,,X,,X
+19,14/03/2020,Rionegro,Hospital,,,,X,,,,,,NA,,X,X,
+20,14/03/2020,Bogotá,En casa,,,,,,,,X,,NA,X,,X,
+21,14/03/2020,Bogotá,En casa,,,,,,X,,,,NA,,X,X,
+22,14/03/2020,Bogotá,En casa,,,,,,X,,,,NA,X,,,X
+23,14/03/2020,Bogotá,En casa,,X,,,,,,,,NA,X,,X,
+24,14/03/2020,Bogotá,En casa,,,X,,,,,,,NA,,X,,X
+25,15/03/2020,Cartagena,En casa,,,,X,,,,,,NA,X,,,X
+26,15/03/2020,Cartagena,En casa,,,X,,,,,,,NA,X,,,X
+27,15/03/2020,Cali,En casa,,,,,X,,,,,NA,,X,X,
+28,15/03/2020,Cúcuta,En casa,,,,,X,,,,,NA,X,,X,
+29,15/03/2020,Dosquebradas,En casa,,,X,,,,,,,NA,,X,X,
+30,15/03/2020,Manizales,En casa,,,,,,,X,,,NA,,X,X,
+31,15/03/2020,Neiva,En casa,,,,,,X,,,,NA,X,,,X
+32,15/03/2020,Medellín,En casa,,,,,,X,,,,NA,,X,X,
+33,15/03/2020,Bogotá,En casa,,,,,,X,,,,NA,,X,X,
+34,15/03/2020,Bogotá,En casa,,,X,,,,,,,NA,X,,X,
+35,15/03/2020,Bogotá,En casa,,,,,,X,,,,NA,,X,X,
+36,15/03/2020,Bogotá,En casa,,,,,,,,X,,NA,,X,X,
+37,15/03/2020,Bogotá,En casa,,,,,X,,,,,NA,X,,X,
+38,15/03/2020,Bogotá,En casa,,,X,,,,,,,NA,,X,X,
+39,15/03/2020,Bogotá,En casa,,,X,,,,,,,NA,,X,X,
+40,15/03/2020,Bogotá,En casa,,,X,,,,,,,NA,X,,X,
+41,15/03/2020,Neiva,En casa,,,,,,,,X,,NA,,X,,X
+42,15/03/2020,Neiva,En casa,,,,,,X,,,,NA,X,,,X
+43,15/03/2020,Neiva,En casa,,,,,,,,X,,NA,,X,,X
+44,15/03/2020,Neiva,En casa,,,X,,,,,,,NA,X,,,X
+45,15/03/2020,Facatativá,En casa,,,X,,,,,,,NA,,X,X,
+46,16/03/2020,Bogotá,En casa,,,,,X,,,,,NA,X,,,X
+47,16/03/2020,Bogotá,En casa,,,,X,,,,,,NA,,X,,X
+48,16/03/2020,Bogotá,En casa,,,,X,,,,,,NA,,X,,X
+49,16/03/2020,Bogotá,En casa,,,,,X,,,,,NA,X,,X,
+50,16/03/2020,Bogotá,En casa,,,,,,,X,,,NA,X,,X,
+51,16/03/2020,Bogotá,En casa,,,X,,,,,,,NA,,X,X,
+52,16/03/2020,Bogotá,En casa,,,X,,,,,,,NA,,X,X,
+53,16/03/2020,Bogotá,En casa,,,,,,,X,,,NA,,X,X,
+54,16/03/2020,Bogotá,En casa,,,,,X,,,,,NA,X,,X,
+55,16/03/2020,Bogotá,En casa,,,,,,X,,,,NA,X,,,X
+56,16/03/2020,Bogotá,En casa,,,,X,,,,,,NA,,X,X,
+57,16/03/2020,Bogotá,Hospital,,,,X,,,,,,NA,,X,,X
+58,17/03/2020,Cartagena,Casa,,,,X,,,,,,NA,,X,,X
+59,17/03/2020,Barranquilla,Casa,,,X,,,,,,,NA,,X,X,
+60,17/03/2020,Bucaramanga,Casa,,,X,,,,,,,NA,,X,X,
+61,17/03/2020,Barranquilla,Casa,,,X,,,,,,,NA,,X,X,
+62,17/03/2020,Cali,Casa,,,,X,,,,,,NA,,X,X,
+63,17/03/2020,Cali,Casa,,,X,,,,,,,NA,X,,X,
+64,17/03/2020,Bogotá,Casa,,,,X,,,,,,NA,,X,X,
+65,17/03/2020,Bogotá,Casa,,,,,,,X,,,NA,,X,,X
+66,17/03/2020,Bogotá,Casa,,,,,X,,,,,NA,X,,X,
+67,17/03/2020,Bogotá,Casa,,,X,,,,,,,NA,X,,X,
+68,17/03/2020,Bogotá,Casa,,,X,,,,,,,NA,,X,X,
+69,17/03/2020,Bogotá,Hospital,,,,,,,,X,,NA,,X,X,
+70,17/03/2020,Bogotá,Casa,,,,X,,,,,,NA,X,,X,
+71,17/03/2020,Cúcuta,Casa,,,,,,X,,,,NA,,X,X,
+72,17/03/2020,Cúcuta,Casa,,,X,,,,,,,NA,X,,,X
+73,17/03/2020,Cartagena,Casa,,,,,,X,,,,NA,X,,,X
+74,17/03/2020,Bogotá,Casa,,X,,,,,,,,NA,,X,,X
+75,17/03/2020,Bogotá,Casa,,,,,X,,,,,NA,X,,,X
+76,18/03/2020,Armenia,Casa,,,,,X,,,,,NA,X,,X,
+77,18/03/2020,Armenia,Casa,,X,,,,,,,,NA,,X,X,
+78,18/03/2020,Palmira,Casa,,,,X,,,,,,NA,X,,,X
+79,18/03/2020,Palmira,Casa,X,,,,,,,,,NA,,X,,X
+80,18/03/2020,Palmira,Casa,,,,,,X,,,,NA,X,,,X
+81,18/03/2020,Cali,Casa,,,,,X,,,,,NA,X,,,X
+82,18/03/2020,Cali,Casa,,,,,,X,,,,NA,,X,X,
+83,18/03/2020,Cali,Casa,,,,,,X,,,,NA,,X,X,
+84,18/03/2020,Cali,Casa,,,,,,X,,,,NA,,X,,X
+85,18/03/2020,Cali,Casa,,,,,X,,,,,NA,X,,,X
+86,18/03/2020,Pereira,Hospital,,,X,,,,,,,NA,,X,X,
+87,18/03/2020,Cajicá,Casa,,,,,X,,,,,NA,,X,X,
+88,18/03/2020,Tolima,Casa,,,,X,,,,,,NA,,X,,X
+89,18/03/2020,Bucaramanga,Casa,,,,X,,,,,,NA,X,,X,
+90,18/03/2020,Neiva,Casa,,,,,,X,,,,NA,X,,,X
+91,18/03/2020,Cajicá,Casa,,,,X,,,,,,NA,,X,X,
+92,18/03/2020,Bogotá,Casa,,,,,,X,,,,NA,,X,,X
+93,18/03/2020,Bogotá,Casa,,,X,,,,,,,NA,X,,X,
