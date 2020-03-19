@@ -13,7 +13,7 @@ selectedCountries <- c("Peru", "Argentina", "Brazil",
 conf <- conf0 %>%
   select(-`Province/State`, -Lat, -Long) %>%
   filter(`Country/Region` %in% selectedCountries) %>%
-  pivot_longer(matches("^[0-9]"), names_to = "fecha")
+  pivot_longer(cols = matches("^\\d+\\/\\d+\\/\\d+$"), names_to = "fecha")
 
 # Clean dates
 con <- conf %>%
