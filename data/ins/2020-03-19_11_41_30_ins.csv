@@ -1,4 +1,4 @@
-idx,fecha,ciudad,Atención,Edad,sexo,tipo_contagio,País de procedencia
+idx,fecha,ciudad,Atención,Edad,Sexo,Tipo,País de procedencia
 1,3/6/2020,Bogotá,casa,10 a 19,F,Importado,Italia
 2,3/9/2020,Buga,hospital,30 a 39,M,Importado,España
 3,3/9/2020,Medellín,casa,50 a 59,F,Importado,España

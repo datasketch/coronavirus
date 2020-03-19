@@ -26,8 +26,8 @@ thm <- hc_theme(chart = list(backgroundColor = NULL),
 d <- cases %>%
   select(`Sexo` = sexo) %>%
   count(Sexo) %>% select(Sexo, Total = n)
-d$Sexo[d$Sexo == "Masculino"] <- "Hombre"
-d$Sexo[d$Sexo == "Femenino"] <- "Mujere"
+d$Sexo[d$Sexo == "M"] <- "Hombre"
+d$Sexo[d$Sexo == "F"] <- "Mujere"
 
 h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
                          agg_text = "",
@@ -47,8 +47,6 @@ h
 filename <- "col_confirmados_sexo.html"
 save_hgchmagic(h, filename, height = 100)
 file.rename(filename, file.path("docs/viz", filename))
-
-
 
 
 # Casos confirmados
@@ -81,7 +79,7 @@ file.rename(filename, file.path("docs/viz", filename))
 thm2 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#ff9d28')))
 d <- cases %>%
-  select(`Total` = age_group)
+  select(`Total` = Edad)
 h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                   ver_label = "", hor_label = "",
                   agg_text = "",
@@ -153,7 +151,7 @@ thm4 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
 
 # Casos acumulados por departamento
 
-d0 <- cases %>% select(department,fecha)
+d0 <- cases %>% select(department, fecha)
 
 other_threshold <- 3
 other_cats <- d0 %>% group_by(department) %>%
@@ -166,7 +164,6 @@ dother <- d0 %>%
 d <- dother %>%
   mutate(cases = 1, cumcases = cumsum(cases)) %>%
   select(department, fecha, cases = cases, cumcases = cumcases)
-
 
 dates <- full_seq(d$fecha, 1)
 d1 <- d %>% group_by(department, fecha) %>%
@@ -187,8 +184,6 @@ d3 <- d2 %>%
 d4 <- d3 %>%
   mutate(department = stringr::str_to_title(department, locale = "es"))
 
-
-
 h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
                          title = "Casos acumulados por departamento",
                          ver_label = "", hor_label = "",
@@ -208,11 +203,7 @@ h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
            labels = list( style = list( color = '#3a4454',
                                         fontSize = "13px",
                                         fontFamily = "Roboto Condensed"))) %>%
-  # hc_plotOptions(
-  #   areaspline = list(lineWidth = 2.5,
-  #                     marker = list(radius = 3.5,
-  #                                   symbol = "circle"))
-  # ) %>%
+
   hc_add_theme(thm4)
 h
 filename <- "col_confirmados_acu_departamento.html"
@@ -224,7 +215,7 @@ file.rename(filename, file.path("docs/viz", filename))
 
 thm5 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#f03f4e')))
-d <- cases %>% select(sexo,fecha) %>%
+d <- cases %>% select(sexo, fecha) %>%
   mutate(cases = 1, cumcases = cumsum(cases)) %>%
   select(sexo, fecha, cases = cases, cumcases = cumcases)
 dates <- full_seq(d$fecha, 1)
@@ -282,7 +273,7 @@ file.rename(filename, file.path("docs/viz", filename))
 
 thm5 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#f03f4e')))
-d <- cases %>% select(tipo_contagio,fecha) %>%
+d <- cases %>% select(tipo_contagio, fecha) %>%
   mutate(cases = 1, cumcases = cumsum(cases)) %>%
   select(tipo_contagio, fecha, cases = cases, cumcases = cumcases)
 dates <- full_seq(d$fecha, 1)
@@ -380,15 +371,3 @@ lf
 filename <- "col_mapa_casos.html"
 save_lfltmagic(lf, filename, height = 100)
 file.rename(filename, file.path("docs/viz", filename))
-
-
-
-
-
-
-
-
-
-
-
-
