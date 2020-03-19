@@ -9,7 +9,8 @@ gsheet_ins <- Sys.getenv("GSHEET_URL_INS")
 tabs <- sheets_sheets(gsheet_ins)
 
 tests <- read_sheet(gsheet_ins, sheet = "tests")
-colombia_reports <- tests %>% select(fecha = updated_date, confirmed = `Casos Confirmados en Colombia`)
+colombia_reports <- tests %>% select(fecha = updated_date,
+                                     confirmed = `Casos Confirmados en Colombia`, everything())
 write_csv(colombia_reports, "data/ins/reports_gsheet.csv")
 
 cases_tabs <- tabs[grepl("rep_*[^v]*$", tabs)]
@@ -19,6 +20,10 @@ message("\nLatest: ", latest)
 
 cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
                     col_types = "???????????????????")
+
+message("\nCases table with columns:\n", paste(names(cases), collapse = ", "),
+        "\n# nrow: ",nrow(cases),
+        "\n# col: ", ncol(cases))
 
 ### Load local cases
 # latest <- list.files("data/ins", full.names = TRUE)
