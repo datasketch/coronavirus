@@ -1,7 +1,8 @@
 library(tidyverse)
-library(googlesheets4)
+library(geodata)
 library(lubridate)
 
+<<<<<<< HEAD
 dotenv::load_dot_env()
 sheets_deauth()
 # INS
@@ -29,6 +30,10 @@ message("\nCases table with columns:\n", paste(names(cases), collapse = ", "),
 # latest <- list.files("data/ins", full.names = TRUE)
 # cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
 # names(cases)
+=======
+cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
+names(cases)
+>>>>>>> 5902baaa10790714b65947245723febe39868fe5
 
 age_group_vars <- names(cases)[grepl("[0-9]", names(cases))]
 
@@ -40,8 +45,6 @@ x <- x %>% pivot_longer(c("Masculino", "Femenino"),
 x <- x %>% pivot_longer(c("Importado", "Asociado"),
                   names_to = "tipo_contagio", values_drop_na = TRUE) %>% select(-value)
 x <- x %>% mutate(fecha = dmy(fecha))
-
-library(geodata)
 
 x$ciudad[x$ciudad == "Meta"] <- "Villavicencio"
 
