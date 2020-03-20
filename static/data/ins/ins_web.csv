@@ -99,3 +99,48 @@ idx,fecha,ciudad,Atención,Edad,sexo,tipo_contagio,País de procedencia
 98,18/03/2020,Cartagena,casa,20 a 29,M,Importado,España
 99,18/03/2020,Ibagué,casa,10 a 19,M,Relacionado,Colombia
 100,18/03/2020,Pereira,casa,20 a 29,M,Importado,España
+101,18/03/2020,Pereira,casa,10 a 19,M,Importado,España
+102,18/03/2020,Dosquebradas,casa,70 a 79,M,Importado,España
+103,19/03/2020,Cartagena,casa,20 a 29,F,Importado,España
+104,19/03/2020,Barranquilla,casa,40 a 49,F,Importado,España
+105,19/03/2020,Palmira,casa,20 a 29,F,Importado,España
+106,19/03/2020,Medellín,casa,40 a 49,M,Importado,España
+107,19/03/2020,Medellín,casa,50 a 59,M,Importado,España
+108,19/03/2020,Medellín,casa,50 a 59,F,Importado,España
+109,19/03/2020,Bogotá,casa,50 a 59,M,Importado,España
+110,19/03/2020,Bogotá,casa,60 a 69,F,Importado,Estados Unidos
+111,19/03/2020,Bogotá,casa,60 a 69,M,Relacionado,Colombia
+112,19/03/2020,Bogotá,casa,30 a 39,M,Importado,España
+113,19/03/2020,Bogotá,casa,30 a 39,M,Importado,Italia - España
+114,19/03/2020,Bogotá,casa,40 a 49,M,Importado,Estados Unidos
+115,19/03/2020,Bogotá,casa,20 a 29,M,Importado,Ecuador
+116,19/03/2020,Bogotá,casa,40 a 49,F,En estudio,Colombia
+117,19/03/2020,Cucuta,casa,20 a 29,M,Importado,España
+118,19/03/2020,Cucuta,casa,50 a 59,M,Relacionado,Colombia
+119,19/03/2020,Cucuta,casa,20 a 29,M,Relacionado,Colombia
+120,19/03/2020,Armenia,casa,20 a 29,F,Relacionado,Colombia
+121,19/03/2020,Popayan,casa,60 a 69,M,Relacionado,Colombia
+122,19/03/2020,Popayan,casa,30 a 39,F,Importado,España
+123,19/03/2020,Caldas,casa,30 a 39,F,Importado,España
+124,19/03/2020,Neiva,casa,70 a 79,F,Relacionado,Colombia
+125,19/03/2020,Cartagena,casa,20 a 29,M,Importado,España
+126,19/03/2020,Barranquilla,casa,50 a 59,F,Importado,Estados Unidos
+127,19/03/2020,Barranquilla,casa,30 a 39,F,Relacionado,Colombia
+128,19/03/2020,Soacha,casa,50 a 59,M,En estudio,Colombia
+129,20/03/2020,Pereira,casa,20 a 29,F,Importado,España
+130,20/03/2020,Anapoima,casa,50 a 59,M,Importado,Estados Unidos
+131,20/03/2020,Medellin,casa,20 a 29,F,Importado,España-Italia
+132,20/03/2020,Cali,casa,30 a 39,M,Relacionado,Colombia
+133,20/03/2020,Rionegro,hospital,50 a 59,M,Importado,
+134,20/03/2020,Medellin,casa,20 a 29,M,Relacionado,Colombia
+135,20/03/2020,Medellin,casa,40 a 49,F,Importado,Alemania
+136,20/03/2020,Medellin,casa,30 a 39,M,Relacionado,Colombia
+137,20/03/2020,Medellin,casa,50 a 59,M,Importado,España-Croacia
+138,20/03/2020,Bogotá,casa,50 a 59,M,Importado,Ecuador
+139,20/03/2020,Bogotá,casa,30 a 39,M,Importado,España-india
+140,20/03/2020,Bogotá,casa,30 a 39,M,Importado,Brasil
+141,20/03/2020,Medellin,casa,60 a 69,F,Relacionado,España-Croacia
+142,20/03/2020,Medellin,casa,30 a 39,F,Importado,Italia - Jamaica-Panamá
+143,20/03/2020,Envigado,casa,40 a 49,M,Importado,España-Italia
+144,20/03/2020,Medellin,casa,40 a 49,M,Relacionado,Colombia
+145,20/03/2020,Medellin,casa,10 a 19,F,Relacionado,España

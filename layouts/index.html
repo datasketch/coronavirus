@@ -28,11 +28,19 @@
 <main class="container" id="app">
   <section>
     <h3 class="section-title">Gráficas</h3>
-    <div class="charts"></div>
+    <div class="charts">
+      {{ range .Site.Data.data.charts }}
+        {{ partial "chart.html" . }}
+      {{ end }}
+    </div>
   </section>
   <section>
     <h3 class="section-title">Datos</h3>
-    <div class="datasets"></div>
+    <div class="datasets">
+      {{ range .Site.Data.data.datasets }}
+        {{ partial "dataset.html" . }}
+      {{ end }}
+    </div>
   </section>
 </main>
 {{ end }}
