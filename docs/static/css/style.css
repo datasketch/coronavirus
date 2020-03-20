@@ -11,15 +11,16 @@ body {
   font-family: 'Contrail One', cursive;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .nav {
   align-items: center;
   display: flex;
+  height: 4rem;
   justify-content: space-between;
-  left: 0;
-  padding: 1.25rem 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 0rem 1rem;
 }
 
 .nav-brand {
@@ -27,7 +28,7 @@ body {
 }
 
 .nav-brand img {
-  height: 2rem;
+  height: 100%;
   width: auto;
 }
 
@@ -35,16 +36,24 @@ body {
   margin-right: 1rem;
 }
 
-.hero {
-  align-items: center;
+#header {
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 4rem;
+}
+
+.hero {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 12rem 1rem;
+  padding: 8rem 1rem;
   text-align: center;
+}
+
+.hero-image {
+  max-width: 100%;
 }
 
 .hero-tagline {
@@ -56,4 +65,102 @@ body {
   display: block;
   padding: 0.25rem 1rem;
   letter-spacing: 0.05em;
+}
+
+#app {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-title {
+  color: #481796;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.card-media {
+  height: 0;
+  padding-bottom: 56.25%;
+  width: 100%;
+  position: relative;
+}
+
+.card-media img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-media iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1.5rem 1rem;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.share-btn {
+  background-color: #481796;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Contrail One', cursive;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .charts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+  .charts {
+    grid-gap: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
