@@ -2,7 +2,7 @@ library(tidyverse)
 library(geodata)
 library(lubridate)
 
-cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
+cases <- read_csv("static/data/ins/ins_web.csv", col_types = cols(.default = "c"))
 
 # age_group_vars <- names(cases)[grepl("[0-9]", names(cases))]
 
@@ -20,4 +20,4 @@ x$ciudad[x$ciudad == "Meta"] <- "Villavicencio"
 
 xgeo <- geocode(x, col = "ciudad", "col_municipalities")
 
-write_csv(xgeo, "data/ins/cases_colombia_detail.csv")
+write_csv(xgeo, "static/data/ins/cases_colombia_detail.csv")

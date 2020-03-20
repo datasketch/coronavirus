@@ -5,7 +5,7 @@ library(lubridate)
 # Timeseries
 url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
 confirmed_cases <- read_csv(url)
-write_csv(confirmed_cases, "data/csse/cases_timeseries.csv")
+write_csv(confirmed_cases, "static/data/csse/cases_timeseries.csv")
 selectedCountries <- c("Peru", "Argentina", "Brazil",
                        "Colombia",
                        "Bolivia", "Chile", "Ecuador")
@@ -29,6 +29,6 @@ confirmed_cases <- confirmed_cases %>%
   group_by(country) %>%
   mutate(day = 1:n())
 
-write_csv(confirmed_cases, "data/csse/cases_countries.csv")
+write_csv(confirmed_cases, "static/data/csse/cases_countries.csv")
 
 

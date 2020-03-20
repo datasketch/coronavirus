@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.63.2" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coronavirus · Datasketch</title>
-  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href='/css/style.css'>
-</head>
-<body>
-  
+{{ define "main" }}
 <header id="header">
   <nav class="nav">
     <div class="nav-left">
-      <a href="/" class="nav-brand">
-        <img src='/images/logo.svg' alt="Datasketch">
+      <a href="{{ .Site.BaseURL }}" class="nav-brand">
+        <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
       </a>
     </div>
     <div class="nav-right">
       <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
-        <img src='/images/tw.svg' alt="">
+        <img src='{{ "images/tw.svg" | absURL }}' alt="">
       </a>
       <a class="nav-item" href="mailto:info@datasketch.co">
-        <img src='/images/mail.svg' alt="">
+        <img src='{{ "images/mail.svg" | absURL }}' alt="">
       </a>
       <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
-        <img src='/images/fb.svg' alt="">
+        <img src='{{ "images/fb.svg" | absURL }}' alt="">
       </a>
     </div>
   </nav>
   <div class="hero">
-    <img class="hero-image" src='/images/title.svg' alt="Coronavirus">
+    <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
     <div class="hero-tagline">
       <h2>Datos y gráficas actualizadas</h2>
     </div>
@@ -46,10 +35,9 @@
     <div class="datasets"></div>
   </section>
 </main>
+{{ end }}
 
-  
-<script src='/js/share.js'></script>
-<script src='/js/main.js'></script>
-
-</body>
-</html>
+{{ define "script" }}
+<script src='{{ "js/share.js" | absURL }}'></script>
+<script src='{{ "js/main.js" | absURL }}'></script>
+{{ end }}

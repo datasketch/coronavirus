@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "es-es"
+title = "Coronavirus · Datasketch"
+publishDir = "docs"
