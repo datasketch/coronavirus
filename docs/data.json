@@ -17,5 +17,11 @@
       "path": "viz/col_confirmados_departamento.html"
     }
   ],
-  "datasets": []
+  "datasets": [
+    {
+      "title": "Casos confirmados en Colombia",
+      "description": "En este dataset se encuentran los casos confirmados en Colombia por el Instituto Nacional de Salud.",
+      "path": "datasets/ins.csv"
+    }
+  ]
 }

@@ -29,13 +29,13 @@ const handleError = err => {
 };
 
 const populateDOM = data => {
-  const { charts } = data;
+  const { charts, datasets } = data;
   // add charts
   const chartsContainer = document.querySelector('.charts');
   charts.forEach(chart => {
     const { card, cardMedia, cardActions } = createCard();
     const iframe = document.createElement('iframe');
-    const shareButton = document.createElement('button')
+    const shareButton = document.createElement('button');
 
     card.appendChild(cardMedia);
     card.appendChild(cardActions);
@@ -44,22 +44,51 @@ const populateDOM = data => {
 
     iframe.src = `./${chart.path}`;
     shareButton.textContent = 'Compartir';
-    shareButton.classList.add('share-btn');
+    shareButton.classList.add('btn');
 
     shareButton.addEventListener('click', () => {
-      navigator.share({
-        title: 'Datasketch · Coronavirus',
-        text: chart.title,
-        url: `${location.href}${chart.path}`
-      }, {
-        print: false,
-        sms: false,
-        skype: false,
-        language: 'es'
-      })
-    })
+      navigator.share(
+        {
+          title: 'Datasketch · Coronavirus',
+          text: chart.title,
+          url: `${location.href}${chart.path}`
+        },
+        {
+          print: false,
+          sms: false,
+          skype: false,
+          language: 'es'
+        }
+      );
+    });
 
     chartsContainer.appendChild(card);
+  });
+
+  // add datasets
+  const datasetsContainer = document.querySelector('.datasets');
+  datasets.forEach(dataset => {
+    const { card, cardBody, cardActions } = createCard();
+    const title = document.createElement('p');
+    const description = document.createElement('p');
+    const download = document.createElement('a');
+
+    card.appendChild(cardBody);
+    card.appendChild(cardActions);
+    cardBody.appendChild(title);
+    cardBody.appendChild(description);
+    cardActions.appendChild(download);
+
+    card.classList.add('dataset');
+    title.textContent = dataset.title;
+    title.classList.add('dataset-title');
+    description.textContent = dataset.description;
+    description.classList.add('dataset-description');
+    download.textContent = 'Descargar';
+    download.href = `${location.href}${dataset.path}`;
+    download.classList.add('btn');
+
+    datasetsContainer.appendChild(card);
   });
 };
 
