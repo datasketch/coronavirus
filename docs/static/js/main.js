@@ -64,7 +64,7 @@ const populateDOM = data => {
 };
 
 function init() {
-  fetch('/data.json')
+  fetch(`${location.href}data.json`)
     .then(handleResponse)
     .then(populateDOM)
     .catch(handleError);
