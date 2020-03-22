@@ -3,11 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/metodologia/</loc>
+  </url>
+  
+  <url>
+    <loc>/suggestions/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
   </url>
   
   <url>
+    <loc>/contacto/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/dashboard/</loc>
   </url>
   
   <url>
