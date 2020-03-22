@@ -1,40 +1,6 @@
 library(rvest)
 library(tidyverse)
 
-
-# dotenv::load_dot_env()
-# sheets_deauth()
-# # INS
-# gsheet_ins <- Sys.getenv("GSHEET_URL_INS")
-# tabs <- sheets_sheets(gsheet_ins)
-#
-# tests <- read_sheet(gsheet_ins, sheet = "tests")
-# colombia_reports <- tests %>% select(fecha = updated_date,
-#                                      confirmed = `Casos Confirmados en Colombia`, everything())
-# write_csv(colombia_reports, "data/ins/reports_gsheet.csv")
-#
-# cases_tabs <- tabs[grepl("rep_*[^v]*$", tabs)]
-# #latest <- sort(tabs[grepl("rep_*[^v]*$", tabs)], decreasing = TRUE)[1]
-# latest <- cases_tabs[1]
-# message("\nLatest: ", latest)
-#
-# cases <- read_sheet(gsheet_ins, sheet = latest, skip = 1,
-#                     col_types = "???????????????????")
-#
-# message("\nCases table with columns:\n", paste(names(cases), collapse = ", "),
-#         "\n# nrow: ",nrow(cases),
-#         "\n# col: ", ncol(cases))
-
-### Load local cases
-# latest <- list.files("data/ins", full.names = TRUE)
-# cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
-# names(cases)
-
-# cases <- read_csv("data/ins/ins_web.csv", col_types = cols(.default = "c"))
-# names(cases)
-
-
-
 ## Get data from web
 
 system("phantomjs scripts/read_html.js")
@@ -50,21 +16,34 @@ updated <- gsub("COVID-19 Colombia \\| Reporte |Corte ","", names(ins_tables[[1]
 updated_date <- lubridate::dmy(substr(updated, 1, 10))
 updated_time <- substr(updated, 12, nchar(updated) - 2)
 
-number <- ins %>%
-  html_nodes("b") %>%
-  html_text()
 
-ins %>%
-  html_nodes(".igc-textual-entry") %>%
-  html_text()
+entry <- ins %>%
+  html_nodes(".igc-textual-entry")
 
-number <- ins %>%
+entryNumber <- entry %>%
   html_nodes(".igc-textual-figure") %>%
   html_text()
-
-info <- ins %>%
-  html_nodes(".igc-textual-fact b") %>%
+entryText <- entry %>%
+  html_nodes(".igc-textual-fact") %>%
   html_text()
+entryText <- gsub("Ingresó a Colombia después de venir de un país con circulación de COVID",
+                  "",
+                  entryText)
+entryText <- gsub("Tuvo contacto con un caso confirmado de COVID",
+                  "",
+                  entryText)
+entryText <- gsub("se está definiendo la cadena de transmisión",
+                  "",
+                  entryText)
+
+# number <- ins %>%
+#   html_nodes(".igc-textual-figure") %>%
+#   html_text()
+# info <- ins %>%
+#   html_nodes(".igc-textual-fact b") %>%
+#   html_text()
+number <- entryNumber
+info <- entryText
 
 x <- tibble(info = info, number = number) %>%
   filter(info != "") %>%
@@ -75,19 +54,31 @@ reports <- transpose(x) %>%
   set_names(x$info) %>%
   as_tibble()
 
-reports$updated <- lubridate::parse_date_time(updated, orders = "dmyIp", tz = "America/Bogota")
-reports$updated <- as.character(reports$updated)
-reports$updated_date <- substr(reports$updated,1,10)
-reports$updated_time <- substr(reports$updated,12,16)
+if(ncol(reports) < 7){
+  # stop("Update recent report by hand")
+  today <- as.character(Sys.Date())
+  latest_local_report <- tail(list.files("static/data/ins/cases",
+                                         full.names = TRUE),1)
+  if(!grepl(today, latest_local_report)){
+    stop("No local report")
+  }
+  message("Found latest local report")
+}else{
+  reports$updated <- lubridate::parse_date_time(updated, orders = "dmyIp", tz = "America/Bogota")
+  reports$updated <- as.character(reports$updated)
+  reports$updated_date <- substr(reports$updated,1,10)
+  reports$updated_time <- substr(reports$updated,12,16)
 
-message("\nUpdated: \n",reports$updated)
+  message("\nUpdated: \n",reports$updated)
 
-reports <- reports %>% select(updated, updated_date, updated_time, everything())
-filename <- gsub(" ","_",gsub(":","-",reports$updated))
-write_csv(reports, paste0("static/data/ins/reports/",filename, ".csv"))
+  reports <- reports %>% select(updated, updated_date, updated_time, everything())
+  filename <- gsub(" ","_",gsub(":","-",reports$updated))
+  write_csv(reports, paste0("static/data/ins/reports/",filename, ".csv"))
+}
 
 all_reps <- list.files("static/data/ins/reports/", full.names = TRUE)
-all_reps <- map(all_reps, read_csv) %>% bind_rows()
+all_reps <- map(all_reps, read_csv) %>% bind_rows() %>%
+  select(one_of(names(reports)))
 
 write_csv(all_reps, "static/data/ins/col_reports.csv")
 
