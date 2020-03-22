@@ -2,19 +2,35 @@
   "charts": [
     {
       "title": "Casos confirmados por sexo",
-      "path": "viz_2020-03-21/col_confirmados_sexo.html"
+      "path": "viz/col_confirmados_sexo.html"
+    },
+    {
+      "title": "Casos confirmados acumulados por sexo",
+      "path": "viz/col_confirmados_acu_sexo.html"
     },
     {
       "title": "Casos confirmados por tipo de contagio",
-      "path": "viz_2020-03-21/col_confirmados_tipo.html"
+      "path": "viz/col_confirmados_tipo.html"
     },
     {
       "title": "Casos confirmados por grupo de edad",
-      "path": "viz_2020-03-21/col_confirmados_edad.html"
+      "path": "viz/col_confirmados_edad.html"
     },
     {
       "title": "Casos confirmados por departamento",
-      "path": "viz_2020-03-21/col_confirmados_departamento.html"
+      "path": "viz/col_confirmados_departamento.html"
+    },
+    {
+      "title": "Casos confirmados acumulados por departamento",
+      "path": "viz/col_confirmados_acu_departamento.html"
+    },
+    {
+      "title": "Casos confirmados por departamento",
+      "path": "viz/col_confirmados_departamento.html"
+    },
+    {
+      "title": "Mapa de casos confirmados en Colombia",
+      "path": "viz/col_mapa_casos.html"
     }
   ],
   "datasets": [
