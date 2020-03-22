@@ -151,11 +151,11 @@ idx,fecha,ciudad,atencion,edad,sexo,tipo_contagio,pais_procedencia
 150,20/03/2020,Bogotá,casa,20 a 29,F,Importado,Italia-Ucrania-Turquía
 151,20/03/2020,Bogotá,casa,40 a 49,M,Importado,Ecuador
 152,20/03/2020,Bogotá,casa,60 a 69,M,Importado,Estados Unidos
-153,20/03/2020,Bogotá,casa,50 a 59,F,En estudio,
+153,20/03/2020,Bogotá,casa,50 a 59,F,En estudio,NA
 154,20/03/2020,Bogotá,casa,40 a 49,M,Importado,Jamaica-Panamá-Islas Caimán
 155,20/03/2020,Santa Marta,casa,20 a 29,M,Importado,España
 156,20/03/2020,Chía,casa,20 a 29,F,Importado,España
-157,20/03/2020,Santa Marta,hospital,80 a 89,M,En estudio,
+157,20/03/2020,Santa Marta,hospital,80 a 89,M,En estudio,NA
 158,20/03/2020,Madrid,casa,30 a 39,M,Relacionado,Colombia
 159,20/03/2020,Bogotá,casa,30 a 39,M,Importado,Estados Unidos
 160,20/03/2020,Bogotá,casa,40 a 49,F,Importado,Estados Unidos
@@ -195,3 +195,17 @@ idx,fecha,ciudad,atencion,edad,sexo,tipo_contagio,pais_procedencia
 194,21/03/2020,Palmira,casa,60 a 69,F,Importado,España
 195,21/03/2020,Pereira,casa,60 a 69,F,Importado,Estados Unidos
 196,21/03/2020,Neiva,casa,50 a 59,F,Importado,España
+197,21/03/2020,Cartagena,fallecido,50 a 59,M,Relacionado,Colombia
+198,21/03/2020,Medellín,casa,30 a 39,M,Importado,España
+199,21/03/2020,Guarne,casa,20 a 29,M,Importado,Estados Unidos
+200,21/03/2020,Cartagena,casa,50 a 59,F,Relacionado,Colombia
+201,21/03/2020,Chía,casa,50 a 59,F,Importado,España
+202,21/03/2020,Itaguí,hospital,50 a 59,M,En estudio,NA
+203,21/03/2020,Barranquilla,casa,20 a 29,F,Importado,Estados Unidos
+204,21/03/2020,Barranquilla,casa,30 a 39,M,Importado,Estados Unidos
+205,21/03/2020,Bogotá,casa,20 a 29,M,Relacionado,Colombia
+206,21/03/2020,Bogotá,casa,60 a 69,F,Importado,España
+207,21/03/2020,Bogotá,casa,40 a 49,M,Importado,Guatemala
+208,21/03/2020,Bogotá,casa,60 a 69,M,Importado,España
+209,21/03/2020,Bogotá,casa,60 a 69,F,Importado,Reino Unido
+210,21/03/2020,Bogotá,casa,50 a 59,M,Importado,Turquia

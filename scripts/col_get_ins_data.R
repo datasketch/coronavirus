@@ -51,11 +51,19 @@ updated_date <- lubridate::dmy(substr(updated, 1, 10))
 updated_time <- substr(updated, 12, nchar(updated) - 2)
 
 number <- ins %>%
+  html_nodes("b") %>%
+  html_text()
+
+ins %>%
+  html_nodes(".igc-textual-entry") %>%
+  html_text()
+
+number <- ins %>%
   html_nodes(".igc-textual-figure") %>%
   html_text()
 
 info <- ins %>%
-  html_nodes(".igc-textual-fact") %>%
+  html_nodes(".igc-textual-fact b") %>%
   html_text()
 
 x <- tibble(info = info, number = number) %>%
@@ -85,10 +93,17 @@ write_csv(all_reps, "static/data/ins/col_reports.csv")
 
 cases_html_table <- ins_tables[[2]]
 
-if(nrow(cases_html_table) < reports$`Casos Confirmados en Colombia`){
+n_cases <- reports$`Casos Confirmados en Colombia`
+if(is.null(n_cases)){
+  n_cases <- reports$`Casos Importados` +
+    reports$`Casos Relacionados` +
+    reports$`Casos en Estudio`
+}
+
+if(nrow(cases_html_table) < n_cases){
   # Try
   today <- as.character(Sys.Date())
-  latest_local_case <- tail(list.files("static/data/ins/cases/", full.names = TRUE),1)
+  latest_local_case <- tail(list.files("static/data/ins/cases", full.names = TRUE),1)
   if(!grepl(today, latest_local_case)){
     stop("No local file")
   }
