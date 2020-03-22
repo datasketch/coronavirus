@@ -3,12 +3,15 @@ library(tidyverse)
 
 ## Get data from web
 
-system("phantomjs scripts/read_html.js")
-ins <- read_html("static/data/ins/prep/ins.html")
-
-
-x <- ins %>% html_table()
-
+scrape_ins <- function(){
+  system("phantomjs scripts/read_html.js")
+  ins <- read_html("static/data/ins/prep/ins.html")
+  ins %>% html_table()
+}
+x <- scrape_ins()
+if(length(x) < 2){
+  x <- scrape_ins()
+}
 
 ins_tables <- ins %>% html_table()
 
