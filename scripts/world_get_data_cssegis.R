@@ -56,7 +56,7 @@ write_csv(conf_cases_trans, "static/data/csse/cases_countries_all_langs.csv")
 
 conf_cases_es <- conf_cases_trans %>%
   select(country = es, isocode = id, date, day, confirmed, lat, lon)
-write_csv(conf_cases_es, "static/data/csse/cases_countries_all_langs.csv")
+write_csv(conf_cases_es, "static/data/csse/cases_countries_es.csv")
 
 
 
