@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>/metodologia/</loc>
+  </url>
+  
+  <url>
     <loc>/suggestions/</loc>
   </url>
   
@@ -19,7 +23,51 @@
   </url>
   
   <url>
+    <loc>/contacto/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/colombia-confirmados-departamento-acumulado/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_acu_sexo/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_acu_tipo_linea/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_departamento/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_edad/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_sexo/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_confirmados_tipo/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/col_mapa_casos/</loc>
+  </url>
+  
+  <url>
+    <loc>/dashboard/</loc>
   </url>
   
   <url>
