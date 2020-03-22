@@ -1,0 +1,8 @@
+<div class="card chart">
+  <div class="card-media">
+    <iframe src='{{ .path | absURL }}'></iframe>
+  </div>
+  <div class="card-actions">
+    <button class="btn" data-chart="{{ jsonify . }}">Compartir</button>
+  </div>
+</div>

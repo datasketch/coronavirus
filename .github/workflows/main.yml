@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: '0 */2 * * *'
   push:
     branches: 
       - master
@@ -26,6 +26,7 @@ jobs:
       run: |
         sudo tar xjvf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
         sudo ln -f -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin
+        sudo rm phantomjs-2.1.1-linux-x86_64.tar.bz2
     - name: Install needed packages
       run: |
         sudo Rscript -e "install.packages('devtools')"
