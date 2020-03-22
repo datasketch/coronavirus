@@ -1,4 +1,4 @@
-const shareButtons = Array.from(document.querySelectorAll('.chart .btn'));
+const shareButtons = Array.from(document.querySelectorAll('.chart .share-btn'));
 
 shareButtons.forEach(shareButton => {
   const chart = JSON.parse(shareButton.dataset.chart);
@@ -7,7 +7,8 @@ shareButtons.forEach(shareButton => {
       {
         title: 'Datasketch · Coronavirus',
         text: chart.title,
-        url: `${location.href}${chart.path}`
+        // url: `${location.href}${chart.path}`
+        url: `${location.href}` + 'vis/' + chart.uid
       },
       {
         print: false,

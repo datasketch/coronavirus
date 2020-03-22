@@ -1,3 +1,4 @@
+theme = "hugo-titi"
 baseURL = "/"
 languageCode = "es-es"
 title = "Coronavirus · Datasketch"

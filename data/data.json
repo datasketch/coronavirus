@@ -1,42 +1,54 @@
 {
   "charts": [
     {
+      "uid": "col_confirmados_sexo",
       "title": "Casos confirmados por sexo",
+      "thumbnail": "viz/col_confirmados_sexo.png",
       "path": "viz/col_confirmados_sexo.html"
     },
     {
+      "uid": "col_confirmados_acu_sexo",
       "title": "Casos confirmados acumulados por sexo",
+      "thumbnail": "viz/col_confirmados_acu_sexo.png",
       "path": "viz/col_confirmados_acu_sexo.html"
     },
     {
+      "uid": "col_confirmados_tipo",
       "title": "Casos confirmados por tipo de contagio",
+      "thumbnail": "viz/col_confirmados_tipo.png",
       "path": "viz/col_confirmados_tipo.html"
     },
     {
+      "uid": "col_confirmados_edad",
       "title": "Casos confirmados por grupo de edad",
+      "thumbnail": "viz/col_confirmados_edad.png",
       "path": "viz/col_confirmados_edad.html"
     },
     {
-      "title": "Casos confirmados por departamento",
-      "path": "viz/col_confirmados_departamento.html"
-    },
-    {
+      "uid": "col_confirmados_acu_departamento",
       "title": "Casos confirmados acumulados por departamento",
+      "thumbnail": "viz/col_confirmados_acu_departamento.png",
       "path": "viz/col_confirmados_acu_departamento.html"
     },
     {
+      "uid": "col_confirmados_departamento",
       "title": "Casos confirmados por departamento",
+      "thumbnail": "viz/col_confirmados_departamento.png",
       "path": "viz/col_confirmados_departamento.html"
     },
     {
+      "uid": "col_mapa_casos",
       "title": "Mapa de casos confirmados en Colombia",
+      "thumbnail": "viz/col_mapa_casos.png",
       "path": "viz/col_mapa_casos.html"
     }
   ],
   "datasets": [
     {
+      "uid": "este",
       "title": "Casos confirmados en Colombia",
       "description": "En este dataset se encuentran los casos confirmados en Colombia por el Instituto Nacional de Salud.",
+      "thumbnail": "datasets/ins.png",
       "path": "datasets/ins.csv"
     }
   ]

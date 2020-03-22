@@ -23,6 +23,7 @@ thm <- hc_theme(chart = list(backgroundColor = NULL),
 
 
 # Casos género
+uid <- "col_confirmados_sexo"
 d <- cases %>%
   select(`Sexo` = sexo) %>%
   count(Sexo) %>% select(Sexo, Total = n)
@@ -43,13 +44,14 @@ h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
                                      format = "<b>{point.name}s</b><br>{point.value}"))) %>%
   hc_add_theme(thm)
 h
-
-filename <- "col_confirmados_sexo.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 
 # Casos confirmados
+uid <- "col_confirmados_tipo"
 d <- cases %>%
   select(`Tipo contagio` = tipo_contagio) %>%
   count(`Tipo contagio`) %>% select(`Tipo contagio`, Total = n)
@@ -68,14 +70,14 @@ h <- hgch_treemap_CatNum(d, title = glue("{n_cases} casos confirmados"),
                                      format = "<b>{point.name}s</b><br>{point.value}"))) %>%
   hc_add_theme(thm)
 h
-
-filename <- "col_confirmados_tipo.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 
 # Casos por grupo de edad
-
+uid <- "col_confirmados_edad"
 thm2 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#ff9d28')))
 d <- cases %>%
@@ -103,12 +105,13 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por edad"),
                                        fontFamily = "Roboto Condensed"))) %>%
   hc_add_theme(thm2)
 h
-filename <- "col_confirmados_edad.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 # Casos por departamento
-
+uid <- "col_confirmados_departamento"
 thm3 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#ff9d28', '#ff9d28')))
 d <- cases %>%
@@ -138,9 +141,10 @@ h <- hgch_bar_Cat(d, title = glue("Casos confirmados por departamento"),
                                         fontFamily = "Roboto Condensed"))) %>%
   hc_add_theme(thm3)
 h
-filename <- "col_confirmados_departamento.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 
 thm4 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
@@ -150,7 +154,7 @@ thm4 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                                 '#93bedf', '#62356d','#af2276')))
 
 # Casos acumulados por departamento
-
+uid <- "col_confirmados_acu_departamento"
 d0 <- cases %>% select(department, fecha)
 
 other_threshold <- 3
@@ -206,13 +210,14 @@ h <- hgch_area_CatCatNum(d4, graph_type = "stacked", agg = "sum",
 
   hc_add_theme(thm4)
 h
-filename <- "col_confirmados_acu_departamento.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 
 # Casos acumulados por sexo
-
+uid <- "col_confirmados_acu_sexo"
 thm5 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#f03f4e')))
 d <- cases %>% select(sexo, fecha) %>%
@@ -262,14 +267,14 @@ h <- hgch_area_CatCatNum(d3, graph_type = "stacked",
   ) %>%
   hc_add_theme(thm5)
 h
-filename <- "col_confirmados_acu_sexo.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
-
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 ## Casos acumulados
-
 # Casos acumulados por tipo líneas
+uid <- "col_confirmados_acu_tipo_linea"
 
 thm5 <- hc_theme_merge(thm, hc_theme(chart = list(backgroundColor = NULL),
                                      colors = c('#a0f0da', '#f03f4e')))
@@ -322,14 +327,15 @@ h <- hgch_line_CatCatNum(d3,
   # ) %>%
   hc_add_theme(thm5)
 h
-filename <- "col_confirmados_acu_tipo_linea.html"
-save_hgchmagic(h, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
 
 
 # Leaflet map
 library(lfltmagic)
-
+uid <- "col_mapa_casos"
 d <- cases %>%
   group_by(ciudad, lat, lon) %>%
   summarise(Casos = n(),
@@ -349,7 +355,7 @@ topoData <- geodata::geodataTopojsonPath("col_municipalities")
 topoData <- readLines(topoData) %>% paste(collapse = "\n")
 
 
-lf <- leaflet(d) %>%
+h <- leaflet(d) %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   #addProviderTiles(providers$CartoDB.Positron) %>%
   # addProviderTiles(providers$Stadia.AlidadeSmoothDark) %>%
@@ -367,7 +373,9 @@ lf <- leaflet(d) %>%
   ) %>%
   addLegend(pal = pal, values = ~Casos, opacity = 0.7, title = NULL,
                 position = "bottomright")
-lf
-filename <- "col_mapa_casos.html"
-save_lfltmagic(lf, filename, height = 100)
-file.rename(filename, file.path("static/viz", filename))
+h
+save_hgchmagic(h, uid, format = "png")
+save_hgchmagic(h, uid, format = "html")
+file.rename(paste0(uid,".png"), file.path("static/viz", paste0(uid,".png")))
+file.rename(paste0(uid,".html"), file.path("static/viz", paste0(uid,".html")))
+
