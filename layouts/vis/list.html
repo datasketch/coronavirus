@@ -1,4 +1,7 @@
 {{ define "main" }}
+  <div id="wrapper" class="column">
+    {{ partial "menu" . }}
+  </div>
   {{ .Content }}
   <div class="container container_md">
     {{ range where .Pages "Section" "posts" }}

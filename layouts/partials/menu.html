@@ -1,0 +1,55 @@
+<nav class="nav nav_pages">
+    <div class="nav-left">
+        <a href="{{ .Site.BaseURL }}" class="nav-brand">
+            <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
+        </a>
+    </div>
+    <div class="nav-right">
+        <!--         <div class="container">
+            <ul class="nav-item burger-menu--items">
+                {{ range .Site.Menus.burger }}
+                <li class="burger-menu--item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+                {{ if .Site.Menus.nav }}
+                {{ range .Site.Menus.nav }}
+                <li class="nav-item burger-menu--item burger-menu--nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div> -->
+        {{ if .Site.Menus.nav }}
+        {{ range .Site.Menus.nav }}
+          <a class="nav-item"><a class="nav-item-link" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        {{ end }}
+        <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer" style="padding-left: 10px;">
+            <img src='{{ "images/tw.svg" | absURL }}' alt="">
+        </a>
+        <a class="nav-item" href="mailto:info@datasketch.co">
+            <img src='{{ "images/mail.svg" | absURL }}' alt="">
+        </a>
+        <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+            <img src='{{ "images/fb.svg" | absURL }}' alt="">
+        </a>
+    </div>
+</nav>
+<!-- {{ $color := .Site.Params.nav.color }}
+{{ $bg := .Site.Params.nav.bg }}
+
+<div
+  class="burger-menu column v-centered"
+  style="background: {{ $bg | safeCSS }}; color: {{ $color | safeCSS }}"
+>
+  <div class="container">
+    <ul class="burger-menu--items">
+      {{ range .Site.Menus.burger }}
+        <li class="burger-menu--item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+      {{ if .Site.Menus.nav }}
+        {{ range .Site.Menus.nav }}
+          <li class="burger-menu--item burger-menu--nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div> -->

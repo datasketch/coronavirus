@@ -1,4 +1,7 @@
 {{ define "main" }}
+  <div id="wrapper" class="column">
+    {{ partial "menu" . }}
+  </div>
 {{ $renderCover := and .Params.images (or .Params.cover (eq .Params.cover nil)) }}
 <div class="post">
     {{ if $renderCover }}
