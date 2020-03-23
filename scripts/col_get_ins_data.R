@@ -6,15 +6,14 @@ library(tidyverse)
 scrape_ins <- function(){
   system("phantomjs scripts/read_html.js")
   ins <- read_html("static/data/ins/prep/ins.html")
-  ins %>% html_table()
+  ins
 }
-x <- scrape_ins()
-if(length(x) < 2){
-  x <- scrape_ins()
+ins <- scrape_ins()
+if(length(ins) < 2){
+  ins <- scrape_ins()
 }
 
 ins_tables <- ins %>% html_table()
-
 updated <- gsub("COVID-19 Colombia \\| Reporte |Corte ","", names(ins_tables[[1]]))
 updated_date <- lubridate::dmy(substr(updated, 1, 10))
 updated_time <- substr(updated, 12, nchar(updated) - 2)
@@ -29,22 +28,9 @@ entryNumber <- entry %>%
 entryText <- entry %>%
   html_nodes(".igc-textual-fact") %>%
   html_text()
-entryText <- gsub("Ingresó a Colombia después de venir de un país con circulación de COVID",
-                  "",
-                  entryText)
-entryText <- gsub("Tuvo contacto con un caso confirmado de COVID",
-                  "",
-                  entryText)
-entryText <- gsub("se está definiendo la cadena de transmisión",
-                  "",
-                  entryText)
-
-# number <- ins %>%
-#   html_nodes(".igc-textual-figure") %>%
-#   html_text()
-# info <- ins %>%
-#   html_nodes(".igc-textual-fact b") %>%
-#   html_text()
+entryText <- gsub("Ingresó a Colombia después de venir de un país con circulación de COVID","",entryText)
+entryText <- gsub("Tuvo contacto con un caso confirmado de COVID","",entryText)
+entryText <- gsub("se está definiendo la cadena de transmisión","", entryText)
 number <- entryNumber
 info <- entryText
 
@@ -57,7 +43,7 @@ reports <- transpose(x) %>%
   set_names(x$info) %>%
   as_tibble()
 
-if(ncol(reports) < 7){
+if(ncol(reports) < 9){
   # stop("Update recent report by hand")
   today <- as.character(Sys.Date())
   latest_local_report <- tail(list.files("static/data/ins/cases",

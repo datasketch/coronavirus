@@ -1,4 +1,4 @@
-idx,fecha,ciudad,Departamento,atencion,edad,sexo,tipo_contagio,pais_procedencia
+ID de caso,Fecha de diagnóstico,Ciudad de ubicación,Departamento,Atención,Edad,Sexo,Tipo*,País de procedencia
 1,03/06/2020,Bogotá,Bogotá,casa,10 a 19,F,Importado,Italia
 2,03/09/2020,Buga,Valle,hospital,30 a 39,M,Importado,España
 3,03/09/2020,Medellín,Antioquia,casa,50 a 59,F,Importado,España

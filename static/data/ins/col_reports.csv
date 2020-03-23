@@ -1,4 +1,4 @@
-updated,updated_date,updated_time,Casos Confirmados en Colombia,Muerte en Colombia,Casos Confirmados en América,Casos Confirmados en el Mundo,Países con casos confirmados,Casos Importados,Casos Relacionados,Casos en Estudio
+updated,updated_date,updated_time,Casos Confirmados en Colombia,Muertes en Colombia,Casos Confirmados en América,Casos Confirmados en el Mundo,Países con casos confirmados,Casos Importados,Casos Relacionados,Casos en Estudio
 2020-03-16T20:00:00Z,2020-03-16,20:00:00,57,NA,4780,167414,NA,37,20,NA
 2020-03-17T08:00:00Z,2020-03-17,08:00:00,65,NA,4780,167414,NA,43,22,NA
 2020-03-17T20:00:00Z,2020-03-17,20:00:00,75,NA,6039,180159,NA,48,27,NA
@@ -7,5 +7,6 @@ updated,updated_date,updated_time,Casos Confirmados en Colombia,Muerte en Colomb
 2020-03-19T20:00:00Z,2020-03-19,20:00:00,128,NA,11804,213254,NA,82,44,2
 2020-03-20T08:00:00Z,2020-03-20,08:00:00,145,NA,11804,213254,NA,93,50,2
 2020-03-21T08:00:00Z,2020-03-21,08:00:00,196,NA,17419,242488,NA,123,66,7
-2020-03-21T20:00:00Z,2020-03-21,20:00:00,210,1,23804,271364,173,133,69,8
-2020-03-21T20:00:00Z,2020-03-21,20:00:00,231,2,23804,271364,173,142,79,10
+2020-03-21T20:00:00Z,2020-03-21,20:00:00,210,NA,23804,271364,173,133,69,8
+2020-03-21T20:00:00Z,2020-03-21,20:00:00,231,NA,23804,271364,173,142,79,10
+2020-03-22T20:00:00Z,2020-03-22,20:00:00,235,2,23804,271364,173,147,81,7

@@ -3,7 +3,7 @@ library(hgchmagic)
 library(glue)
 
 cases <- read_csv("static/data/ins/col_cases.csv")
-cases_col <- read_csv("static/data/csse/colombia_cases.csv")
+# cases_col <- read_csv("static/data/csse/colombia_cases.csv")
 n_cases <- nrow(cases)
 
 
@@ -339,9 +339,10 @@ uid <- "col_mapa_casos"
 d <- cases %>%
   group_by(ciudad, lat, lon) %>%
   summarise(Casos = n(),
-            Hombres = sum(sexo == "Masculino"),
-            Mujeres = sum(sexo == "Femenino")) %>%
-  mutate(popup = glue("<strong>{ciudad}</strong><br>{Hombres} Hombres <br>{Mujeres} Mujeres")) %>%
+            Hombres = sum(sexo == "M"),
+            Mujeres = sum(sexo == "F")) %>%
+  mutate(popup = glue("<strong>{ciudad}</strong><br>Hombres: {Hombres}<br>
+                      Mujeres: {Mujeres}")) %>%
   ungroup()
 
 pal <- colorNumeric(c('#f0f05a','#f03f4e'), domain = c(0, max(d$Casos)))
@@ -365,8 +366,8 @@ h <- leaflet(d) %>%
   #addMarkers(lng=d$lon, lat = d$lat, popup=d$popup)
   addCircleMarkers(
     lng=d$lon, lat = d$lat,
-    #radius = 5 * sqrt(d$Casos),
-    radius = 8,
+    radius = 10 * sqrt(d$Casos/max(d$Casos)),
+    # radius = 8,
     color = pal(d$Casos),
     stroke = TRUE, fillOpacity = 0.9,
     popup = d$popup
