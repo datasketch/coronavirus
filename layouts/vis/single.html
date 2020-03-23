@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div id="wrapper" class="column">
+    {{ partial "menu" . }}
+  </div>
+{{ $renderCover := and .Params.images (or .Params.cover (eq .Params.cover nil)) }}
+<div class="post">
+    {{ if $renderCover }}
+    <div class="post__cover background" style="width: 100%; background-image: url({{ index .Params.images 0 | relURL }})"></div>
+    {{ end }}
+    {{ if or (not .Params.hideTitle) (eq .Params.hideTitle nil) }}
+    <h1 class="post__title" style="{{ if not $renderCover }}margin-top: 20px{{ end }}">{{ .Title }}</h1>
+    {{ end }}
+    <div class="iframe_container">
+        <iframe src="/viz/{{ .File.BaseFileName }}.html" width="100%" height="600px" class="iframe_embed"></iframe>
+    </div>
+    <button class="btn share-btn" data-chart='{ "title": "{{.Title}}", "uid": "{{.File.BaseFileName}}" }'>Compartir</button>
+    <!-- <button class="btn share-btn" data-chart="{{ jsonify .Params }}">Compartir</button> -->
+    {{ .Content }}
+    {{ if .Site.DisqusShortname }}
+    {{ template "_internal/disqus.html" . }}
+    {{ end }}
+</div>
+{{ end }}
+{{ define "script" }}
+<script src='{{ "js/share.js" | absURL }}'></script>
+<script src='{{ "js/main.js" | absURL }}'></script>
+{{ end }}

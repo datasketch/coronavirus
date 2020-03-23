@@ -29,6 +29,15 @@
     </item>
     
     <item>
+      <title>Col confirmados sexo</title>
+      <link>/vis/col_confirmados_sexo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/vis/col_confirmados_sexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Contacto</title>
       <link>/contacto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,11 +48,11 @@
     
     <item>
       <title>Home</title>
-      <link>/vis/colombia-confirmados-departamento-acumulado/</link>
+      <link>/vis/col_confirmados_acu_departamento/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/vis/colombia-confirmados-departamento-acumulado/</guid>
-      <description>Hola Esto es colombia confirmados </description>
+      <guid>/vis/col_confirmados_acu_departamento/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -52,7 +61,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_confirmados_acu_sexo/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>
@@ -61,7 +70,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_confirmados_acu_tipo_linea/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>
@@ -70,7 +79,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_confirmados_departamento/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>
@@ -79,16 +88,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_confirmados_edad/</guid>
-      <description>Hola Esto es explora latam </description>
-    </item>
-    
-    <item>
-      <title>Home</title>
-      <link>/vis/col_confirmados_sexo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/vis/col_confirmados_sexo/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_confirmados_tipo/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/vis/col_mapa_casos/</guid>
-      <description>Hola Esto es explora latam </description>
+      <description></description>
     </item>
     
     <item>

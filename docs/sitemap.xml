@@ -19,6 +19,10 @@
   </url>
   
   <url>
+    <loc>/vis/col_confirmados_sexo/</loc>
+  </url>
+  
+  <url>
     <loc>/contacto/</loc>
   </url>
   
@@ -31,11 +35,7 @@
   </url>
   
   <url>
-    <loc>/vis/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/colombia-confirmados-departamento-acumulado/</loc>
+    <loc>/vis/col_confirmados_acu_departamento/</loc>
   </url>
   
   <url>
@@ -52,10 +52,6 @@
   
   <url>
     <loc>/vis/col_confirmados_edad/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_sexo/</loc>
   </url>
   
   <url>
@@ -76,6 +72,10 @@
   
   <url>
     <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/vis/</loc>
   </url>
   
 </urlset>

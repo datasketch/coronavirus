@@ -1,4 +1,28 @@
+theme = "hugo-titi"
 baseURL = "/"
 languageCode = "es-es"
 title = "Coronavirus · Datasketch"
 publishDir = "docs"
+
+[menu]
+  [[menu.nav]]
+    name = "Metodología"
+    url = "/metodologia"
+    weight = 2
+  [[menu.nav]]
+    name = "Visualizaciones"
+    url = "/vis"
+    weight = 1
+
+[params.nav]
+  bg = "#2a2a2a"
+  color = "#ffffff"
+  logo = "images/ds-logo.svg"
+  logoWidth = "150px"
+  # Optional, true by default
+  # fixed = true
+
+[params.footer]
+  text = "Todo el material en esta página es [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web."
+  bg = "#333333"
+  color = "#cccccc"

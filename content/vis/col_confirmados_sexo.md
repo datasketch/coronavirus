@@ -1,9 +1,5 @@
 ---
-title: Home
+title: Col confirmados sexo
 ---
 
 
-
-# Hola 
-
-## Esto es explora latam

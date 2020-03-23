@@ -1,7 +1,6 @@
 ---
-title: Home
+title: Visualizaciones
 ---
 
+# Visualizaciones
 
-
-# Hola Corona

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Site.Title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href='{{ "css/style.css" | absURL }}'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{{ "css/style.css" | absURL }}'>
 </head>
+
 <body>
-  {{ block "main" . }}{{ end }}
-  {{ block "script" . }}{{ end }}
+<!-- 	<div id="wrapper" class="column">
+    {{ partial "menu" . }}
+	</div> -->
+    {{ block "main" . }}{{ end }}
+    {{ block "script" . }}{{ end }}
+    {{ partial "footer.html" . }}
 </body>
+
 </html>
