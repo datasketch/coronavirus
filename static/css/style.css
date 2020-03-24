@@ -12,6 +12,15 @@ body {
   min-height: 600px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.block {
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }
@@ -89,6 +98,11 @@ body {
   padding-right: 1rem;
 }
 
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .section-title {
   color: #481796;
   font-size: 1.5rem;
@@ -133,6 +147,7 @@ body {
 }
 
 .charts,
+.charts-sm,
 .datasets {
   display: grid;
   grid-template-columns: 1fr;
@@ -191,6 +206,9 @@ footer a {
   .container {
     width: 640px;
   }
+  .charts-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -201,6 +219,10 @@ footer a {
   .charts,
   .datasets {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .charts-sm {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

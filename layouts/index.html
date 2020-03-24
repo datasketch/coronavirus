@@ -1,51 +1,51 @@
 {{ define "main" }}
-<header id="header">
-  <nav class="nav">
-    <div class="nav-left">
-      <a href="{{ .Site.BaseURL }}" class="nav-brand">
-        <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
-      </a>
+  <header id="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="{{ .Site.BaseURL }}" class="nav-brand">
+          <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
+        </a>
+      </div>
+      <div class="nav-right">
+        <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+          <img src='{{ "images/tw.svg" | absURL }}' alt="">
+        </a>
+        <a class="nav-item" href="mailto:info@datasketch.co">
+          <img src='{{ "images/mail.svg" | absURL }}' alt="">
+        </a>
+        <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+          <img src='{{ "images/fb.svg" | absURL }}' alt="">
+        </a>
+      </div>
+    </nav>
+    <div class="hero">
+      <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
+      <div class="hero-tagline">
+        <h2>Datos y gráficas actualizadas</h2>
+      </div>
     </div>
-    <div class="nav-right">
-      <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
-        <img src='{{ "images/tw.svg" | absURL }}' alt="">
-      </a>
-      <a class="nav-item" href="mailto:info@datasketch.co">
-        <img src='{{ "images/mail.svg" | absURL }}' alt="">
-      </a>
-      <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
-        <img src='{{ "images/fb.svg" | absURL }}' alt="">
-      </a>
-    </div>
-  </nav>
-  <div class="hero">
-    <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
-    <div class="hero-tagline">
-      <h2>Datos y gráficas actualizadas</h2>
-    </div>
-  </div>
-</header>
-<main class="container" id="app">
-  <section>
-    <h3 class="section-title">Gráficas</h3>
-    <div class="charts">
-      {{ range .Site.Data.data.charts }}
-        {{ partial "chart.html" . }}
-      {{ end }}
-    </div>
-  </section>
-  <section>
-    <h3 class="section-title">Datos</h3>
-    <div class="datasets">
-      {{ range .Site.Data.data.datasets }}
-        {{ partial "dataset.html" . }}
-      {{ end }}
-    </div>
-  </section>
-</main>
+  </header>
+  <main class="container" id="app">
+    <section>
+      <h3 class="section-title">Gráficas</h3>
+      <div class="charts">
+        {{ range .Site.Data.data.charts }}
+          {{ partial "chart.html" . }}
+        {{ end }}
+      </div>
+    </section>
+    <section>
+      <h3 class="section-title">Datos</h3>
+      <div class="datasets">
+        {{ range .Site.Data.data.datasets }}
+          {{ partial "dataset.html" . }}
+        {{ end }}
+      </div>
+    </section>
+  </main>
 {{ end }}
 
 {{ define "script" }}
-<script src='{{ "js/share.js" | absURL }}'></script>
-<script src='{{ "js/main.js" | absURL }}'></script>
+  <script src='{{ "js/share.js" | absURL }}'></script>
+  <script src='{{ "js/main.js" | absURL }}'></script>
 {{ end }}
