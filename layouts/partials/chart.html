@@ -1,13 +1,12 @@
 <div class="card chart">
-    <h3>{{ .title}}</h3>
-    <div class="card-media">
-        <!-- <iframe src='{{ .path | absURL }}'></iframe> -->
-        <img src='{{ .thumbnail | absURL }}'>
-    </div>
-    <div class="card-actions">
-        <a href="/vis/{{.uid}}">
-            <button class="btn">Ver</button>
-        </a>
-        <button class="btn share-btn" data-chart="{{ jsonify . }}">Compartir</button>
-    </div>
+  <h3>{{ .title}}</h3>
+  <div class="card-media">
+    <img src='{{ .thumbnail | absURL }}'>
+  </div>
+  <div class="card-actions">
+    <a href="/vis/{{.uid}}" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{{ jsonify . }}">
+      Compartir
+    </button>
+  </div>
 </div>
