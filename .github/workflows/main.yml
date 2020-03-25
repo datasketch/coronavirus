@@ -31,6 +31,7 @@ jobs:
       run: |
         sudo Rscript -e "install.packages('devtools')"
         sudo Rscript -e "install.packages('tidyverse')"
+        sudo Rscript -e "install.packages('webshot')"
         sudo Rscript -e "devtools::install_github('datasketch/geodata')"
         sudo Rscript -e "devtools::install_github('datasketch/homodatum')"
         sudo Rscript -e "devtools::install_github('jpmarindiaz/datafringe')"

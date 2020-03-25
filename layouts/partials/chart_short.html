@@ -1,12 +1,13 @@
-<div class="list short">
-    <a href="{{.uid}}">
-        <h3>{{ .title}}</h3>
-        <div class="">
-            <!-- <iframe src='{{ .path | absURL }}'></iframe> -->
-            <img src='{{ .thumbnail | absURL }}' width="200px">
-        </div>
-        <div class="card-actions">
-            <button class="btn share-btn" data-chart="{{ jsonify . }}">Compartir</button>
-        </div>
-    </a>
+<div class="card">
+  <a href="{{.uid}}" class="block">
+    <h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">{{ .title}}</h3>
+    <div class="card-media">
+      <img src='{{ .thumbnail | absURL }}' width="200px">
+    </div>
+    <div class="card-actions">
+      <button class="btn share-btn" data-chart="{{ jsonify . }}">
+        Compartir
+      </button>
+    </div>
+  </a>
 </div>
