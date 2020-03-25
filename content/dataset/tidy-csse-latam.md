@@ -1,13 +1,13 @@
 ---
-path: world/csse/tidy_csse_pt
-scope: world
+description: Events timeline per country
+path: latam/csse/tidy-csse-latam
+scope: latam
 datasource: csse
-uid: tidy_csse_pt
-name: Dados mundiais de coronavirus
+name: Datos organizados sobre varios países de América Latina
+uid: tidy-csse-latam
 viz: []
 scope_info:
-- uid: world
-  name: World
+- uid: latam
 datasource_info:
 - uid: csse
   name: COVID-19 Data Repository by Johns Hopkins CSSE

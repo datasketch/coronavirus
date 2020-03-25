@@ -1,9 +1,9 @@
 ---
-path: colombia/ins-col/col_ins_cases
+path: colombia/ins-col/col-ins-cases
 scope: colombia
 datasource: ins-col
-uid: col_ins_cases
 name: Casos de coronavirus en Colombia
+uid: col-ins-cases
 viz:
 - uid: col-casos-sexo-acumulado
   name: Casos confirmados (acumulado) por sexo

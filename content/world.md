@@ -27,18 +27,33 @@ dashboard:
   type: Dashboard
 name: World
 datasources:
+- uid: financial-times
+  name: 'Coronavirus tracked: the latest figures as the pandemic spreads'
+  url: https://www.ft.com/coronavirus-latest
+- uid: ecdc
+  name: Distribución geográfica de los casos de COVID-19
+  url: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
 - uid: csse
   name: COVID-19 Data Repository by Johns Hopkins CSSE
   url: http://github.com/CSSEGISandData/COVID-19
+- uid: world-meters
+  name: COVID-19 CORONAVIRUS PANDEMIC
+  url: https://www.worldometers.info/coronavirus/#countries
+- uid: who
+  name: Novel Coronavirus (COVID-19) Situation
+  url: https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd
 tools: []
 datasets:
-- tidy_csse_es
-- cases
-- tidy_csse_en
-- tidy_csse_langs
-- tidy_csse
-- tidy_csse_pt
+- tidy-csse-es
+- tidy-csse-en
+- tidy-csse-langs
+- tidy-csse
+- tidy-csse-pt
 reads:
+- name: 'Seeking Evidence-Based Covid-19 Preparedness: A FEMA Framework for Clinic
+    Management'
+  url: https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0079
+  date_published: '2020-03-25'
 - name: The 1957 pandemic.
   url: https://twitter.com/NAChristakis/status/1238934000187707400
   date_published: '2020-03-14'
@@ -50,18 +65,16 @@ reads:
   url: https://twitter.com/BallouxFrancois/status/1238837158007447558
 viz: []
 datasets_info:
-- uid: tidy_csse_es
+- uid: tidy-csse-es
   name: Datos mundiales de coronavirus (confirmados, muertos, recuperados)
-- uid: cases
-  name: Novel Coronavirus (COVID-19) Situation
-- uid: tidy_csse_en
+- uid: tidy-csse-en
   name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
-- uid: tidy_csse_langs
+- uid: tidy-csse-langs
   name: Tidy world coronavirus cases (confirmed, death, recovered) with country names
     in multiple languages
-- uid: tidy_csse
+- uid: tidy-csse
   name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
-- uid: tidy_csse_pt
+- uid: tidy-csse-pt
   name: Dados mundiais de coronavirus
 ---
 

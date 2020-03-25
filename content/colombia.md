@@ -16,9 +16,9 @@ datasources:
   url: https://coronaviruscolombia.gov.co/Covid19/index.html
 tools: []
 datasets:
-- col_ins_reports
-- col_ins_cases
-- col_ins_cases_municipio
+- col-ins-reports
+- col-ins-cases
+- col-ins-cases-municipio
 reads: []
 viz:
 - uid: col-casos-sexo-acumulado
@@ -40,11 +40,11 @@ viz:
 - uid: col-casos-por-tipo
   name: Casos por tipo
 datasets_info:
-- uid: col_ins_reports
+- uid: col-ins-reports
   name: Casos de coronavirus en Colombia
-- uid: col_ins_cases
+- uid: col-ins-cases
   name: Casos de coronavirus en Colombia
-- uid: col_ins_cases_municipio
+- uid: col-ins-cases-municipio
   name: Casos de coronavirus en Colombia
 ---
 

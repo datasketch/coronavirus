@@ -1,9 +1,9 @@
 ---
-path: world/csse/tidy_csse_en
+path: world/csse/tidy-csse-en
 scope: world
 datasource: csse
-uid: tidy_csse_en
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
+uid: tidy-csse-en
 viz: []
 scope_info:
 - uid: world

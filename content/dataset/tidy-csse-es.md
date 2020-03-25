@@ -1,10 +1,9 @@
 ---
-path: world/csse/tidy_csse_langs
+path: world/csse/tidy-csse-es
 scope: world
 datasource: csse
-uid: tidy_csse_langs
-name: Tidy world coronavirus cases (confirmed, death, recovered) with country names
-  in multiple languages
+name: Datos mundiales de coronavirus (confirmados, muertos, recuperados)
+uid: tidy-csse-es
 viz: []
 scope_info:
 - uid: world
