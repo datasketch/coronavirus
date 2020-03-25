@@ -217,6 +217,45 @@ footer a {
     width: 80%;
 }
 
+/**
+  * Collapsible
+  */
+.collapsible-trigger {
+  background-color: #eeeeee;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.collapsible-trigger:hover {
+  background-color: #e0e0e0;
+}
+
+.collapsible-trigger:focus {
+  outline: none;
+}
+
+.collapsible-state-icon {
+  width: 1rem;
+}
+
+.collapsible.opened .collapsible-state-icon {
+  transform: rotate(180deg);
+}
+
+.collapsible-content {
+  border: 1px solid #eeeeee;
+  display: none;
+  padding: 1rem;
+}
+
+.collapsible.opened .collapsible-content {
+  display: block;
+}
+
 @media screen and (min-width: 640px) {
     .container {
         width: 640px;

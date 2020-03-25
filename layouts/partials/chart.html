@@ -1,7 +1,8 @@
 <div class="card chart">
-  <h3>{{ .title}}</h3>
+  {{ $thumbnail := absURL (path.Join "viz/" (printf "%s.png" .uid)) }}
+  <h3>{{ .name }}</h3>
   <div class="card-media">
-    <img src='{{ .thumbnail | absURL }}'>
+    <img src="{{ $thumbnail }}">
   </div>
   <div class="card-actions">
     <a href="/vis/{{.uid}}" class="btn">Ver</a>
