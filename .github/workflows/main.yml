@@ -15,7 +15,7 @@ jobs:
     - name: Install R
       run: |
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-        sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/' && apt update && apt install -y r-base
+        sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/' && sudo apt update && sudo apt install -y r-base
     - name: Install base dependencies
       run: sudo apt-get update && sudo apt-get install -y software-properties-common build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
     - name: Install needed packages
