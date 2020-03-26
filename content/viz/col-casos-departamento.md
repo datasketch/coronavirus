@@ -19,5 +19,6 @@ dataset_info:
 - uid: col-ins-casos
   name: Casos de coronavirus en Colombia
   path: colombia/ins-col/col-ins-casos
+tags_info: []
 ---
 

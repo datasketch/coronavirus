@@ -11,7 +11,7 @@ recommended_viz:
   name: Casos por tipo
   scope: colombia
 status: Published
-tags: recHxuEagQ0hw6cda
+tags: highlight
 scope_info:
 - uid: colombia
   name: Colombia
@@ -19,5 +19,9 @@ dataset_info:
 - uid: col-ins-casos
   name: Casos de coronavirus en Colombia
   path: colombia/ins-col/col-ins-casos
+tags_info:
+- uid: highlight
+  name: Highlight
+  name_es: Destacado
 ---
 

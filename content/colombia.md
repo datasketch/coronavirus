@@ -11,6 +11,9 @@ datasources:
   name: Coronavirus en Antioquia
   url: https://www.elcolombiano.com/coronavirus-en-colombia-contra-el-miedo
 dashboard:
+- name: Covid19 en Colombia
+  url: http://www.genetica.unal.edu.co/gibbs/index.php?id=covid19-en-colombia
+  type: Visualizations
 - name: Número de camas hospitalarias / UCI en Colombia
   url: https://app.powerbi.com/view?r=eyJrIjoiNDc5YzUyMzctZTI1MS00NzgxLTkxYTAtODY0ZTM4MDk5ZWFjIiwidCI6ImZjNTMxMjM3LTQzYzYtNDRkZS1hMWU4LWQzYmY2ZGM0MzZlMSIsImMiOjR9
   type: Dashboard
@@ -31,7 +34,12 @@ datasets:
 - col-ins-casos-municipio
 - col-ins-casos-departamento-fecha
 - col-ins-casos-departamento
-reads: []
+reads:
+- name: COVID-19 I El cuidado ahora es colectivo
+  url: https://cerosetenta.uniandes.edu.co/el-cuidado-ahora-es-colectivo/
+  description: Esta es una coyuntura que demuestra que estamos pensando la salud tal
+    vez de una forma menos antropocentrista.
+  date_published: '2020-03-18'
 viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo

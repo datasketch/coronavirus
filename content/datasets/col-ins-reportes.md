@@ -8,7 +8,7 @@ scope: colombia
 datasource: ins-col
 name: Reportes de casos de coronavirus en Colombia
 uid: col-ins-reportes
-tags: recHxuEagQ0hw6cda
+tags: highlight
 viz: []
 scope_info:
 - uid: colombia
@@ -18,5 +18,9 @@ datasource_info:
   name: INS - Coronavirus en Colombia
   url: https://coronaviruscolombia.gov.co/Covid19/index.html
   type: Gob site
+tags_info:
+- uid: highlight
+  name: Highlight
+  name_es: Destacado
 ---
 
