@@ -3,6 +3,7 @@ description: Reportes de casos de coronavirus en Colombia. Datos del Instituto N
   de Salud.
 status: Published
 path: colombia/ins-col/col-ins-reportes
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/colombia/ins-col/col-ins-reportes
 scope: colombia
 datasource: ins-col
 name: Reportes de casos de coronavirus en Colombia

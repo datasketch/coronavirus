@@ -1,0 +1,13 @@
+{{ define "main" }}
+	{{ $filename := (printf "%s.png" .File.BaseFileName) }}
+	<div class="container py-12">
+		<h3 class="text-center text-3xl">{{ .Params.name}}</h3>
+		<img src='https://data.datasketch.co/datasketch/coronavirus/data{{ .Params.path | absURL }}.png' height="300px"></img>
+		<a class="btn bg-electric-violet" href="{{ .Params.public_link }}">Descargar</a>
+		<button class="btn share-btn bg-electric-violet" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
+		{{ .Content }}
+		{{ if .Site.DisqusShortname }}
+			{{ template "_internal/disqus.html" . }}
+			{{ end }}
+	</div>
+{{ end }}

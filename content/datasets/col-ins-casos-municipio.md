@@ -3,6 +3,7 @@ description: Casos de coronavirus en Colombia, agrupados por municipio. Datos de
   Instituto Nacional de Salud.
 status: Published
 path: colombia/ins-col/col-ins-casos-municipio
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-municipio
 scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia por municipios

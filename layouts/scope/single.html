@@ -1,19 +1,14 @@
 {{ define "main" }}
-{{ $filename := (printf "%s.html" .File.BaseFileName) }}
-{{ partial "menu" . }}
-<div class="container section">
+  {{ $filename := (printf "%s.html" .File.BaseFileName) }}
+  <div class="container section">
     <div class="iframe-container">
-    	<h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">{{ .Params.name}}</h3>
-        <img src='https://via.placeholder.com/300' height="300px"></img>
+      <h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">{{ .Params.name}}</h3>
+      <img src='https://via.placeholder.com/300' height="300px"></img>
     </div>
-    <button class="btn share-btn" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
-    {{ .Content }}
-    {{ if .Site.DisqusShortname }}
+  <button class="btn share-btn bg-persian-blue" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
+  {{ .Content }}
+  {{ if .Site.DisqusShortname }}
     {{ template "_internal/disqus.html" . }}
-    {{ end }}
+  {{ end }}
 </div>
-{{ end }}
-{{ define "script" }}
-<script src='{{ "js/share.js" | absURL }}'></script>
-<script src='{{ "js/main.js" | absURL }}'></script>
 {{ end }}

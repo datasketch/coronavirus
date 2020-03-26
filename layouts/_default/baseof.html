@@ -11,16 +11,19 @@
   <link rel="stylesheet" href='{{ "css/collapsible.css" | absURL }}'>
 </head>
 
-<body class="font-contrail-one">
+<body class="font-contrail-one flex flex-col min-h-screen">
   {{ partial "navbar.html" . }}
-  <main>
+  <main class="flex-grow">
     {{ block "main" . }}{{ end }}
     {{ block "charts" . }}{{ end }}
     {{ block "datasets" . }}{{ end }}
     {{ block "reads" . }}{{ end }}
   </main>
-  {{ block "script" . }}{{ end }}
   {{ partial "footer.html" . }}
+  <script src='{{ "js/share.js" | absURL }}'></script>
+  <script src='{{ "js/main.js" | absURL }}'></script>
+  <script src='{{ "js/collapsible.js" | absURL }}'></script>
+  {{ block "script" . }}{{ end }}
 </body>
 
 </html>

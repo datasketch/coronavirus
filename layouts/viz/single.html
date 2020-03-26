@@ -1,19 +1,14 @@
 {{ define "main" }}
-{{ $filename := (printf "%s.html" .File.BaseFileName) }}
-{{ partial "menu" . }}
-<div class="container section">
+  {{ $filename := (printf "%s.html" .File.BaseFileName) }}
+  <div class="container py-12">
     <div class="iframe-container">
-        <iframe src='https://data.datasketch.co/datasketch/coronavirus/viz/{{$filename}}' width="100%" height="500px" frameborder="0" class = "iframe-embed"></iframe>
-        <!-- <iframe src='{{ absURL (path.Join "viz/" $filename) }}' width="100%" height="600px" frameborder="0"></iframe> -->
+      <iframe src='https://data.datasketch.co/datasketch/coronavirus/viz/{{$filename}}' width="100%" height="500px"
+      frameborder="0" class="iframe-embed"></iframe>
     </div>
     <button class="btn share-btn" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
     {{ .Content }}
     {{ if .Site.DisqusShortname }}
-    {{ template "_internal/disqus.html" . }}
+      {{ template "_internal/disqus.html" . }}
     {{ end }}
-</div>
-{{ end }}
-{{ define "script" }}
-<script src='{{ "js/share.js" | absURL }}'></script>
-<script src='{{ "js/main.js" | absURL }}'></script>
+  </div>
 {{ end }}

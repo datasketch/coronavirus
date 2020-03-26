@@ -3,6 +3,7 @@ description: Casos de coronavirus en el mundo en español. Datos del CSSE de la 
   Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse-es
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/world/csse/tidy-csse-es
 scope: world
 datasource: csse
 name: Datos mundiales de coronavirus (confirmados, muertos, recuperados)

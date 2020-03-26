@@ -1,10 +1,10 @@
 <div class="card dataset">
   <div class="card-body">
-    <p class="card-title">{{ .Params.name }}</p>
-    <!-- <p class="card-description">{{ . }}</p> -->
-    <!-- <p class="card-source">Fuente: {{ . }}</p> -->
+    <p class="card-title">{{ .name }}</p>
+    <p class="card-description">{{ .description }}</p>
   </div>
   <div class="card-actions">
-    <a class="btn bg-electric-violet" href="">Descargar</a>
+    {{ $pathname := path.Join "datasets" .uid }}
+    <a class="btn bg-electric-violet" href="{{ absURL $pathname }}">Ver</a>
   </div>
 </div>
