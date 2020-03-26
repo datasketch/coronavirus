@@ -1,5 +1,18 @@
 {
-  "viz": [],
+  "viz": [
+    {
+      "uid": "col-casos-por-sexo",
+      "name": "Casos por sexo"
+    },
+    {
+      "uid": "col-casos-edad",
+      "name": "Casos por edad"
+    },
+    {
+      "uid": "col-casos-mapa",
+      "name": "Mapa de casos por municipio"
+    }
+  ],
   "datasets": [
     {
       "uid": "tidy-csse-es",

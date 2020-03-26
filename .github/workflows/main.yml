@@ -1,45 +1,45 @@
-name: Deploy
+# name: Deploy
 
-on:
-  schedule:
-    - cron: '0 */8 * * *'
-  push:
-    branches: 
-      - master
+# on:
+#   schedule:
+#     - cron: '0 */8 * * *'
+#   push:
+#     branches: 
+#       - master
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install R
-      run: |
-        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-        sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
-        sudo apt update
-        sudo apt install -y r-base
-    - name: Install base dependencies
-      run: sudo apt-get update && sudo apt-get install -y software-properties-common build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
-    - name: Install needed packages
-      run: |
-        sudo Rscript -e "install.packages('devtools')"
-        sudo Rscript -e "install.packages('tidyverse')"
-        sudo Rscript -e "install.packages('dotenv')"
-        sudo Rscript -e "devtools::install_github('bergant/airtabler')"
-    - name: Run script
-      env:
-        AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-        AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
-      run: |
-        echo AIRTABLE_API_KEY=$AIRTABLE_API_KEY >> .env
-        echo AIRTABLE_BASE=$AIRTABLE_BASE >> .env
-        sudo Rscript ./scripts/load_data.R
-        sudo Rscript ./scripts/generate_posts.R
-        rm .env
-    - name: Commit changes
-      run: |
-        git config --local user.name "GitHub Action"
-        git config --local user.email action@github.com
-        git add .
-        git commit --allow-empty -m 'Updated build'
-        git push origin master
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Install R
+#       run: |
+#         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+#         sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+#         sudo apt update
+#         sudo apt install -y r-base
+#     - name: Install base dependencies
+#       run: sudo apt-get update && sudo apt-get install -y software-properties-common build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
+#     - name: Install needed packages
+#       run: |
+#         sudo Rscript -e "install.packages('devtools')"
+#         sudo Rscript -e "install.packages('tidyverse')"
+#         sudo Rscript -e "install.packages('dotenv')"
+#         sudo Rscript -e "devtools::install_github('bergant/airtabler')"
+#     - name: Run script
+#       env:
+#         AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+#         AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
+#       run: |
+#         echo AIRTABLE_API_KEY=$AIRTABLE_API_KEY >> .env
+#         echo AIRTABLE_BASE=$AIRTABLE_BASE >> .env
+#         sudo Rscript ./scripts/load_data.R
+#         sudo Rscript ./scripts/generate_posts.R
+#         rm .env
+#     - name: Commit changes
+#       run: |
+#         git config --local user.name "GitHub Action"
+#         git config --local user.email action@github.com
+#         git add .
+#         git commit --allow-empty -m 'Updated build'
+#         git push origin master
