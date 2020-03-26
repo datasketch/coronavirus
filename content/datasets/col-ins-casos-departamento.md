@@ -8,7 +8,7 @@ scope: colombia
 datasource: ins-col
 name: Reportes de casos de coronavirus en Colombia
 uid: col-ins-casos-departamento
-tags: {}
+tags: []
 viz: []
 scope_info:
 - uid: colombia

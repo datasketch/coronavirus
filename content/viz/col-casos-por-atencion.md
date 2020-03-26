@@ -11,7 +11,7 @@ recommended_viz:
   name: Mapa de casos por municipio
   scope: colombia
 status: Published
-tags: {}
+tags: []
 scope_info:
 - uid: colombia
   name: Colombia

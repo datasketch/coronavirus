@@ -8,7 +8,7 @@ scope: world
 datasource: csse
 name: Dados mundiais de coronavirus
 uid: tidy-csse-pt
-tags: {}
+tags: []
 viz: []
 scope_info:
 - uid: world

@@ -8,7 +8,7 @@ scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia por municipios
 uid: col-ins-casos-municipio
-tags: {}
+tags: []
 viz:
 - uid: col-casos-mapa
   name: Mapa de casos por municipio
