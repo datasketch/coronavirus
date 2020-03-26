@@ -1,0 +1,109 @@
+@tailwind base;
+
+@font-face {
+  font-family: Contrail One;
+  font-weight: 400;
+  src: url(/fonts/ContrailOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  src: url(/fonts/PTSansNarrow-Regular.ttf);
+}
+
+@font-face {
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  src: url(/fonts/PTSansNarrow-Bold.ttf);
+}
+
+@tailwind components;
+
+.btn {
+  @apply border-0 cursor-pointer inline-block font-contrail-one uppercase px-2 py-1 text-white;
+}
+
+/**
+  * Hero
+  */
+
+.hero {
+  @apply py-16 px-4 bg-center bg-cover bg-no-repeat;
+  background-image: url(/images/banner-home.png);
+}
+
+.hero-inner {
+  @apply flex flex-col justify-center items-center text-center;
+}
+
+.hero-tagline {
+  @apply uppercase mt-8 bg-white block tracking-wider text-electric-violet px-4 pt-1 text-2xl;
+}
+
+/**
+  * Sections
+  */
+
+.section-banner {
+  @apply bg-no-repeat bg-cover text-center py-12;
+}
+
+.section-title {
+  @apply bg-white uppercase text-center inline-block tracking-wide px-2 pt-2 pb-0 text-5xl;
+}
+
+.section-content {
+  @apply p-4;
+}
+
+#graphs .section-banner {
+  background-image: url(/images/banner-graphs.png);
+}
+
+#graphs .section-title {
+  @apply text-persian-blue;
+}
+
+#datasets .section-banner {
+  background-image: url(/images/banner-datasets.png);
+}
+
+#datasets .section-title {
+  @apply text-electric-violet;
+}
+
+#reads .section-banner {
+  background-image: url(/images/banner-reads.png);
+}
+
+#reads .section-title {
+  @apply text-rose;
+}
+
+/**
+  * Card
+  */
+
+.card {
+  @apply shadow p-4;
+}
+
+.card-media {
+  @apply h-0 relative w-full;
+  padding-bottom: 56.25%;
+}
+
+.card-media img {
+  @apply h-full left-0 top-0 w-full object-cover object-center absolute;
+}
+
+.card-media iframe {
+  @apply h-full top-0 left-0 absolute w-full border-0;
+}
+
+.card-actions {
+  @apply mt-3;
+}
+
+@tailwind utilities;

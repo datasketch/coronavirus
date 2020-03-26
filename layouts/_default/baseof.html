@@ -6,16 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Site.Title }}</title>
   {{ template "_internal/google_analytics_async.html" . }}
-  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=PT+Sans+Narrow:400,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href='{{ "css/style.css" | absURL }}'>
-  <link rel="stylesheet" href='{{ "css/navbar.css" | absURL }}'>
-  <link rel="stylesheet" href='{{ "css/footer.css" | absURL }}'>
+  {{ $style := resources.Get "css/tailwind.pcss" | toCSS | postCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href='{{ "css/collapsible.css" | absURL }}'>
 </head>
 
-<body>
+<body class="font-contrail-one">
   {{ partial "navbar.html" . }}
-  {{ block "main" . }}{{ end }}
+  <main>
+    {{ block "main" . }}{{ end }}
+    {{ block "charts" . }}{{ end }}
+    {{ block "datasets" . }}{{ end }}
+    {{ block "reads" . }}{{ end }}
+  </main>
   {{ block "script" . }}{{ end }}
   {{ partial "footer.html" . }}
 </body>

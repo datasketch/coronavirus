@@ -1,14 +1,25 @@
-<header id="header">
-  <nav class="nav">
-    <div class="nav-left">
-      <a href="{{ .Site.BaseURL }}" class="nav-brand">
-        <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
+<header class="fixed w-full h-16 bg-transparent">
+  <nav class="flex h-full justify-between items-center px-4">
+    <div class="flex justify-between items-center w-full md:w-auto">
+      <a href="{{ .Site.BaseURL }}" class="inline-block">
+        <img class="h-full w-auto" src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
       </a>
+      <button class="text-white md:hidden">
+        <svg class="w-6 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
-    <div class="nav-right">
-      <a class="nav-item section-link" href="#graphs">GRÁFICAS</a>
-      <a class="nav-item section-link" href="#datasets">DATASETS</a>
-      <a class="nav-item section-link" href="#reads">ARTÍCULOS</a>
+    <div class="hidden items-center md:flex">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#graphs">
+        Gráficas
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#datasets">
+        Datasets
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#reads">
+        Artículos
+      </a>
       <div class="collapsible">
         <button class="collapsible-trigger">
           Todos los países
@@ -24,21 +35,15 @@
           {{ end }}
         </div>
       </div>
-      <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+      <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
         <img src='{{ "images/tw.svg" | absURL }}' alt="">
       </a>
-      <a class="nav-item" href="mailto:info@datasketch.co">
+      <a class="text-white mr-4" href="mailto:info@datasketch.co">
         <img src='{{ "images/mail.svg" | absURL }}' alt="">
       </a>
-      <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+      <a class="text-white mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
         <img src='{{ "images/fb.svg" | absURL }}' alt="">
       </a>
     </div>
   </nav>
-  <div class="hero">
-    <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
-    <div class="hero-tagline">
-      <h3>Datos y gráficas actualizadas</h3>
-    </div>
-  </div>
 </header>

@@ -1,48 +1,61 @@
 {{ define "main" }}
-  <main class="container" id="app">
-    <section id="map">
-    Aquí va el mapa
-    </section>
-    <section id="graphs">
-      <div class="section-banner">
-        <h1 class="section-title">Gráficas</h1>
-      </div>
-      <div class="section-content">
-        <!-- <p><code>Reemplaza "colombia" por "world" en la línea n cuando haya visualizaciones</code></p> -->
-        {{ range where (.Site.Data.scopes) "uid" "colombia" }}
-          <div class="charts">
-            {{ range .viz }}
-              {{ partial "chart.html" . }}
-            {{ end }}
-          </div>
+<div class="hero" id="header">
+  <div class="hero-inner py-16">
+    <img class="max-w-full" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
+    <div class="hero-tagline">
+      <h3>Datos y gráficas actualizadas</h3>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "charts" }}
+<section id="graphs">
+  <div class="section-banner">
+    <h1 class="section-title">Gráficas</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3">
+      {{ range where (.Site.Data.scopes) "uid" "colombia" }}
+        {{ range .viz }}
+          {{ partial "chart.html" . }}
         {{ end }}
-      </div>
-    </section>
-    <section id="datasets">
-      <div class="section-banner">
-        <h1 class="section-title">Datasets</h1>
-      </div>
-      <div class="section-content">
-        {{ range where (.Site.Data.scopes) "uid" "colombia" }}
-          {{ range .datasets }}
-            {{ partial "dataset.html" . }}
-          {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "datasets" }}
+<section id="datasets">
+  <div class="section-banner">
+    <h1 class="section-title">Datasets</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range where .Site.Pages "Section" "dataset" }}
+        {{ partial "dataset.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "reads" }}
+<section id="reads">
+  <div class="section-banner">
+    <h1 class="section-title">Artículos</h1>
+  </div>
+  <div class="container">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range where (.Site.Data.scopes) "uid" "world" }}
+        {{ range .reads }}
+          {{ partial "read.html" . }}
         {{ end }}
-      </div>
-    </section>
-    <section id="reads">
-      <div class="section-banner">
-        <h1 class="section-title">Artículos</h1>
-      </div>
-      <div class="section-content">
-        {{ range where (.Site.Data.scopes) "uid" "world" }}
-          {{ range .reads }}
-            {{ partial "read.html" . }}
-          {{ end }}
-        {{ end }}
-      </div>
-    </section>
-  </main>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
 
 {{ define "script" }}

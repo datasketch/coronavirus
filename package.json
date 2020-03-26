@@ -1,0 +1,35 @@
+{
+  "name": "coronavirus",
+  "version": "1.0.0",
+  "description": "Datos sobre el coronavirus relevante para Colombia y América Latina.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datasketch/coronavirus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datasketch/coronavirus/issues"
+  },
+  "homepage": "https://github.com/datasketch/coronavirus#readme",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ]
+}
