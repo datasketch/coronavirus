@@ -8,6 +8,7 @@ scope: world
 datasource: csse
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
 uid: tidy-csse
+tags: recHxuEagQ0hw6cda
 viz: []
 scope_info:
 - uid: world

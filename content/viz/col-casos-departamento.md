@@ -11,6 +11,7 @@ recommended_viz:
   name: Casos confirmados por departamento
   scope: colombia
 status: Published
+tags: {}
 scope_info:
 - uid: colombia
   name: Colombia

@@ -11,6 +11,7 @@ recommended_viz:
   name: Casos por tipo
   scope: colombia
 status: Published
+tags: recHxuEagQ0hw6cda
 scope_info:
 - uid: colombia
   name: Colombia
