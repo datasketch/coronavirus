@@ -13,12 +13,13 @@ window.addEventListener('scroll', function() {
 if (shareButtons) {
   shareButtons.forEach(shareButton => {
     const chart = JSON.parse(shareButton.dataset.chart);
+    const type = shareButton.dataset.type;
     shareButton.addEventListener('click', () => {
       navigator.share(
         {
           title: 'Datasketch · Coronavirus',
           text: chart.title,
-          url: `${location.href}viz/${chart.uid}`
+          url: `${location.origin}/${type ? 'datasets' : 'viz'}/${chart.uid}`
         },
         {
           print: false,

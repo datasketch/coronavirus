@@ -1,5 +1,5 @@
 <header
-  class='header {{ if or ((eq .Section "viz") or (eq .Section "datasets")) (eq .Kind "404")}}header-page{{end}}'
+  class='header {{ if or (eq .Kind "404") (or (eq .Section "viz") (eq .Section "datasets"))}}header-page{{end}}'
 >
   <nav class="flex h-full justify-between items-center px-4">
     <div class="flex justify-between items-center w-full md:w-auto">

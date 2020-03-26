@@ -162,7 +162,8 @@
   @apply flex justify-between p-2 bg-white cursor-pointer justify-between font-contrail-one uppercase text-electric-violet tracking-wider text-lg;
 }
 
-.dropdown-select:hover {
+.dropdown-select:hover,
+.dropdown-select:focus {
   @apply bg-mine-shaft text-white;
 }
 
@@ -179,7 +180,7 @@
 }
 
 .dropdown-options {
-  @apply bg-white absolute left-0 m-0 h-0 p-0 overflow-hidden list-none w-full;
+  @apply bg-white absolute left-0 m-0 h-0 p-0 overflow-hidden list-none w-full z-10 shadow;
   top: 100%;
 }
 

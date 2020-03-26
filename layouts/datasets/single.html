@@ -1,13 +1,19 @@
 {{ define "main" }}
-	{{ $filename := (printf "%s.png" .File.BaseFileName) }}
+	{{ $image_path := printf "https://data.datasketch.co/datasketch/coronavirus/data/%s.png" .Params.path }}
 	<div class="container py-12">
-		<h3 class="text-center text-3xl">{{ .Params.name}}</h3>
-		<img src='https://data.datasketch.co/datasketch/coronavirus/data{{ .Params.path | absURL }}.png' height="300px"></img>
-		<a class="btn bg-electric-violet" href="{{ .Params.public_link }}">Descargar</a>
-		<button class="btn share-btn bg-electric-violet" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
+		<h3 class="text-center text-3xl mb-6">{{ .Params.name}}</h3>
+		<img src='{{ $image_path }}' class="mx-auto max-w-full"></img>
+		<div class="mt-4 flex items-center justify-center">
+			<a class="btn bg-electric-violet mr-4" href="{{ .Params.public_link }}">
+				Descargar
+			</a>
+			<button class="btn share-btn bg-electric-violet" data-chart='{ "title": "{{.Title }}", "text": "{{ .Title }}", "uid": "{{ .Params.uid }}" }' data-type="dataset">
+				Compartir
+			</button>
+		</div>
 		{{ .Content }}
 		{{ if .Site.DisqusShortname }}
 			{{ template "_internal/disqus.html" . }}
-			{{ end }}
+		{{ end }}
 	</div>
 {{ end }}

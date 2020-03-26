@@ -1,14 +1,13 @@
 <div class="card">
   {{ $thumbnail := printf "https://data.datasketch.co/datasketch/coronavirus/viz/%s.png" .uid }}
-  <a href='{{ absURL (path.Join "viz" .uid) }}' class="block">
-    <h3 class="bg-mine-shaft text-white inline-block py-1 px-2 mb-4">{{ .name}}</h3>
-    <div class="card-media">
-      <img src='{{ absURL $thumbnail }}' width="200px">
-    </div>
-    <div class="card-actions">
-      <button class="btn share-btn bg-persian-blue" data-chart="{{ jsonify . }}">
-        Compartir
-      </button>
-    </div>
-  </a>
+  <h3 class="bg-mine-shaft text-white inline-block py-1 px-2 mb-4">{{ .name}}</h3>
+  <div class="card-media">
+    <img src='{{ absURL $thumbnail }}' width="200px">
+  </div>
+  <div class="card-actions">
+    <a href='{{ absURL (path.Join "viz" .uid) }}' class="btn bg-persian-blue">Ver</a>
+    <button class="btn share-btn bg-persian-blue" data-chart="{{ jsonify . }}">
+      Compartir
+    </button>
+  </div>
 </div>
