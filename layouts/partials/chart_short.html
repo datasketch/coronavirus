@@ -1,6 +1,6 @@
 <div class="card">
   {{ $thumbnail := printf "https://data.datasketch.co/datasketch/coronavirus/viz/%s.png" .uid }}
-  <h3 class="bg-mine-shaft text-white inline-block py-1 px-2 mb-4">{{ .name}}</h3>
+  <h3 class="font-pt-sans-narrow mb-4 text-xl text-center tracking-wide font-bold">{{ .name }}</h3>
   <div class="card-media">
     <img src='{{ absURL $thumbnail }}' width="200px">
   </div>
