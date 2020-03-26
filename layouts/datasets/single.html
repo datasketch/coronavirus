@@ -11,9 +11,15 @@
 				Compartir
 			</button>
 		</div>
-		{{ .Content }}
-		{{ if .Site.DisqusShortname }}
-			{{ template "_internal/disqus.html" . }}
-		{{ end }}
+		{{ if .Params.viz }}
+      <div class="mt-6">
+        <h3 class="text-2xl text-rose">Visualizaciones recomendadas</h3>
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-3 mt-6">
+          {{ range .Params.viz }}
+            {{ partial "chart.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
 	</div>
 {{ end }}
