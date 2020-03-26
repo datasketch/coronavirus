@@ -7,7 +7,7 @@ scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia
 uid: col-ins-casos
-tags: recHxuEagQ0hw6cda
+tags: highlight
 viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo
@@ -27,5 +27,9 @@ datasource_info:
   name: INS - Coronavirus en Colombia
   url: https://coronaviruscolombia.gov.co/Covid19/index.html
   type: Gob site
+tags_info:
+- uid: highlight
+  name: Highlight
+  name_es: Destacado
 ---
 

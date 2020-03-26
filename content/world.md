@@ -50,6 +50,10 @@ dashboard:
 - name: Coronavirus Disease (COVID-19) – Statistics and Research
   url: https://ourworldindata.org/coronavirus
   type: Dashboard
+- name: 'COVID-19 #Coronavirus Data Pack'
+  url: https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/
+  type: Infographics
+  author: Information is beautiful
 - name: COVID-19 Current World Situation
   url: https://datastudio.google.com/embed/u/0/reporting/55c64c82-fdcf-44c0-ae91-b5f83b54b9d1
   type: Dashboard

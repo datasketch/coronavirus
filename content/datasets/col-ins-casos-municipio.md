@@ -20,5 +20,6 @@ datasource_info:
   name: INS - Coronavirus en Colombia
   url: https://coronaviruscolombia.gov.co/Covid19/index.html
   type: Gob site
+tags_info: []
 ---
 

@@ -9,7 +9,7 @@ datasource: csse
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country names
   in multiple languages
 uid: tidy-csse-langs
-tags: recHxuEagQ0hw6cda
+tags: highlight
 viz: []
 scope_info:
 - uid: world
@@ -19,5 +19,9 @@ datasource_info:
   name: COVID-19 Data Repository by Johns Hopkins CSSE
   url: http://github.com/CSSEGISandData/COVID-19
   type: Academia
+tags_info:
+- uid: highlight
+  name: Highlight
+  name_es: Destacado
 ---
 

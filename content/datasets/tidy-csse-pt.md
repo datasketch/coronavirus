@@ -18,5 +18,6 @@ datasource_info:
   name: COVID-19 Data Repository by Johns Hopkins CSSE
   url: http://github.com/CSSEGISandData/COVID-19
   type: Academia
+tags_info: []
 ---
 
