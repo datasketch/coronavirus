@@ -1,4 +1,6 @@
 ---
+description: Reportes de casos de coronavirus en Colombia, agrupados por departamento
+  y fecha. Datos del Instituto Nacional de Salud.
 status: Published
 path: colombia/ins-col/col-ins-casos-departamento-fecha
 scope: colombia

@@ -1,4 +1,6 @@
 ---
+description: Casos de coronavirus en el mundo en portugués. Datos del CSSE de la universidad
+  Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse-pt
 scope: world

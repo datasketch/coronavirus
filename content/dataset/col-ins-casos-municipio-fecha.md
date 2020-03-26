@@ -1,4 +1,6 @@
 ---
+description: Casos de coronavirus en Colombia, agrupados por municipio y fecha. Datos
+  del Instituto Nacional de Salud.
 status: Published
 path: colombia/ins-col/col-ins-casos-municipio-fecha
 scope: colombia

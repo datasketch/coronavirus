@@ -1,4 +1,6 @@
 ---
+description: Casos de coronavirus en el mundo con nombre de país en diferentes idiomas.
+  Datos del CSSE de la universidad Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse-langs
 scope: world

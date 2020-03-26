@@ -1,4 +1,5 @@
 ---
+description: Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.
 status: Published
 path: colombia/ins-col/col-ins-casos
 scope: colombia
