@@ -4,9 +4,6 @@ name: Casos confirmados por departamento
 scope: colombia
 dataset: col-ins-cases
 recommended_viz:
-- uid: col-casos-sexo-acumulado
-  name: Casos confirmados (acumulado) por sexo
-  scope: colombia
 - uid: col-casos-edad
   name: Casos por edad
   scope: colombia

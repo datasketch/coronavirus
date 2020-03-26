@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datasets on Coronavirus · Datasketch</title>
+    <link>/dataset/</link>
+    <description>Recent content in Datasets on Coronavirus · Datasketch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="/dataset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-cases-municipio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-cases-municipio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-cases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-reports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-reports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse-en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse-en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse-es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse-es/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse-langs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse-langs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse-latam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse-latam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse-pt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse-pt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/tidy-csse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/tidy-csse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

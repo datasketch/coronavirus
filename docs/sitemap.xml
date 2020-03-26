@@ -3,11 +3,111 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/metodologia/</loc>
+    <loc>/chile/</loc>
   </url>
   
   <url>
-    <loc>/suggestions/</loc>
+    <loc>/colombia/</loc>
+  </url>
+  
+  <url>
+    <loc>/costa-rica/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/col-ins-cases-municipio/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/col-ins-cases/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/col-ins-reports/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse-en/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse-es/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse-langs/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse-latam/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse-pt/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/tidy-csse/</loc>
+  </url>
+  
+  <url>
+    <loc>/espana/</loc>
+  </url>
+  
+  <url>
+    <loc>/europe/</loc>
+  </url>
+  
+  <url>
+    <loc>/france/</loc>
+  </url>
+  
+  <url>
+    <loc>/germany/</loc>
+  </url>
+  
+  <url>
+    <loc>/iran/</loc>
+  </url>
+  
+  <url>
+    <loc>/italy/</loc>
+  </url>
+  
+  <url>
+    <loc>/korea/</loc>
+  </url>
+  
+  <url>
+    <loc>/uk/</loc>
+  </url>
+  
+  <url>
+    <loc>/usa/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-departamento/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-edad/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-por-atencion/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-por-sexo/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-por-tipo/</loc>
+  </url>
+  
+  <url>
+    <loc>/world/</loc>
   </url>
   
   <url>
@@ -15,51 +115,19 @@
   </url>
   
   <url>
-    <loc>/vis/col_confirmados_sexo/</loc>
-  </url>
-  
-  <url>
     <loc>/contacto/</loc>
   </url>
   
   <url>
     <loc>/contacto/</loc>
+  </url>
+  
+  <url>
+    <loc>/dataset/</loc>
   </url>
   
   <url>
     <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_acu_departamento/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_acu_sexo/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_acu_tipo_linea/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_departamento/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_edad/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_confirmados_tipo/</loc>
-  </url>
-  
-  <url>
-    <loc>/vis/col_mapa_casos/</loc>
-  </url>
-  
-  <url>
-    <loc>/dashboard/</loc>
   </url>
   
   <url>
@@ -71,7 +139,7 @@
   </url>
   
   <url>
-    <loc>/vis/</loc>
+    <loc>/viz/</loc>
   </url>
   
 </urlset>

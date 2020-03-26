@@ -4,9 +4,6 @@ name: Casos por sexo
 scope: colombia
 dataset: col-ins-cases
 recommended_viz:
-- uid: col-casos-mapa
-  name: Mapa de casos por municipio
-  scope: colombia
 - uid: col-casos-por-tipo
   name: Casos por tipo
   scope: colombia

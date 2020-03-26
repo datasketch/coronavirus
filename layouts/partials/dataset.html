@@ -1,9 +1,17 @@
 <div class="card dataset">
-  <div class="card-body">
-    <p class="dataset-title">{{ .title }}</p>
-    <p class="dataset-description">{{ .description }}</p>
-  </div>
-  <div class="card-actions">
-    <a class="btn" href='{{ .path | absURL }}'>Descargar</a>
-  </div>
+    <a href="{{.uid}}" class="block">
+        <h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">{{ .name}}</h3>
+        <div class="card-body">
+            <p class="dataset-title">{{ .title }}</p>
+            <p class="dataset-description">{{ .description }}</p>
+        </div>
+        <div class="card-media">
+            <img src='https://data.datasketch.co/datasketch/coronavirus/data{{ .path | absURL }}.png' width="200px">
+        </div>
+        <div class="card-actions">
+            <button class="btn share-btn" data-chart="{{ jsonify . }}">
+                Compartir
+            </button>
+        </div>
+    </a>
 </div>

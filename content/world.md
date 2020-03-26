@@ -82,5 +82,6 @@ datasets_info:
   name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
 - uid: tidy-csse-pt
   name: Dados mundiais de coronavirus
+type: scope
 ---
 

@@ -21,30 +21,23 @@ datasets:
 - col-ins-cases-municipio
 reads: []
 viz:
-- uid: col-casos-sexo-acumulado
-  name: Casos confirmados (acumulado) por sexo
 - uid: col-casos-por-sexo
   name: Casos por sexo
 - uid: col-casos-edad
   name: Casos por edad
-- uid: col-casos-departamento-acumulado
-  name: Casos confirmados (acumulado) por departamento
 - uid: col-casos-departamento
   name: Casos confirmados por departamento
 - uid: col-casos-por-atencion
   name: Casos por atencion
-- uid: col-casos-mapa
-  name: Mapa de casos por municipio
-- uid: col-casos-departamento-acumulado-spline
-  name: Casos confirmados (acumulado) por departamento
 - uid: col-casos-por-tipo
   name: Casos por tipo
 datasets_info:
 - uid: col-ins-reports
-  name: Casos de coronavirus en Colombia
+  name: Reportes de casos de coronavirus en Colombia
 - uid: col-ins-cases
   name: Casos de coronavirus en Colombia
 - uid: col-ins-cases-municipio
-  name: Casos de coronavirus en Colombia
+  name: Casos de coronavirus en Colombia por municipios
+type: scope
 ---
 

@@ -6,13 +6,24 @@ googleAnalytics="UA-66152192-4"
 
 [menu]
   [[menu.nav]]
+    name = "Visualizaciones"
+    url = "/viz"
+    weight = 1
+  [[menu.nav]]
+    name = "Datos"
+    url = "/dataset"
+    weight = 1
+  [[menu.nav]]
+    name = "Colombia"
+    url = "/colombia"
+    weight = 1
+  [[menu.nav]]
+    name = "Mundo"
+    url = "/world"
+  [[menu.nav]]
     name = "Metodología"
     url = "/metodologia"
     weight = 2
-  [[menu.nav]]
-    name = "Visualizaciones"
-    url = "/vis"
-    weight = 1
 
 [params.footer]
   text = "Todo el material en esta página es [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web."

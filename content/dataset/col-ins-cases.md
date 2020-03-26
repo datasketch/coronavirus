@@ -5,22 +5,14 @@ datasource: ins-col
 name: Casos de coronavirus en Colombia
 uid: col-ins-cases
 viz:
-- uid: col-casos-sexo-acumulado
-  name: Casos confirmados (acumulado) por sexo
 - uid: col-casos-por-sexo
   name: Casos por sexo
 - uid: col-casos-edad
   name: Casos por edad
-- uid: col-casos-departamento-acumulado
-  name: Casos confirmados (acumulado) por departamento
 - uid: col-casos-departamento
   name: Casos confirmados por departamento
 - uid: col-casos-por-atencion
   name: Casos por atencion
-- uid: col-casos-mapa
-  name: Mapa de casos por municipio
-- uid: col-casos-departamento-acumulado-spline
-  name: Casos confirmados (acumulado) por departamento
 - uid: col-casos-por-tipo
   name: Casos por tipo
 scope_info:

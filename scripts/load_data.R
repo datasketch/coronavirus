@@ -15,11 +15,13 @@ dfs <- map(tables, function(x){
 
 
 # Datasets
-datasets0 <- dfs[["datasets"]] %>% filter(!is.na(uid))
+datasets0 <- dfs[["datasets"]] %>% filter(!is.na(uid)) %>%
+  filter(status == "Published")
 # Dataources
 datasources0 <- dfs[["datasources"]] %>% filter(!is.na(uid))
 # Viz
-viz0 <- dfs[["viz"]] %>% filter(!is.na(uid))
+viz0 <- dfs[["viz"]] %>% filter(!is.na(uid)) %>%
+  filter(status == "Published")
 # Scopes
 scopes0 <- dfs[["scopes"]] %>% filter(!is.na(uid))
 # Datasources

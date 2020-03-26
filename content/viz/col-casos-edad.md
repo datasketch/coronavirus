@@ -7,9 +7,6 @@ recommended_viz:
 - uid: col-casos-departamento
   name: Casos confirmados por departamento
   scope: colombia
-- uid: col-casos-mapa
-  name: Mapa de casos por municipio
-  scope: colombia
 status: Published
 scope_info:
 - uid: colombia

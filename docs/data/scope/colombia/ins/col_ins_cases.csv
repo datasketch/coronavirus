@@ -1,0 +1,236 @@
+idx,fecha,atencion,edad,sexo,tipo_contagio,pais_procedencia,departamento,municipio,dept_cod_dane,muni_cod_dane,lat,lon
+1,2020-03-06,casa,10 a 19,F,Importado,Italia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+2,2020-03-09,hospital,30 a 39,M,Importado,España,Valle Del Cauca,Guadalajara De Buga,76,76111,3.8896650761284213,-76.26588829272106
+3,2020-03-09,casa,50 a 59,F,Importado,España,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+4,2020-03-11,casa,50 a 59,M,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+5,2020-03-11,casa,20 a 29,M,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+6,2020-03-11,casa,20 a 29,F,Relacionado,Colombia,Antioquia,Itagüí,05,05360,6.185948165564286,-75.61484700227143
+7,2020-03-11,hospital,80 a 89,F,Importado,Estados Unidos,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+8,2020-03-11,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+9,2020-03-11,casa,20 a 29,F,Importado,España-Italia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+10,2020-03-12,casa,30 a 39,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+11,2020-03-12,casa,40 a 49,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+12,2020-03-12,hospital,70 a 79,F,Importado,Italia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+13,2020-03-12,hospital,60 a 69,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+14,2020-03-13,casa,40 a 49,M,Importado,España,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+15,2020-03-13,casa,30 a 39,F,Importado,España,Meta,Villavicencio,50,50001,4.092659968965926,-73.53246285973333
+16,2020-03-13,hospital,60 a 69,F,Importado,Italia-Ucrania-España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+17,2020-03-14,casa,70 a 79,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+18,2020-03-14,casa,50 a 59,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+19,2020-03-14,casa,50 a 59,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+20,2020-03-14,casa,20 a 29,F,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+21,2020-03-14,casa,20 a 29,M,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+22,2020-03-14,casa,30 a 39,M,Importado,Estados Unidos,Antioquia,Rionegro,05,05615,6.150634085837836,-75.40950938420681
+23,2020-03-14,casa,20 a 29,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+24,2020-03-14,casa,10 a 19,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+25,2020-03-15,casa,40 a 49,M,Importado,España,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+26,2020-03-15,casa,30 a 39,F,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+27,2020-03-15,casa,30 a 39,F,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+28,2020-03-15,casa,20 a 29,M,Importado,Estados Unidos,Risaralda,Dosquebradas,66,66170,4.836315441122117,-75.66770752488324
+29,2020-03-15,casa,50 a 59,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+30,2020-03-15,casa,40 a 49,F,Importado,España,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+31,2020-03-15,casa,60 a 69,M,Importado,Estados Unidos,Caldas,Manizales,17,17001,5.081914683140773,-75.54740571406604
+32,2020-03-15,casa,50 a 59,M,Importado,España-Croacia-Bosnia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+33,2020-03-15,casa,50 a 59,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+34,2020-03-15,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+35,2020-03-15,casa,50 a 59,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+36,2020-03-15,casa,70 a 79,M,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+37,2020-03-15,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+38,2020-03-15,casa,20 a 29,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+39,2020-03-15,casa,50 a 59,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+40,2020-03-15,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+41,2020-03-15,casa,70 a 79,M,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+42,2020-03-15,casa,50 a 59,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+43,2020-03-15,casa,70 a 79,M,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+44,2020-03-15,casa,20 a 29,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+45,2020-03-15,casa,20 a 29,M,Importado,España,Cundinamarca,Subachoque,25,25769,4.9572020614476,-74.15462791989424
+46,2020-03-16,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+47,2020-03-16,casa,30 a 39,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+48,2020-03-16,casa,30 a 39,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+49,2020-03-16,casa,40 a 49,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+50,2020-03-16,casa,60 a 69,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+51,2020-03-16,casa,20 a 29,M,Importado,Ecuador,Cundinamarca,Soacha,25,25754,4.55177279609,-74.23282414493333
+52,2020-03-16,casa,20 a 29,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+53,2020-03-16,casa,60 a 69,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+54,2020-03-16,casa,40 a 49,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+55,2020-03-16,casa,50 a 59,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+56,2020-03-16,casa,30 a 39,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+57,2020-03-16,hospital,30 a 39,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+58,2020-03-17,casa,20 a 29,M,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+59,2020-03-17,casa,20 a 29,M,Importado,España,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+60,2020-03-17,casa,20 a 29,M,Importado,España,Santander,Bucaramanga,68,68001,7.150325748487166,-73.11503101543808
+61,2020-03-17,casa,20 a 29,M,Importado,España,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+62,2020-03-17,casa,30 a 39,M,Importado,Italia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+63,2020-03-17,casa,20 a 29,F,Importado,Francia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+64,2020-03-17,casa,30 a 39,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+65,2020-03-17,casa,60 a 69,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+66,2020-03-17,casa,40 a 49,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+67,2020-03-17,casa,20 a 29,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+68,2020-03-17,hospital,70 a 79,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+69,2020-03-17,casa,20 a 29,F,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+70,2020-03-17,casa,30 a 39,F,Importado,Turquía-Grecia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+71,2020-03-17,casa,50 a 59,M,Relacionado,Colombia,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+72,2020-03-17,casa,20 a 29,F,Relacionado,Colombia,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+73,2020-03-17,casa,50 a 59,F,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+74,2020-03-17,casa,10 a 19,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+75,2020-03-17,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+76,2020-03-18,casa,40 a 49,F,Importado,Italia,Antioquia,Armenia,05,05059,6.15859994656,-75.80464680026
+77,2020-03-18,casa,10 a 19,M,Importado,España,Antioquia,Armenia,05,05059,6.15859994656,-75.80464680026
+78,2020-03-18,casa,30 a 39,F,Relacionado,Colombia,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+79,2020-03-18,casa,0 a 9,M,Relacionado,Colombia,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+80,2020-03-18,casa,50 a 59,F,Relacionado,Colombia,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+81,2020-03-18,casa,40 a 49,F,Importado,Estados Unidos,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+82,2020-03-18,casa,50 a 59,M,Importado,España,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+83,2020-03-18,casa,50 a 59,M,Importado,Estados Unidos,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+84,2020-03-18,casa,50 a 59,M,Importado,Ecuador,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+85,2020-03-18,casa,40 a 49,F,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+86,2020-03-18,hospital,20 a 29,M,Importado,Francia,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+87,2020-03-18,casa,40 a 49,M,Importado,España,Cundinamarca,Cajicá,25,25126,4.92805735511145,-74.03064589253482
+88,2020-03-18,casa,30 a 39,M,Relacionado,Colombia,Tolima,Ibagué,73,73001,4.434694601950806,-75.21638108565423
+89,2020-03-18,Casa,30 a 39,F,Importado,España,Santander,Bucaramanga,68,68001,7.150325748487166,-73.11503101543808
+90,2020-03-18,casa,50 a 59,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+91,2020-03-18,casa,30 a 39,M,Importado,España - Italia,Cundinamarca,Cajicá,25,25126,4.92805735511145,-74.03064589253482
+92,2020-03-18,casa,50 a 59,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+93,2020-03-18,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+94,2020-03-18,casa,50 a 59,M,Importado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+95,2020-03-18,hospital,60 a 69,M,Importado,Turquía,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+96,2020-03-18,casa,30 a 39,F,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+97,2020-03-18,casa,20 a 29,M,Importado,Estados Unidos,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+98,2020-03-18,casa,20 a 29,M,Importado,España,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+99,2020-03-18,casa,10 a 19,M,Relacionado,Colombia,Tolima,Ibagué,73,73001,4.434694601950806,-75.21638108565423
+100,2020-03-18,casa,20 a 29,M,Importado,España,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+101,2020-03-18,casa,10 a 19,M,Importado,España,Risaralda,Dosquebradas,66,66170,4.836315441122117,-75.66770752488324
+102,2020-03-18,casa,70 a 79,M,Importado,España,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+103,2020-03-19,casa,20 a 29,F,Importado,España,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+104,2020-03-19,casa,40 a 49,F,Importado,España,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+105,2020-03-19,casa,20 a 29,F,Importado,España,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+106,2020-03-19,casa,40 a 49,M,Importado,España,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+107,2020-03-19,casa,50 a 59,M,Importado,España,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+108,2020-03-19,casa,50 a 59,F,Importado,España,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+109,2020-03-19,casa,50 a 59,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+110,2020-03-19,casa,60 a 69,F,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+111,2020-03-19,casa,60 a 69,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+112,2020-03-19,casa,30 a 39,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+113,2020-03-19,casa,30 a 39,M,Importado,Italia - España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+114,2020-03-19,casa,40 a 49,M,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+115,2020-03-19,casa,20 a 29,M,Importado,Ecuador,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+116,2020-03-19,casa,40 a 49,F,En estudio,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+117,2020-03-19,casa,20 a 29,M,Importado,España,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+118,2020-03-19,casa,50 a 59,M,Relacionado,Colombia,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+119,2020-03-19,casa,20 a 29,M,Relacionado,Colombia,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+120,2020-03-19,casa,20 a 29,F,Relacionado,Colombia,Antioquia,Armenia,05,05059,6.15859994656,-75.80464680026
+121,2020-03-19,casa,60 a 69,M,Importado,Colombia,Cauca,Popayán,19,19001,2.4714222700742825,-76.60334542415713
+122,2020-03-19,casa,30 a 39,F,Importado,España,Cauca,Popayán,19,19001,2.4714222700742825,-76.60334542415713
+123,2020-03-19,casa,30 a 39,F,Importado,España,Caldas,Viterbo,17,17877,5.06286441938,-75.8707592879
+124,2020-03-19,casa,70 a 79,F,Relacionado,Colombia,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+125,2020-03-19,casa,40 a 49,M,Importado,España,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+126,2020-03-19,casa,50 a 59,F,Importado,Estados Unidos,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+127,2020-03-19,casa,30 a 39,F,Relacionado,Colombia,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+128,2020-03-19,casa,50 a 59,M,En estudio,Colombia,Cundinamarca,Soacha,25,25754,4.55177279609,-74.23282414493333
+129,2020-03-20,casa,20 a 29,F,Importado,España,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+130,2020-03-20,casa,50 a 59,M,Importado,Estados Unidos,Cundinamarca,Anapoima,25,25035,4.548102882905,-74.507356359675
+131,2020-03-20,casa,20 a 29,F,Importado,España - Italia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+132,2020-03-20,casa,30 a 39,M,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+133,2020-03-20,hospital,50 a 59,M,Relacionado,Colombia,Antioquia,Rionegro,05,05615,6.150634085837836,-75.40950938420681
+134,2020-03-20,casa,20 a 29,M,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+135,2020-03-20,casa,40 a 49,F,Importado,Alemania,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+136,2020-03-20,casa,30 a 39,M,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+137,2020-03-20,casa,50 a 59,M,Importado,España-Croacia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+138,2020-03-20,casa,50 a 59,M,Importado,Ecuador,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+139,2020-03-20,casa,30 a 39,M,Importado,España-India,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+140,2020-03-20,casa,30 a 39,M,Importado,Brasil,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+141,2020-03-20,casa,60 a 69,F,Importado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+142,2020-03-20,casa,30 a 39,F,Importado,Italia- Jamaica- Panamá,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+143,2020-03-20,casa,40 a 49,M,Importado,España-Italia,Antioquia,Envigado,05,05266,6.154903769219,-75.54793342274017
+144,2020-03-20,casa,40 a 49,M,Importado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+145,2020-03-20,casa,10 a 19,F,Relacionado,Colombia,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+146,2020-03-20,casa,30 a 39,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+147,2020-03-20,casa,20 a 29,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+148,2020-03-20,casa,30 a 39,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+149,2020-03-20,casa,30 a 39,M,Importado,Alemania-Estambul,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+150,2020-03-20,casa,20 a 29,F,Importado,Italia-Ucrania-Turquía,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+151,2020-03-20,casa,40 a 49,M,Importado,Ecuador,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+152,2020-03-20,casa,60 a 69,M,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+153,2020-03-20,casa,50 a 59,F,En estudio,NA,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+154,2020-03-20,casa,40 a 49,M,Importado,Jamaica-Panamá-Islas Caimán,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+155,2020-03-20,casa,20 a 29,M,Importado,España,Magdalena,Santa Marta,47,47001,11.198350494029523,-73.9148177134209
+156,2020-03-20,casa,20 a 29,F,Importado,España,Cundinamarca,Chía,25,25175,4.862844802549676,-74.04677047168106
+157,2020-03-20,hospital,80 a 89,M,En estudio,NA,Magdalena,Santa Marta,47,47001,11.198350494029523,-73.9148177134209
+158,2020-03-20,casa,30 a 39,M,Relacionado,Colombia,Cundinamarca,Madrid,25,25430,4.798488571371666,-74.25934074775
+159,2020-03-20,casa,30 a 39,M,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+160,2020-03-20,casa,40 a 49,F,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+161,2020-03-20,casa,20 a 29,F,Importado,Estados Unidos,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+162,2020-03-20,casa,20 a 29,M,Importado,Estados Unidos-México,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+163,2020-03-20,casa,20 a 29,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+164,2020-03-20,casa,60 a 69,F,Importado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+165,2020-03-20,casa,30 a 39,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+166,2020-03-20,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+167,2020-03-20,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+168,2020-03-20,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+169,2020-03-20,casa,40 a 49,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+170,2020-03-20,casa,40 a 49,F,Importado,Grecia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+171,2020-03-20,casa,20 a 29,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+172,2020-03-20,casa,20 a 29,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+173,2020-03-20,casa,60 a 69,F,Importado,México,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+174,2020-03-20,casa,70 a 79,M,Importado,México,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+175,2020-03-20,casa,20 a 29,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+176,2020-03-21,casa,20 a 29,F,Importado,Estados Unidos,Tolima,Ibagué,73,73001,4.434694601950806,-75.21638108565423
+177,2020-03-21,casa,20 a 29,M,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+178,2020-03-21,casa,20 a 29,M,Importado,Estados Unidos,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+179,2020-03-21,casa,40 a 49,F,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+180,2020-03-21,casa,20 a 29,M,Importado,España,Norte De Santander,Villa Del Rosario,54,54874,7.7741540960333335,-72.48269509443334
+181,2020-03-21,casa,20 a 29,F,Importado,Estados Unidos,Caldas,Manizales,17,17001,5.081914683140773,-75.54740571406604
+182,2020-03-21,casa,40 a 49,F,Relacionado,Colombia,Norte De Santander,Cúcuta,54,54001,8.139068780978823,-72.46298983000588
+183,2020-03-21,casa,40 a 49,F,Importado,Ecuador,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+184,2020-03-21,hospital,40 a 49,F,Importado,Estados Unidos,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+185,2020-03-21,casa,50 a 59,F,Relacionado,Colombia,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+186,2020-03-21,casa,50 a 59,F,Importado,España,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+187,2020-03-21,casa,70 a 79,M,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+188,2020-03-21,fallecido,70 a 79,F,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+189,2020-03-21,casa,80 a 89,F,Importado,Estados Unidos,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+190,2020-03-21,casa,20 a 29,M,Importado,España,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+191,2020-03-21,casa,10 a 19,M,Importado,Estados Unidos,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+192,2020-03-21,casa,30 a 39,F,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+193,2020-03-21,casa,50 a 59,F,Importado,Italia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+194,2020-03-21,casa,60 a 69,F,Importado,España,Valle Del Cauca,Palmira,76,76520,3.5456771025705467,-76.29470941591414
+195,2020-03-21,casa,60 a 69,F,Importado,Estados Unidos,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+196,2020-03-21,casa,50 a 59,F,Importado,España,Huila,Neiva,41,41001,3.051207147593283,-75.33492084254752
+197,2020-03-21,fallecido,50 a 59,M,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+198,2020-03-21,casa,30 a 39,M,Importado,España,Antioquia,Medellín,05,05001,6.25644386238998,-75.61172523487957
+199,2020-03-21,casa,20 a 29,M,Importado,Estados Unidos,Antioquia,Guarne,05,05318,6.2707429182688665,-75.43823603949286
+200,2020-03-21,casa,50 a 59,F,Relacionado,Colombia,Bolívar,Cartagena De Indias,13,13001,10.362282179811823,-75.53124709711665
+201,2020-03-21,casa,50 a 59,F,Importado,España,Cundinamarca,Chía,25,25175,4.862844802549676,-74.04677047168106
+202,2020-03-21,hospital,50 a 59,M,En estudio,NA,Antioquia,Itagüí,05,05360,6.185948165564286,-75.61484700227143
+203,2020-03-21,casa,20 a 29,F,Importado,Estados Unidos,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+204,2020-03-21,casa,30 a 39,M,Importado,Estados Unidos,Atlántico,Barranquilla,08,08001,10.9796493947,-74.8187880943
+205,2020-03-21,casa,20 a 29,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+206,2020-03-21,casa,60 a 69,F,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+207,2020-03-21,casa,40 a 49,M,Importado,Guatemala,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+208,2020-03-21,casa,60 a 69,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+209,2020-03-21,casa,60 a 69,F,Importado,Reino Unido,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+210,2020-03-21,casa,50 a 59,M,Importado,Turquia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+211,2020-03-22,casa,20 a 29,M,Importado,España,Quindío,Calarcá,63,63130,4.476670843483166,-75.662543829022
+212,2020-03-22,casa,50 a 59,F,Relacionado,Colombia,Antioquia,Armenia,05,05059,6.15859994656,-75.80464680026
+213,2020-03-22,casa,30 a 39,M,Importado,España,Cesar,Valledupar,20,20001,10.388462800487089,-73.39374626660248
+214,2020-03-22,casa,50 a 59,F,Relacionado,Colombia,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+215,2020-03-22,casa,50 a 59,F,Importado,Grecia,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+216,2020-03-22,casa,40 a 49,M,Importado,España,Risaralda,Dosquebradas,66,66170,4.836315441122117,-75.66770752488324
+217,2020-03-22,casa,30 a 39,M,En estudio,Colombia,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+218,2020-03-22,casa,20 a 29,F,En estudio,Colombia,Caldas,La Dorada,17,17380,5.501632360914545,-74.7071085523909
+219,2020-03-22,casa,50 a 59,M,Importado,España,Caldas,Chinchiná,17,17174,4.97394842541125,-75.659999681525
+220,2020-03-22,casa,40 a 49,F,Relacionado,Colombia,Caldas,Chinchiná,17,17174,4.97394842541125,-75.659999681525
+221,2020-03-22,casa,50 a 59,F,Importado,República Dominicana,Santander,Bucaramanga,68,68001,7.150325748487166,-73.11503101543808
+222,2020-03-22,casa,30 a 39,M,Relacionado,Colombia,"Archipiélago De San Andrés, Providencia Y",San Andrés,88,88001,12.553664166363175,-81.71085707316246
+223,2020-03-22,casa,70 a 79,F,Importado,Estados Unidos,Risaralda,Pereira,66,66001,4.783060994085624,-75.72468998154469
+224,2020-03-22,casa,10 a 19,M,Relacionado,Colombia,Tolima,Ibagué,73,73001,4.434694601950806,-75.21638108565423
+225,2020-03-22,casa,20 a 29,M,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+226,2020-03-22,casa,40 a 49,F,Relacionado,Colombia,Valle Del Cauca,Yumbo,76,76892,3.592442113921607,-76.51312689798584
+227,2020-03-22,casa,20 a 29,M,Importado,Estados Unidos,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+228,2020-03-22,casa,20 a 29,M,Importado,España,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+229,2020-03-22,casa,30 a 39,F,Relacionado,Colombia,Casanare,Yopal,85,85001,5.27091180068099,-72.3162339986489
+230,2020-03-22,casa,30 a 39,F,Relacionado,Colombia,Antioquia,Armenia,05,05059,6.15859994656,-75.80464680026
+231,2020-03-22,casa,40 a 49,F,Relacionado,Colombia,Valle Del Cauca,Cali,76,76001,3.4065958420696165,-76.56580990494098
+232,2020-03-22,hospital,50 a 59,F,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+233,2020-03-22,casa,60 a 69,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+234,2020-03-22,hospital,40 a 49,M,Relacionado,Colombia,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304
+235,2020-03-22,casa,40 a 49,M,Importado,España,"Bogotá, D. C.","Bogotá, D.c.",11,11001,4.32664941085017,-74.18417790176304

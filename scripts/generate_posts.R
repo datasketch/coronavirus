@@ -30,6 +30,7 @@ all_scopes <- jsonlite::fromJSON("data/all-scopes.json")
 unlink(paste0("content/",all_scopes,".md"), recursive = FALSE)
 # dir.create("content")
 walk(l, function(x){
+  x$type <- "scope"
   yaml <- paste0("---\n",as.yaml(x),"---\n")
   write_lines(yaml, file.path(path,paste0(x$uid,".md")))
 })
