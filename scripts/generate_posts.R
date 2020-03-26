@@ -5,9 +5,9 @@ library(yaml)
 
 # Generate Datasets
 l <- fromJSON("data/datasets.json", simplifyDataFrame = FALSE)
-path <- "content/dataset/"
-unlink("content/dataset/", recursive = TRUE)
-dir.create("content/dataset/")
+path <- "content/datasets/"
+unlink("content/datasets/", recursive = TRUE)
+dir.create("content/datasets/")
 walk(l, function(x){
   yaml <- paste0("---\n",as.yaml(x),"---\n")
   write_lines(yaml, file.path(path,paste0(x$uid,".md")))

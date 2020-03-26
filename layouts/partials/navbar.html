@@ -1,4 +1,6 @@
-<header class="fixed w-full h-16 bg-transparent">
+<header
+  class='header {{ if or ((eq .Section "viz") or (eq .Section "datasets")) (eq .Kind "404")}}header-page{{end}}'
+>
   <nav class="flex h-full justify-between items-center px-4">
     <div class="flex justify-between items-center w-full md:w-auto">
       <a href="{{ .Site.BaseURL }}" class="inline-block">
@@ -11,30 +13,16 @@
       </button>
     </div>
     <div class="hidden items-center md:flex">
-      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#graphs">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/viz">
         Gráficas
       </a>
-      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#datasets">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/datasets">
         Datasets
       </a>
-      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#reads">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/reads">
         Artículos
       </a>
-      <div class="collapsible">
-        <button class="collapsible-trigger">
-          Todos los países
-          <svg class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
-            <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
-          </svg>
-        </button>
-        <div class="collapsible-content">
-          {{ range (index .Site.Data "all-scopes") }}
-            {{ if ne . "world" }}
-              <div class="collapsible-item"><a href="{{ . }}">{{ . }}</a></div>
-            {{ end }}
-          {{ end }}
-        </div>
-      </div>
+      {{ partial "dropdown.html" . }}
       <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
         <img src='{{ "images/tw.svg" | absURL }}' alt="">
       </a>

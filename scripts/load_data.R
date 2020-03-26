@@ -64,7 +64,8 @@ datasets$tags_info <- map(datasets0$tags, function(x){
   filter(tags_min, id %in% x) %>% select(uid, name, name_es)
 })
 datasets <- datasets %>% select(-id, -createdTime)
-jsonlite::write_json(datasets, "data/datasets.json", auto_unbox = TRUE)
+jsonlite::write_json(datasets, "data/datasets.json",
+                     auto_unbox = TRUE, pretty = TRUE)
 
 # Viz
 scopes_min <- scopes0 %>% select(id, uid, name)
@@ -93,7 +94,8 @@ viz$tags_info <- map(viz0$tags, function(x){
   filter(tags_min, id %in% x) %>% select(uid, name, name_es)
 })
 viz <- viz %>% select(-id, -createdTime, -viz_fun, -viz_params)
-jsonlite::write_json(viz, "data/viz.json", auto_unbox = TRUE)
+jsonlite::write_json(viz, "data/viz.json",
+                     auto_unbox = TRUE, pretty = TRUE)
 
 # Scopes
 datasets_min <- datasets0 %>% select(id, uid, name)
@@ -142,7 +144,8 @@ scopes_no_empty <- scopes %>%
   filter(with_info) %>%
   select(-starts_with("with_"))
 jsonlite::write_json(scopes0$uid, "data/all-scopes.json")
-jsonlite::write_json(scopes_no_empty, "data/scopes.json", auto_unbox = TRUE)
+jsonlite::write_json(scopes_no_empty, "data/scopes.json",
+                     auto_unbox = TRUE, pretty = TRUE)
 
 # Reads
 reads <- reads0
@@ -164,5 +167,5 @@ home <- list(
   reads = reads %>% filter(tags == "highlight") %>%
     select(name, description, url)
 )
-jsonlite::write_json(home, "data/home.json")
+jsonlite::write_json(home, "data/home.json", pretty = TRUE)
 

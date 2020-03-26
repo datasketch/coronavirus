@@ -7,7 +7,11 @@ recommended_viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo
   scope: colombia
+- uid: col-casos-mapa
+  name: Mapa de casos por municipio
+  scope: colombia
 status: Published
+tags: []
 scope_info:
 - uid: colombia
   name: Colombia

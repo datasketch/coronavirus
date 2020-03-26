@@ -1,8 +1,8 @@
 ---
-uid: col-casos-departamento
-name: Casos confirmados por departamento
+uid: col-casos-mapa
+name: Mapa de casos por municipio
 scope: colombia
-dataset: col-ins-casos
+dataset: col-ins-casos-municipio
 recommended_viz:
 - uid: col-casos-edad
   name: Casos por edad
@@ -11,13 +11,13 @@ recommended_viz:
   name: Casos confirmados por departamento
   scope: colombia
 status: Published
-tags: []
+tags: recHxuEagQ0hw6cda
 scope_info:
 - uid: colombia
   name: Colombia
 dataset_info:
-- uid: col-ins-casos
-  name: Casos de coronavirus en Colombia
-  path: colombia/ins-col/col-ins-casos
+- uid: col-ins-casos-municipio
+  name: Casos de coronavirus en Colombia por municipios
+  path: colombia/ins-col/col-ins-casos-municipio
 ---
 

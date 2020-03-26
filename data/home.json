@@ -1,1 +1,70 @@
-{"viz":[{"uid":"col-casos-por-sexo","name":"Casos por sexo"},{"uid":"col-casos-edad","name":"Casos por edad"},{"uid":"col-casos-mapa","name":"Mapa de casos por municipio"}],"datasets":[{"uid":"tidy-csse-es","name":"Datos mundiales de coronavirus (confirmados, muertos, recuperados)","description":"Casos de coronavirus en el mundo en español. Datos del CSSE de la universidad Johns Hopkins."},{"uid":"col-ins-reportes","name":"Reportes de casos de coronavirus en Colombia","description":"Reportes de casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."},{"uid":"tidy-csse-langs","name":"Tidy world coronavirus cases (confirmed, death, recovered) with country names in multiple languages","description":"Casos de coronavirus en el mundo con nombre de país en diferentes idiomas. Datos del CSSE de la universidad Johns Hopkins."},{"uid":"tidy-csse","name":"Tidy world coronavirus cases (confirmed, death, recovered) with country codes","description":"Casos de coronavirus en el mundo con código de país. Datos del CSSE de la universidad Johns Hopkins."},{"uid":"col-ins-casos","name":"Casos de coronavirus en Colombia","description":"Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."}],"reads":[{"name":"Coronavirus: Why it’s so deadly in Italy","description":"Demographics and why they are a warning to other countries.","url":"https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf"},{"name":"The Korean clusters: How coronavirus cases exploded in South Korean churches and hospitals","description":"South Korea announced thousands of coronavirus cases in the space of only a few days in late February.","url":"https://graphics.reuters.com/CHINA-HEALTH-SOUTHKOREA-CLUSTERS/0100B5G33SB/index.html"},{"name":"Coronavirus tracked: the latest figures as the pandemic spreads","description":"The countries affected, the number of deaths and the economic impact.","url":"https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441"},{"name":"Coronavirus: The Hammer and the Dance","description":"What the next 18 months can look like, if leaders buy us time.","url":"https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56"},{"name":"COVID-19 I El cuidado ahora es colectivo","description":"Esta es una coyuntura que demuestra que estamos pensando la salud tal vez de una forma menos antropocentrista.","url":"https://cerosetenta.uniandes.edu.co/el-cuidado-ahora-es-colectivo/"}]}
+{
+  "viz": [
+    {
+      "uid": "col-casos-por-sexo",
+      "name": "Casos por sexo"
+    },
+    {
+      "uid": "col-casos-edad",
+      "name": "Casos por edad"
+    },
+    {
+      "uid": "col-casos-mapa",
+      "name": "Mapa de casos por municipio"
+    }
+  ],
+  "datasets": [
+    {
+      "uid": "tidy-csse-es",
+      "name": "Datos mundiales de coronavirus (confirmados, muertos, recuperados)",
+      "description": "Casos de coronavirus en el mundo en español. Datos del CSSE de la universidad Johns Hopkins."
+    },
+    {
+      "uid": "col-ins-reportes",
+      "name": "Reportes de casos de coronavirus en Colombia",
+      "description": "Reportes de casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."
+    },
+    {
+      "uid": "tidy-csse-langs",
+      "name": "Tidy world coronavirus cases (confirmed, death, recovered) with country names in multiple languages",
+      "description": "Casos de coronavirus en el mundo con nombre de país en diferentes idiomas. Datos del CSSE de la universidad Johns Hopkins."
+    },
+    {
+      "uid": "tidy-csse",
+      "name": "Tidy world coronavirus cases (confirmed, death, recovered) with country codes",
+      "description": "Casos de coronavirus en el mundo con código de país. Datos del CSSE de la universidad Johns Hopkins."
+    },
+    {
+      "uid": "col-ins-casos",
+      "name": "Casos de coronavirus en Colombia",
+      "description": "Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."
+    }
+  ],
+  "reads": [
+    {
+      "name": "Coronavirus: Why it’s so deadly in Italy",
+      "description": "Demographics and why they are a warning to other countries.",
+      "url": "https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf"
+    },
+    {
+      "name": "The Korean clusters: How coronavirus cases exploded in South Korean churches and hospitals",
+      "description": "South Korea announced thousands of coronavirus cases in the space of only a few days in late February.",
+      "url": "https://graphics.reuters.com/CHINA-HEALTH-SOUTHKOREA-CLUSTERS/0100B5G33SB/index.html"
+    },
+    {
+      "name": "Coronavirus tracked: the latest figures as the pandemic spreads",
+      "description": "The countries affected, the number of deaths and the economic impact.",
+      "url": "https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441"
+    },
+    {
+      "name": "Coronavirus: The Hammer and the Dance",
+      "description": "What the next 18 months can look like, if leaders buy us time.",
+      "url": "https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56"
+    },
+    {
+      "name": "COVID-19 I El cuidado ahora es colectivo",
+      "description": "Esta es una coyuntura que demuestra que estamos pensando la salud tal vez de una forma menos antropocentrista.",
+      "url": "https://cerosetenta.uniandes.edu.co/el-cuidado-ahora-es-colectivo/"
+    }
+  ]
+}

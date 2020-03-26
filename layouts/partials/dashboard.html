@@ -6,7 +6,6 @@
     {{ end }}
   </div>
   <div class="card-actions">
-    {{ $pathname := path.Join "datasets" .uid }}
-    <a class="btn bg-electric-violet" href="{{ absURL $pathname }}">Ver</a>
+    <a class="btn bg-electric-violet" href="{{ .url }}" target="_blank">Visitar</a>
   </div>
 </div>
