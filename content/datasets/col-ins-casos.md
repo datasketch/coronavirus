@@ -8,17 +8,7 @@ datasource: ins-col
 name: Casos de coronavirus en Colombia
 uid: col-ins-casos
 tags: highlight
-viz:
-- uid: col-casos-por-sexo
-  name: Casos por sexo
-- uid: col-casos-edad
-  name: Casos por edad
-- uid: col-casos-departamento
-  name: Casos confirmados por departamento
-- uid: col-casos-por-atencion
-  name: Casos por atencion
-- uid: col-casos-por-tipo
-  name: Casos por tipo
+viz: []
 scope_info:
 - uid: colombia
   name: Colombia
