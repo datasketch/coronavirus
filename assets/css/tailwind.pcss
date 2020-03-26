@@ -28,16 +28,11 @@
   * Header
   */
 .header {
-  @apply w-full h-16;
-}
-
-.header-home {
-  @apply fixed bg-transparent
-
+  @apply w-full h-16 fixed bg-transparent bg-cover bg-no-repeat bg-center;
 }
 
 .header-page {
-  @apply bg-cover bg-no-repeat bg-center;
+  @apply static;
   background-image: url(/images/banner-home.png);
 }
 
@@ -149,5 +144,51 @@
 .card-actions {
   @apply mt-3;
 }
+
+/**
+  * Dropdown
+  */
+.dropdown {
+  @apply relative cursor-pointer leading-none;
+  background-color: #ececec;
+}
+
+.dropdown-select {
+  @apply flex justify-between p-2 bg-white cursor-pointer justify-between font-contrail-one uppercase text-electric-violet tracking-wider text-lg;
+}
+
+.dropdown-select:hover {
+  @apply bg-mine-shaft text-white;
+}
+
+.dropdown-placeholder {
+  @apply select-none mr-4;
+}
+
+.dropdown-select svg {
+  @apply self-center;
+}
+
+.dropdown.opened .dropdown-select svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-options {
+  @apply bg-white absolute left-0 m-0 h-0 p-0 overflow-hidden list-none w-full;
+  top: 100%;
+}
+
+.dropdown.opened .dropdown-options {
+  @apply overflow-y-auto h-auto h-48;
+}
+
+.dropdown-option {
+  @apply p-2 text-center capitalize;
+}
+
+.dropdown-option:hover {
+  @apply text-electric-violet;
+}
+
 
 @tailwind utilities;

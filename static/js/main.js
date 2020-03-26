@@ -1,4 +1,5 @@
 const shareButtons = Array.from(document.querySelectorAll('.share-btn'));
+const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
 
 if (shareButtons) {
   shareButtons.forEach(shareButton => {
@@ -17,6 +18,14 @@ if (shareButtons) {
           language: 'es'
         }
       );
+    });
+  });
+}
+
+if (dropdowns) {
+  dropdowns.forEach(function(dropdown) {
+    dropdown.addEventListener('click', function(event) {
+      this.classList.toggle('opened');
     });
   });
 }

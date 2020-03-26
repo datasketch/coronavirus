@@ -1,14 +1,119 @@
 {{ define "main" }}
-  {{ $filename := (printf "%s.html" .File.BaseFileName) }}
-  <div class="container section">
-    <div class="iframe-container">
-      <h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">{{ .Params.name}}</h3>
-      <img src='https://via.placeholder.com/300' height="300px"></img>
-    </div>
-  <button class="btn share-btn bg-persian-blue" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{$filename}}" }'>Compartir</button>
-  {{ .Content }}
-  {{ if .Site.DisqusShortname }}
-    {{ template "_internal/disqus.html" . }}
-  {{ end }}
+<div class="hero" id="header">
+  <div class="hero-inner pt-12">
+    <h2 class="text-rose bg-white uppercase text-6xl leading-none px-4 pt-2 pb-1">{{ .Params.uid }}</h2>
+  </div>
 </div>
+{{ partial "subnav.html" . }}
+{{ end }}
+
+{{ define "charts" }}
+  {{ if .Params.viz }}
+    <section id="graphs">
+      <div class="section-banner">
+        <div class="text-right">
+          <a href='{{ absURL "viz" }}' class="btn bg-white text-persian-blue">Ver todos</a>
+        </div>
+        <h1 class="section-title">Gráficas</h1>
+      </div>
+      <div class="container py-12">
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-2">
+          {{ range .Params.viz }}
+            {{ partial "chart.html" . }}
+          {{ end }}
+        </div>
+        <div class="text-center pt-12">
+          <a href='{{ absURL "viz" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ define "datasets" }}
+    {{ if .Params.datasets_info }}
+      <section id="datasets">
+        <div class="section-banner">
+          <div class="text-right">
+            <a href='{{ absURL "datasets" }}' class="btn bg-white text-electric-violet">Ver todos</a>
+          </div>
+          <h1 class="section-title">Datasets</h1>
+        </div>
+        <div class="container py-12">
+          <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            {{ range .Params.datasets_info }}
+              {{ partial "dataset.html" . }}
+            {{ end }}
+          </div>
+          <div class="text-center pt-12">
+            <a href='{{ absURL "datasets" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+{{ end }}
+
+{{ define "reads" }}
+  {{ if .Params.reads }}
+    <section id="reads">
+      <div class="section-banner">
+        <div class="text-right">
+          <a href='{{ absURL "reads" }}' class="btn bg-white text-rose">Ver todos</a>
+        </div>
+        <h1 class="section-title">Artículos</h1>
+      </div>
+      <div class="container py-12">
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+          {{ range index .Site.Data.home "reads" }}
+            {{ partial "read.html" . }}
+          {{ end }}
+        </div>
+        <div class="text-center pt-12">
+          <a href='{{ absURL "reads" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ define "dashboards" }}
+<section id="dashboards">
+  <div class="section-banner">
+    <div class="text-right">
+      <a href='{{ absURL "dashboards" }}' class="btn bg-white text-persian-blue">Ver todos</a>
+    </div>
+    <h1 class="section-title">Dashboards</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range index .Site.Data.home "dashboards" }}
+        {{ partial "dashboard.html" . }}
+      {{ end }}
+    </div>
+    <div class="text-center pt-12">
+      <a href='{{ absURL "dashboards" }}' class="btn bg-persian-blue text-white text-2xl">Ver todos</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "tools" }}
+<section id="tools">
+  <div class="section-banner">
+    <div class="text-right">
+      <a href='{{ absURL "tools" }}' class="btn bg-white text-rose">Ver todos</a>
+    </div>
+    <h1 class="section-title">Recursos</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range index .Site.Data.home "tools" }}
+        {{ partial "tool.html" . }}
+      {{ end }}
+    </div>
+    <div class="text-center pt-12">
+      <a href='{{ absURL "tools" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+    </div>
+  </div>
+</section>
 {{ end }}

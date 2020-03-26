@@ -1,7 +1,7 @@
 <div class="card chart">
   {{ $thumbnail := printf "https://data.datasketch.co/datasketch/coronavirus/viz/%s.png" .uid }}
   {{ $pathname := path.Join "viz" .uid }}
-  <h3 class="bg-mine-shaft text-white inline-block py-1 px-2 mb-4">{{ .title }}</h3>
+  <h3 class="bg-mine-shaft text-white inline-block py-1 px-2 mb-4">{{ or .title .name }}</h3>
   <div class="card-media">
     <img src="{{ $thumbnail }}">
   </div>

@@ -1,7 +1,9 @@
 <div class="card dataset">
   <div class="card-body">
     <p class="card-title">{{ .name }}</p>
-    <p class="card-description">{{ .description }}</p>
+    {{ if .description }}
+      <p class="card-description">{{ .description }}</p>
+    {{ end }}
   </div>
   <div class="card-actions">
     {{ $pathname := path.Join "datasets" .uid }}

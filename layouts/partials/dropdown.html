@@ -1,0 +1,19 @@
+<div class="dropdown mr-4">
+  <div class="dropdown-select">
+    <div class="dropdown-placeholder">
+      {{ if eq .Type "scope" }}
+        <span class="uppercase">{{ .Params.uid }}</span>
+      {{ else }}
+        Selecciona un país
+      {{ end }}
+    </div>
+    <svg class="w-2" class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
+      <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
+    </svg>
+  </div>
+  <ul class="dropdown-options">
+    {{ range (index .Site.Data "all-scopes") }}
+      <li class="dropdown-option"><a href="{{ . | absURL }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+</div>
