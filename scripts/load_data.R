@@ -32,6 +32,8 @@ dashboards0 <- dfs[["dashboards"]] %>% filter(!is.na(name))
 reads0 <- dfs[["reads"]] %>% filter(!is.na(name))
 # Tools
 tools0 <- dfs[["tools"]] %>% filter(!is.na(name))
+# Tags
+tags0 <- dfs[["tags"]] %>% filter(!is.na(name))
 
 
 # Datasets
@@ -54,6 +56,13 @@ viz_min <- viz0 %>% select(id, uid, name)
 datasets$viz <- map(datasets0$viz, function(x){
   filter(viz_min, id %in% x) %>% select(-id)
 })
+tags_min <- tags0 %>% select(id, uid, name, name_es)
+datasets$tags <- map(datasets0$tags, function(x){
+  filter(tags_min, id %in% x) %>% pull(uid)
+})
+datasets$tags_info <- map(datasets0$tags, function(x){
+  filter(tags_min, id %in% x) %>% select(uid, name, name_es)
+})
 datasets <- datasets %>% select(-id, -createdTime)
 jsonlite::write_json(datasets, "data/datasets.json", auto_unbox = TRUE)
 
@@ -75,6 +84,13 @@ viz$dataset_info <- map(viz0$dataset, function(x){
 })
 viz$recommended_viz <- map(viz0$recommended_viz, function(x){
   filter(viz, id %in% x) %>% select(uid, name, scope)
+})
+tags_min <- tags0 %>% select(id, uid, name, name_es)
+viz$tags <- map(viz0$tags, function(x){
+  filter(tags_min, id %in% x) %>% pull(uid)
+})
+viz$tags_info <- map(viz0$tags, function(x){
+  filter(tags_min, id %in% x) %>% select(uid, name, name_es)
 })
 viz <- viz %>% select(-id, -createdTime, -viz_fun, -viz_params)
 jsonlite::write_json(viz, "data/viz.json", auto_unbox = TRUE)
@@ -128,4 +144,25 @@ scopes_no_empty <- scopes %>%
 jsonlite::write_json(scopes0$uid, "data/all-scopes.json")
 jsonlite::write_json(scopes_no_empty, "data/scopes.json", auto_unbox = TRUE)
 
+# Reads
+reads <- reads0
+tags_min <- tags0 %>% select(id, uid, name, name_es)
+reads$tags <- map(reads0$tags, function(x){
+  filter(tags_min, id %in% x) %>% pull(uid)
+})
+reads$tags_info <- map(reads0$tags, function(x){
+  filter(tags_min, id %in% x) %>% select(uid, name, name_es)
+})
+
+
+# Home
+
+home <- list(
+  viz = viz %>% filter(tags == "highlight") %>% select(uid, name),
+  datasets = datasets %>% filter(tags == "highlight") %>%
+    select(uid, name, description),
+  reads = reads %>% filter(tags == "highlight") %>%
+    select(name, description, url)
+)
+jsonlite::write_json(home, "data/home.json")
 
