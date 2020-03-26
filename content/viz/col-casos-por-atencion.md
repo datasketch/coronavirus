@@ -2,7 +2,7 @@
 uid: col-casos-por-atencion
 name: Casos por atencion
 scope: colombia
-dataset: col-ins-cases
+dataset: col-ins-casos
 recommended_viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo
@@ -12,8 +12,8 @@ scope_info:
 - uid: colombia
   name: Colombia
 dataset_info:
-- uid: col-ins-cases
+- uid: col-ins-casos
   name: Casos de coronavirus en Colombia
-  path: colombia/ins-col/col-ins-cases
+  path: colombia/ins-col/col-ins-casos
 ---
 

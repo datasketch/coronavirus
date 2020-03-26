@@ -1,9 +1,10 @@
 ---
-path: colombia/ins-col/col-ins-reports
+status: Published
+path: colombia/ins-col/col-ins-casos-municipio-fecha
 scope: colombia
 datasource: ins-col
-name: Casos de coronavirus en Colombia
-uid: col-ins-reports
+name: Casos de coronavirus en Colombia por municipios
+uid: col-ins-casos-municipio-fecha
 viz: []
 scope_info:
 - uid: colombia

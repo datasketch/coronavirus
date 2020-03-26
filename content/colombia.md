@@ -16,9 +16,12 @@ dashboard:
 name: Colombia
 tools: []
 datasets:
-- col-ins-reports
-- col-ins-cases
-- col-ins-cases-municipio
+- col-ins-casos-municipio-fecha
+- col-ins-reportes
+- col-ins-casos
+- col-ins-casos-municipio
+- col-ins-casos-departamento-fecha
+- col-ins-casos-departamento
 reads: []
 viz:
 - uid: col-casos-por-sexo
@@ -32,12 +35,18 @@ viz:
 - uid: col-casos-por-tipo
   name: Casos por tipo
 datasets_info:
-- uid: col-ins-reports
-  name: Reportes de casos de coronavirus en Colombia
-- uid: col-ins-cases
-  name: Casos de coronavirus en Colombia
-- uid: col-ins-cases-municipio
+- uid: col-ins-casos-municipio-fecha
   name: Casos de coronavirus en Colombia por municipios
+- uid: col-ins-reportes
+  name: Reportes de casos de coronavirus en Colombia
+- uid: col-ins-casos
+  name: Casos de coronavirus en Colombia
+- uid: col-ins-casos-municipio
+  name: Casos de coronavirus en Colombia por municipios
+- uid: col-ins-casos-departamento-fecha
+  name: Reportes de casos de coronavirus en Colombia
+- uid: col-ins-casos-departamento
+  name: Reportes de casos de coronavirus en Colombia
 type: scope
 ---
 

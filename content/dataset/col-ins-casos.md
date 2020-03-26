@@ -1,9 +1,10 @@
 ---
-path: colombia/ins-col/col-ins-cases
+status: Published
+path: colombia/ins-col/col-ins-casos
 scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia
-uid: col-ins-cases
+uid: col-ins-casos
 viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo

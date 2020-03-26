@@ -1,4 +1,5 @@
 ---
+status: Published
 path: world/csse/tidy-csse
 scope: world
 datasource: csse
