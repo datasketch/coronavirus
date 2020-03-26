@@ -1,0 +1,156 @@
+.nav {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand {
+  display: inline-block;
+}
+
+.nav-brand img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.section-link {
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem 0.1rem 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.section-link:hover {
+  background-color: #232323;
+}
+
+.nav-pages {
+  background-color: #333;
+}
+
+#header {
+  background-image: url(../images/banner-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.hero-tagline {
+  color: #5d3dfa;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  display: block;
+  padding: 0.25rem 1rem 0rem 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-tagline h3 {
+  font-weight: initial;
+}
+
+.collapsible {
+  margin-right: 1rem;
+  width: 170px;
+}
+
+.collapsible-trigger {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem 0.1rem 0.5rem;
+  font-family: 'Contrail One', cursive;
+  font-weight: initial;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5d3dfa;
+}
+
+.collapsible-trigger:hover {
+  background-color: #232323;
+  color: #fff;
+}
+
+.collapsible-trigger:hover .collapsible-state-icon {
+  fill: #fff;
+}
+
+.collapsible-trigger:focus {
+  outline: none;
+}
+
+.collapsible-state-icon {
+  width: 1rem;
+  padding-left: 0.5rem;
+}
+
+.collapsible.opened .collapsible-trigger{
+  background-color: #232323;
+  color: #fff;
+}
+
+.collapsible.opened .collapsible-state-icon {
+  transform: rotate(180deg) translateX(-7px);
+  fill: #fff;
+}
+
+.collapsible-content {
+  background-color: #fff;
+  display: none;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.collapsible.opened .collapsible-content {
+  display: block;
+  overflow: scroll;
+  position: absolute;
+  height: 11rem;
+  width: 170px;
+  text-transform: capitalize;
+}
+
+.collapsible.opened .collapsible-item {
+  padding: 0.2rem 0rem;
+  color: #232323;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.collapsible.opened .collapsible-item:first-of-type {
+  padding-top: 0.5rem;
+}
+
+.collapsible.opened .collapsible-item:hover {
+  color: #5d3dfa;
+}

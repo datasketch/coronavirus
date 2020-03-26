@@ -1,72 +1,46 @@
 {{ define "main" }}
-  <header id="header">
-    <nav class="nav">
-      <div class="nav-left">
-        <a href="{{ .Site.BaseURL }}" class="nav-brand">
-          <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
-        </a>
-      </div>
-      <div class="nav-right">
-        <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
-          <img src='{{ "images/tw.svg" | absURL }}' alt="">
-        </a>
-        <a class="nav-item" href="mailto:info@datasketch.co">
-          <img src='{{ "images/mail.svg" | absURL }}' alt="">
-        </a>
-        <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
-          <img src='{{ "images/fb.svg" | absURL }}' alt="">
-        </a>
-      </div>
-    </nav>
-    <div class="hero">
-      <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
-      <div class="hero-tagline">
-        <h2>Datos y gráficas actualizadas</h2>
-      </div>
-    </div>
-  </header>
   <main class="container" id="app">
-    <div class="collapsible">
-      <button class="collapsible-trigger">
-        Ver lista completa
-        <svg class="collapsible-state-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </button>
-      <div class="collapsible-content">
-        {{ range (index .Site.Data "all-scopes") }}
-          {{ if ne . "world" }}
-            <a href="{{ . }}">{{ . }}</a>
+    <section id="map">
+    Aquí va el mapa
+    </section>
+    <section id="graphs">
+      <div class="section-banner">
+        <h1 class="section-title">Gráficas</h1>
+      </div>
+      <div class="section-content">
+        <!-- <p><code>Reemplaza "colombia" por "world" en la línea n cuando haya visualizaciones</code></p> -->
+        {{ range where (.Site.Data.scopes) "uid" "colombia" }}
+          <div class="charts">
+            {{ range .viz }}
+              {{ partial "chart.html" . }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+    <section id="datasets">
+      <div class="section-banner">
+        <h1 class="section-title">Datasets</h1>
+      </div>
+      <div class="section-content">
+        {{ range where (.Site.Data.scopes) "uid" "colombia" }}
+          {{ range .datasets }}
+            {{ partial "dataset.html" . }}
           {{ end }}
         {{ end }}
       </div>
-    </div>
-    <section>
-      <h1>World Charts</h1>
-      <p><code>Reemplaza "colombia" por "world" en la línea n cuando haya visualizaciones</code></p>
-      {{ range where (.Site.Data.scopes) "uid" "colombia" }}
-        <div class="charts">
-          {{ range .viz }}
-            {{ partial "chart.html" . }}
+    </section>
+    <section id="reads">
+      <div class="section-banner">
+        <h1 class="section-title">Artículos</h1>
+      </div>
+      <div class="section-content">
+        {{ range where (.Site.Data.scopes) "uid" "world" }}
+          {{ range .reads }}
+            <p>{{ .name }} - <a href="{{ .url }}">Leer</a></p>
           {{ end }}
-        </div>
-      {{ end }}
-    </section>
-    <section>
-      <h1>World Data</h1>
-      {{ range where (.Site.Data.scopes) "uid" "colombia" }}
-        {{ range .datasets }}
-          {{ partial "dataset.html" . }}
         {{ end }}
-      {{ end }}
-    </section>
-    <section>
-      <h1>Reads</h1>
-      {{ range where (.Site.Data.scopes) "uid" "world" }}
-        {{ range .reads }}
-          <p>{{ .name }} - <a href="{{ .url }}">Leer</a></p>
-        {{ end }}
-      {{ end }}
+      </div>
     </section>
   </main>
 {{ end }}

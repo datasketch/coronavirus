@@ -1,0 +1,44 @@
+<header id="header">
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="{{ .Site.BaseURL }}" class="nav-brand">
+        <img src='{{ "images/logo.svg" | absURL }}' alt="Datasketch">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-item section-link" href="#graphs">GRÁFICAS</a>
+      <a class="nav-item section-link" href="#datasets">DATASETS</a>
+      <a class="nav-item section-link" href="#reads">ARTÍCULOS</a>
+      <div class="collapsible">
+        <button class="collapsible-trigger">
+          Todos los países
+          <svg class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
+            <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
+          </svg>
+        </button>
+        <div class="collapsible-content">
+          {{ range (index .Site.Data "all-scopes") }}
+            {{ if ne . "world" }}
+              <div class="collapsible-item"><a href="{{ . }}">{{ . }}</a></div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+        <img src='{{ "images/tw.svg" | absURL }}' alt="">
+      </a>
+      <a class="nav-item" href="mailto:info@datasketch.co">
+        <img src='{{ "images/mail.svg" | absURL }}' alt="">
+      </a>
+      <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+        <img src='{{ "images/fb.svg" | absURL }}' alt="">
+      </a>
+    </div>
+  </nav>
+  <div class="hero">
+    <img class="hero-image" src='{{ "images/title.svg" | absURL }}' alt="Coronavirus">
+    <div class="hero-tagline">
+      <h3>Datos y gráficas actualizadas</h3>
+    </div>
+  </div>
+</header>

@@ -1,7 +1,30 @@
-{{ $color := .Site.Params.footer.color }}
-{{ $bg := .Site.Params.footer.bg }}
-<footer style="background: {{ $bg | safeCSS }}; color: {{ $color | safeCSS }}">
-  <div class="footer-inner text-center">
-    {{ markdownify .Site.Params.footer.text }}
+<footer>
+  <div class="border"></div>
+  <div class="content">
+    <div class="footer-item logo">
+      <img src='{{ "images/logo_vertical.svg" | absURL }}' alt="Datasketch">
+    </div>
+    <div class="footer-item">
+      <p class="social-title">Comparte</p>
+      <div class="social-content">
+        <a class="social-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+          <img src='{{ "images/tw.svg" | absURL }}' alt="">
+        </a>
+        <a class="social-item" href="mailto:info@datasketch.co">
+          <img src='{{ "images/mail.svg" | absURL }}' alt="">
+        </a>
+        <a class="social-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+          <img src='{{ "images/fb.svg" | absURL }}' alt="">
+        </a>
+      </div>
+    </div>
+    <div class="footer-item">
+      <div class="copyright-content">
+        <img class="copyright-item" src='{{ "images/cc.svg" | absURL }}' alt="">
+        <img class="copyright-item" src='{{ "images/by.svg" | absURL }}' alt="">
+        <img class="copyright-item" src='{{ "images/sa.svg" | absURL }}' alt="">
+      </div>
+      <p class="copyright-text">{{ markdownify .Site.Params.footer.text }}</p>
+    </div>
   </div>
 </footer>
