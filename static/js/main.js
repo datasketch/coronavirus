@@ -1,5 +1,14 @@
 const shareButtons = Array.from(document.querySelectorAll('.share-btn'));
 const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 100) {
+    header.classList.add('affix')
+    return
+  }
+  header.classList.remove('affix')
+})
 
 if (shareButtons) {
   shareButtons.forEach(shareButton => {
