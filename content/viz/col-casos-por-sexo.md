@@ -10,7 +10,7 @@ recommended_viz:
 - uid: col-casos-por-tipo
   name: Casos por tipo
   scope: colombia
-status: OK
+status: Published
 scope_info:
 - uid: colombia
   name: Colombia

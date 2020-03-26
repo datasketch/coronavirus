@@ -1,6 +1,5 @@
 ---
 uid: uk
-dashboard: []
 datasources:
 - uid: ecdc
   name: Situation update for the EU/EEA and the UK
@@ -8,6 +7,7 @@ datasources:
 - uid: news-sky
   name: 'Coronavirus UK tracker: How many cases are in your area – updated daily'
   url: https://news.sky.com/story/coronavirus-uk-tracker-how-many-cases-are-in-your-area-updated-daily-11956258
+dashboard: []
 tools: []
 datasets: []
 reads: []

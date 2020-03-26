@@ -1,5 +1,6 @@
 ---
 uid: costa-rica
+datasources: []
 dashboard:
 - name: QGis Cloud COVID CR
   url: https://qgiscloud.com/ultravioletas/COVID-19_CR/?
@@ -7,7 +8,6 @@ dashboard:
   author: Sigrid Segura
   author_link: https://twitter.com/ultravioletas_
 name: Costa Rica
-datasources: []
 tools: []
 datasets: []
 reads: []

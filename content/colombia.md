@@ -1,5 +1,9 @@
 ---
 uid: colombia
+datasources:
+- uid: ins-col
+  name: INS - Coronavirus en Colombia
+  url: https://coronaviruscolombia.gov.co/Covid19/index.html
 dashboard:
 - name: Confirmed cases since first report
   url: https://public.tableau.com/profile/john.alexis.guerra.g.mez#!/vizhome/time_series_19-covid-Confirmed/Confirmedcaseslatam?publish=yes
@@ -10,10 +14,6 @@ dashboard:
   author: John Guerra
   author_link: https://twitter.com/duto_guerra
 name: Colombia
-datasources:
-- uid: ins-col
-  name: INS - Coronavirus en Colombia
-  url: https://coronaviruscolombia.gov.co/Covid19/index.html
 tools: []
 datasets:
 - col-ins-reports

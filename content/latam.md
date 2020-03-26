@@ -1,7 +1,7 @@
 ---
 uid: latam
-dashboard: []
 datasources: []
+dashboard: []
 tools: []
 datasets: tidy-csse-latam
 reads: []

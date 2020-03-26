@@ -10,7 +10,7 @@ recommended_viz:
 - uid: col-casos-mapa
   name: Mapa de casos por municipio
   scope: colombia
-status: OK
+status: Published
 scope_info:
 - uid: colombia
   name: Colombia

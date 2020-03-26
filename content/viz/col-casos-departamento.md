@@ -13,7 +13,7 @@ recommended_viz:
 - uid: col-casos-departamento
   name: Casos confirmados por departamento
   scope: colombia
-status: OK
+status: Published
 scope_info:
 - uid: colombia
   name: Colombia

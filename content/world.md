@@ -1,5 +1,21 @@
 ---
 uid: world
+datasources:
+- uid: financial-times
+  name: 'Coronavirus tracked: the latest figures as the pandemic spreads'
+  url: https://www.ft.com/coronavirus-latest
+- uid: ecdc
+  name: Distribución geográfica de los casos de COVID-19
+  url: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
+- uid: csse
+  name: COVID-19 Data Repository by Johns Hopkins CSSE
+  url: http://github.com/CSSEGISandData/COVID-19
+- uid: world-meters
+  name: COVID-19 CORONAVIRUS PANDEMIC
+  url: https://www.worldometers.info/coronavirus/#countries
+- uid: who
+  name: Novel Coronavirus (COVID-19) Situation
+  url: https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd
 dashboard:
 - name: Coronavirus Tracking
   url: https://www.domo.com/coronavirus-tracking
@@ -26,22 +42,6 @@ dashboard:
   url: https://www.worldometers.info/coronavirus/
   type: Dashboard
 name: World
-datasources:
-- uid: financial-times
-  name: 'Coronavirus tracked: the latest figures as the pandemic spreads'
-  url: https://www.ft.com/coronavirus-latest
-- uid: ecdc
-  name: Distribución geográfica de los casos de COVID-19
-  url: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
-- uid: csse
-  name: COVID-19 Data Repository by Johns Hopkins CSSE
-  url: http://github.com/CSSEGISandData/COVID-19
-- uid: world-meters
-  name: COVID-19 CORONAVIRUS PANDEMIC
-  url: https://www.worldometers.info/coronavirus/#countries
-- uid: who
-  name: Novel Coronavirus (COVID-19) Situation
-  url: https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd
 tools: []
 datasets:
 - tidy-csse-es
@@ -63,6 +63,12 @@ reads:
   date_updated: '2020-03-21'
 - name: What I don't know as a computational systems bioligist
   url: https://twitter.com/BallouxFrancois/status/1238837158007447558
+- name: A novel coronavirus outbreak of global health concern
+  url: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30185-9/fulltext#tbl1
+  date_published: '2020-01-24'
+- name: Early Transmissibility Assessment of a Novel Coronavirus in Wuhan, China
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3524675
+  date_published: '2020-01-24'
 viz: []
 datasets_info:
 - uid: tidy-csse-es
