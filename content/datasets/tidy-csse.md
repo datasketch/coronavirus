@@ -3,7 +3,7 @@ description: Casos de coronavirus en el mundo con código de país. Datos del CS
   la universidad Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse
-public_link: https://data.datasketch.co/datasketch/coronavirus/data/world/csse/tidy-csse
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/world/csse/tidy-csse.csv
 scope: world
 datasource: csse
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes

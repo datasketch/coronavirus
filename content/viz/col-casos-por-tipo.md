@@ -7,6 +7,9 @@ recommended_viz:
 - uid: col-casos-edad
   name: Casos por edad
   scope: colombia
+- uid: col-casos-mapa
+  name: Mapa de casos por municipio
+  scope: colombia
 status: Published
 scope_info:
 - uid: colombia
