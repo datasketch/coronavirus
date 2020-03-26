@@ -12,28 +12,55 @@
     
     <item>
       <title></title>
-      <link>/dataset/col-ins-cases-municipio/</link>
+      <link>/dataset/col-ins-casos-departamento-fecha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dataset/col-ins-cases-municipio/</guid>
+      <guid>/dataset/col-ins-casos-departamento-fecha/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/dataset/col-ins-cases/</link>
+      <link>/dataset/col-ins-casos-departamento/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dataset/col-ins-cases/</guid>
+      <guid>/dataset/col-ins-casos-departamento/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/dataset/col-ins-reports/</link>
+      <link>/dataset/col-ins-casos-municipio-fecha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/dataset/col-ins-reports/</guid>
+      <guid>/dataset/col-ins-casos-municipio-fecha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-casos-municipio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-casos-municipio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-casos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-casos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/dataset/col-ins-reportes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataset/col-ins-reportes/</guid>
       <description></description>
     </item>
     
@@ -61,15 +88,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/dataset/tidy-csse-langs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/dataset/tidy-csse-latam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dataset/tidy-csse-latam/</guid>
       <description></description>
     </item>
     

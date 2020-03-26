@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coronavirus · Datasketch</title>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-66152192-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+  <link rel="stylesheet" href="/css/tailwind.pcss">
+  <link rel="stylesheet" href='/css/collapsible.css'>
+</head>
+
+<body class="font-contrail-one">
+  <header class="fixed w-full h-16 bg-transparent">
+  <nav class="flex h-full justify-between items-center px-4">
+    <div class="flex justify-between items-center w-full md:w-auto">
+      <a href="/" class="inline-block">
+        <img class="h-full w-auto" src='/images/logo.svg' alt="Datasketch">
+      </a>
+      <button class="text-white md:hidden">
+        <svg class="w-6 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden items-center md:flex">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#graphs">
+        Gráficas
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#datasets">
+        Datasets
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#reads">
+        Artículos
+      </a>
+      <div class="collapsible">
+        <button class="collapsible-trigger">
+          Todos los países
+          <svg class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
+            <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
+          </svg>
+        </button>
+        <div class="collapsible-content">
+          
+            
+              <div class="collapsible-item"><a href="australia">australia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="france">france</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="brasil">brasil</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="espana">espana</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="belgium">belgium</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="usa">usa</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="argentina">argentina</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="venezuela">venezuela</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="jordan">jordan</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="latam">latam</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="italy">italy</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="new-zealand">new-zealand</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="colombia">colombia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="lebanon">lebanon</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="malaysia">malaysia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="morocco">morocco</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="india">india</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="tunisia">tunisia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="canada">canada</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="norway">norway</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="paraguay">paraguay</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="europe">europe</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="costa-rica">costa-rica</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="china">china</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="el-salvador">el-salvador</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="kuwait">kuwait</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="peru">peru</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="cyprus">cyprus</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="south-africa">south-africa</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="chile">chile</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="uk">uk</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="singapore">singapore</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="germany">germany</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="hong-kong">hong-kong</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="iran">iran</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="mexico">mexico</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="korea">korea</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="denmark">denmark</a></div>
+            
+          
+            
+          
+            
+              <div class="collapsible-item"><a href="iraq">iraq</a></div>
+            
+          
+        </div>
+      </div>
+      <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+        <img src='/images/tw.svg' alt="">
+      </a>
+      <a class="text-white mr-4" href="mailto:info@datasketch.co">
+        <img src='/images/mail.svg' alt="">
+      </a>
+      <a class="text-white mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+        <img src='/images/fb.svg' alt="">
+      </a>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    
+
+<nav class="nav nav-pages">
+  <div class="nav-left">
+    <a href="/" class="nav-brand">
+      <img src='/images/logo.svg' alt="Datasketch">
+    </a>
+  </div>
+  <div class="nav-right">
+    
+      
+        <a class="nav-item" href="/colombia">Colombia</a>
+      
+        <a class="nav-item" href="/dataset">Datos</a>
+      
+        <a class="nav-item" href="/viz">Visualizaciones</a>
+      
+        <a class="nav-item" href="/metodologia">Metodología</a>
+      
+        <a class="nav-item" href="/world">Mundo</a>
+      
+    
+    <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer"
+      style="padding-left: 10px;">
+      <img src='/images/tw.svg' alt="">
+    </a>
+    <a class="nav-item" href="mailto:info@datasketch.co">
+      <img src='/images/mail.svg' alt="">
+    </a>
+    <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+      <img src='/images/fb.svg' alt="">
+    </a>
+  </div>
+</nav>
+<div class="container section">
+    <div class="dataset-img-container">
+    	<h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem">Casos de coronavirus en Colombia por municipios</h3>
+        <img src='https://data.datasketch.co/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-municipio-fecha.png' height="300px"></img>
+        
+    </div>
+    <button class="btn share-btn" data-chart='{ "title": "", "text": "", "uid": "col-ins-casos-municipio-fecha.png" }'>Compartir</button>
+    
+    
+</div>
+
+    
+    
+    
+  </main>
+  
+<script src='/js/share.js'></script>
+<script src='/js/main.js'></script>
+
+  <footer>
+  <div class="h-4 bg-no-repeat bg-cover bg-center" style='background-image: url(/images/footer.png);'></div>
+  
+  <div class="flex flex-wrap items-center bg-mine-shaft px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <img src='/images/logo_vertical.svg' alt="Datasketch">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <p class="uppercase text-xl">Comparte</p>
+      <div class="flex items-center mt-4">
+        <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+          <img src='/images/tw.svg' alt="">
+        </a>
+        <a class="mr-4" href="mailto:info@datasketch.co">
+          <img src='/images/mail.svg' alt="">
+        </a>
+        <a class="mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+          <img src='/images/fb.svg' alt="">
+        </a>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
+      </div>
+      <p class="mt-4 w-64 font-pt-sans-narrow text-sm">Todo el material en esta página es <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

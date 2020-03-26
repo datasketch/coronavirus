@@ -3,10 +3,10 @@
 
 <head>
 	<meta name="generator" content="Hugo 0.68.0" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coronavirus · Datasketch</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coronavirus · Datasketch</title>
+  
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -18,172 +18,623 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href='/css/style.css'>
+  
+  <link rel="stylesheet" href="/css/tailwind.pcss">
+  <link rel="stylesheet" href='/css/collapsible.css'>
 </head>
 
-<body>
+<body class="font-contrail-one">
+  <header class="fixed w-full h-16 bg-transparent">
+  <nav class="flex h-full justify-between items-center px-4">
+    <div class="flex justify-between items-center w-full md:w-auto">
+      <a href="/" class="inline-block">
+        <img class="h-full w-auto" src='/images/logo.svg' alt="Datasketch">
+      </a>
+      <button class="text-white md:hidden">
+        <svg class="w-6 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden items-center md:flex">
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#graphs">
+        Gráficas
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#datasets">
+        Datasets
+      </a>
+      <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="#reads">
+        Artículos
+      </a>
+      <div class="collapsible">
+        <button class="collapsible-trigger">
+          Todos los países
+          <svg class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
+            <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
+          </svg>
+        </button>
+        <div class="collapsible-content">
+          
+            
+              <div class="collapsible-item"><a href="australia">australia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="france">france</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="brasil">brasil</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="espana">espana</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="belgium">belgium</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="usa">usa</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="argentina">argentina</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="venezuela">venezuela</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="jordan">jordan</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="latam">latam</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="italy">italy</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="new-zealand">new-zealand</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="colombia">colombia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="lebanon">lebanon</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="malaysia">malaysia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="morocco">morocco</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="india">india</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="tunisia">tunisia</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="canada">canada</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="norway">norway</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="paraguay">paraguay</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="europe">europe</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="costa-rica">costa-rica</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="china">china</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="el-salvador">el-salvador</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="kuwait">kuwait</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="peru">peru</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="cyprus">cyprus</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="south-africa">south-africa</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="chile">chile</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="uk">uk</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="singapore">singapore</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="germany">germany</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="hong-kong">hong-kong</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="iran">iran</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="mexico">mexico</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="korea">korea</a></div>
+            
+          
+            
+              <div class="collapsible-item"><a href="denmark">denmark</a></div>
+            
+          
+            
+          
+            
+              <div class="collapsible-item"><a href="iraq">iraq</a></div>
+            
+          
+        </div>
+      </div>
+      <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+        <img src='/images/tw.svg' alt="">
+      </a>
+      <a class="text-white mr-4" href="mailto:info@datasketch.co">
+        <img src='/images/mail.svg' alt="">
+      </a>
+      <a class="text-white mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+        <img src='/images/fb.svg' alt="">
+      </a>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    
+<div class="hero" id="header">
+  <div class="hero-inner py-16">
+    <img class="max-w-full" src='/images/title.svg' alt="Coronavirus">
+    <div class="hero-tagline">
+      <h3>Datos y gráficas actualizadas</h3>
+    </div>
+  </div>
+</div>
 
     
-  <header id="header">
-    <nav class="nav">
-      <div class="nav-left">
-        <a href="/" class="nav-brand">
-          <img src='/images/logo.svg' alt="Datasketch">
-        </a>
-      </div>
-      <div class="nav-right">
-        <a class="nav-item" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+<section id="graphs">
+  <div class="section-banner">
+    <h1 class="section-title">Gráficas</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3">
+      
+        
+          <div class="card chart">
+  
+  <h3>Casos por sexo</h3>
+  <div class="card-media">
+    <img src="/viz/col-casos-por-sexo.png">
+  </div>
+  <div class="card-actions">
+    <a href="/vis/col-casos-por-sexo" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{&#34;name&#34;:&#34;Casos por sexo&#34;,&#34;uid&#34;:&#34;col-casos-por-sexo&#34;}">
+      Compartir
+    </button>
+  </div>
+</div>
+        
+          <div class="card chart">
+  
+  <h3>Casos por edad</h3>
+  <div class="card-media">
+    <img src="/viz/col-casos-edad.png">
+  </div>
+  <div class="card-actions">
+    <a href="/vis/col-casos-edad" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{&#34;name&#34;:&#34;Casos por edad&#34;,&#34;uid&#34;:&#34;col-casos-edad&#34;}">
+      Compartir
+    </button>
+  </div>
+</div>
+        
+          <div class="card chart">
+  
+  <h3>Casos confirmados por departamento</h3>
+  <div class="card-media">
+    <img src="/viz/col-casos-departamento.png">
+  </div>
+  <div class="card-actions">
+    <a href="/vis/col-casos-departamento" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{&#34;name&#34;:&#34;Casos confirmados por departamento&#34;,&#34;uid&#34;:&#34;col-casos-departamento&#34;}">
+      Compartir
+    </button>
+  </div>
+</div>
+        
+          <div class="card chart">
+  
+  <h3>Casos por atencion</h3>
+  <div class="card-media">
+    <img src="/viz/col-casos-por-atencion.png">
+  </div>
+  <div class="card-actions">
+    <a href="/vis/col-casos-por-atencion" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{&#34;name&#34;:&#34;Casos por atencion&#34;,&#34;uid&#34;:&#34;col-casos-por-atencion&#34;}">
+      Compartir
+    </button>
+  </div>
+</div>
+        
+          <div class="card chart">
+  
+  <h3>Casos por tipo</h3>
+  <div class="card-media">
+    <img src="/viz/col-casos-por-tipo.png">
+  </div>
+  <div class="card-actions">
+    <a href="/vis/col-casos-por-tipo" class="btn">Ver</a>
+    <button class="btn share-btn" data-chart="{&#34;name&#34;:&#34;Casos por tipo&#34;,&#34;uid&#34;:&#34;col-casos-por-tipo&#34;}">
+      Compartir
+    </button>
+  </div>
+</div>
+        
+      
+    </div>
+  </div>
+</section>
+
+    
+<section id="datasets">
+  <div class="section-banner">
+    <h1 class="section-title">Datasets</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Casos de coronavirus en Colombia por municipios</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Casos de coronavirus en Colombia por municipios</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Casos de coronavirus en Colombia</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country codes</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Datos mundiales de coronavirus (confirmados, muertos, recuperados)</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country names in multiple languages</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Dados mundiais de coronavirus</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country codes</p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+        <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title"></p>
+    
+    
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-electric-violet" href="">Descargar</a>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</section>
+
+    
+<section id="reads">
+  <div class="section-banner">
+    <h1 class="section-title">Artículos</h1>
+  </div>
+  <div class="container">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Seeking Evidence-Based Covid-19 Preparedness: A FEMA Framework for Clinic Management</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0079</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0079'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Updated understanding of the outbreak of 2019 novel coronavirus (2019‐nCoV) in Wuhan, China</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://onlinelibrary.wiley.com/doi/full/10.1002/jmv.25689?af=R</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://onlinelibrary.wiley.com/doi/full/10.1002/jmv.25689?af=R'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">The 1957 pandemic.</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://twitter.com/NAChristakis/status/1238934000187707400</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://twitter.com/NAChristakis/status/1238934000187707400'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Coronavirus Disease 2019 (COVID‐19): What we know?</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://app.dimensions.ai/details/publication/pub.1125633404?search_text=%222019-nCoV%22%20OR%20%22COVID-19%22%20OR%20%E2%80%9CSARS-CoV-2%E2%80%9D%20OR%20%22HCoV-2019%22%20OR%20%22hcov%22%20OR%20%22NCOVID-19%22%20OR%20%20%22severe%20acute%20respiratory%20syndrome%20coronavirus%202%22%20OR%20%22severe%20acute%20respiratory%20syndrome%20corona%20virus%202%22%20OR%20((%22coronavirus%22%20%20OR%20%22corona%20virus%22)%20AND%20(Wuhan%20OR%20China%20OR%20novel))&amp;search_type=kws&amp;search_field=full_search&amp;and_facet_year=2020</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://app.dimensions.ai/details/publication/pub.1125633404?search_text=%222019-nCoV%22%20OR%20%22COVID-19%22%20OR%20%E2%80%9CSARS-CoV-2%E2%80%9D%20OR%20%22HCoV-2019%22%20OR%20%22hcov%22%20OR%20%22NCOVID-19%22%20OR%20%20%22severe%20acute%20respiratory%20syndrome%20coronavirus%202%22%20OR%20%22severe%20acute%20respiratory%20syndrome%20corona%20virus%202%22%20OR%20%28%28%22coronavirus%22%20%20OR%20%22corona%20virus%22%29%20AND%20%28Wuhan%20OR%20China%20OR%20novel%29%29&amp;search_type=kws&amp;search_field=full_search&amp;and_facet_year=2020'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Preliminary estimation of the basic reproduction number of novel coronavirus (2019-nCoV) in China, from 2019 to 2020: A data-driven analysis in the early phase of the outbreak</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://www.sciencedirect.com/science/article/pii/S1201971220300539</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://www.sciencedirect.com/science/article/pii/S1201971220300539'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Coronavirus tracked: the latest figures as the pandemic spreads</p>
+    <p class="card-description">The countries affected, the number of deaths and the economic impact.</p>
+    <p class="card-source">Fuente: https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">What I don&#39;t know as a computational systems bioligist</p>
+    <p class="card-description">&#34;I should be qualified to comment on the covid-19 pandemic. (...) In this thread, I will summarise what I believe I (don&#39;t) know.&#34;</p>
+    <p class="card-source">Fuente: https://twitter.com/BallouxFrancois/status/1238837158007447558</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://twitter.com/BallouxFrancois/status/1238837158007447558'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">A novel coronavirus outbreak of global health concern</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30185-9/fulltext#tbl1</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2820%2930185-9/fulltext#tbl1'>Leer artículo</a>
+  </div>
+</div>
+
+        
+          <div class="card dataset">
+  <div class="card-body">
+    <p class="card-title">Early Transmissibility Assessment of a Novel Coronavirus in Wuhan, China</p>
+    <p class="card-description"></p>
+    <p class="card-source">Fuente: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3524675</p>
+  </div>
+  <div class="card-actions">
+    <a class="btn bg-rose" href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3524675'>Leer artículo</a>
+  </div>
+</div>
+
+        
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+  
+  <script src='/js/collapsible.js'></script>
+
+  <footer>
+  <div class="h-4 bg-no-repeat bg-cover bg-center" style='background-image: url(/images/footer.png);'></div>
+  
+  <div class="flex flex-wrap items-center bg-mine-shaft px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <img src='/images/logo_vertical.svg' alt="Datasketch">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <p class="uppercase text-xl">Comparte</p>
+      <div class="flex items-center mt-4">
+        <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
           <img src='/images/tw.svg' alt="">
         </a>
-        <a class="nav-item" href="mailto:info@datasketch.co">
+        <a class="mr-4" href="mailto:info@datasketch.co">
           <img src='/images/mail.svg' alt="">
         </a>
-        <a class="nav-item" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+        <a class="mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
           <img src='/images/fb.svg' alt="">
         </a>
       </div>
-    </nav>
-    <div class="hero">
-      <img class="hero-image" src='/images/title.svg' alt="Coronavirus">
-      <div class="hero-tagline">
-        <h2>Datos y gráficas actualizadas</h2>
-      </div>
     </div>
-  </header>
-  <main class="container" id="app">
-    <section>
-      <h3 class="section-title">Gráficas</h3>
-      <div class="charts">
-        
-          <div class="card chart">
-  <h3>Casos confirmados por sexo</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_sexo.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_sexo" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_sexo.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_sexo.png&#34;,&#34;title&#34;:&#34;Casos confirmados por sexo&#34;,&#34;uid&#34;:&#34;col_confirmados_sexo&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Casos confirmados acumulados por sexo</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_acu_sexo.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_acu_sexo" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_acu_sexo.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_acu_sexo.png&#34;,&#34;title&#34;:&#34;Casos confirmados acumulados por sexo&#34;,&#34;uid&#34;:&#34;col_confirmados_acu_sexo&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Casos confirmados por tipo de contagio</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_tipo.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_tipo" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_tipo.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_tipo.png&#34;,&#34;title&#34;:&#34;Casos confirmados por tipo de contagio&#34;,&#34;uid&#34;:&#34;col_confirmados_tipo&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Casos confirmados por grupo de edad</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_edad.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_edad" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_edad.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_edad.png&#34;,&#34;title&#34;:&#34;Casos confirmados por grupo de edad&#34;,&#34;uid&#34;:&#34;col_confirmados_edad&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Casos confirmados acumulados por departamento</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_acu_departamento.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_acu_departamento" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_acu_departamento.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_acu_departamento.png&#34;,&#34;title&#34;:&#34;Casos confirmados acumulados por departamento&#34;,&#34;uid&#34;:&#34;col_confirmados_acu_departamento&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Casos confirmados por departamento</h3>
-  <div class="card-media">
-    <img src='/viz/col_confirmados_departamento.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_confirmados_departamento" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_confirmados_departamento.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_confirmados_departamento.png&#34;,&#34;title&#34;:&#34;Casos confirmados por departamento&#34;,&#34;uid&#34;:&#34;col_confirmados_departamento&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
-          <div class="card chart">
-  <h3>Mapa de casos confirmados en Colombia</h3>
-  <div class="card-media">
-    <img src='/viz/col_mapa_casos.png'>
-  </div>
-  <div class="card-actions">
-    <a href="/vis/col_mapa_casos" class="btn">Ver</a>
-    <button class="btn share-btn" data-chart="{&#34;path&#34;:&#34;viz/col_mapa_casos.html&#34;,&#34;thumbnail&#34;:&#34;viz/col_mapa_casos.png&#34;,&#34;title&#34;:&#34;Mapa de casos confirmados en Colombia&#34;,&#34;uid&#34;:&#34;col_mapa_casos&#34;}">
-      Compartir
-    </button>
-  </div>
-</div>
-        
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
       </div>
-    </section>
-    <section>
-      <h3 class="section-title">Datos</h3>
-      <div class="datasets">
-        
-          <div class="card dataset">
-    <a href="este" class="block">
-        <h3 class="text-center" style="font-size: 1rem; margin-bottom: 0.5rem"></h3>
-        <div class="card-body">
-            <p class="dataset-title">Casos confirmados en Colombia</p>
-            <p class="dataset-description">En este dataset se encuentran los casos confirmados en Colombia por el Instituto Nacional de Salud.</p>
-        </div>
-        <div class="card-media">
-            <img src='https://data.datasketch.co/datasketch/coronavirus/data/datasets/ins.csv.png' width="200px">
-        </div>
-        <div class="card-actions">
-            <button class="btn share-btn" data-chart="{&#34;description&#34;:&#34;En este dataset se encuentran los casos confirmados en Colombia por el Instituto Nacional de Salud.&#34;,&#34;path&#34;:&#34;datasets/ins.csv&#34;,&#34;thumbnail&#34;:&#34;datasets/ins.png&#34;,&#34;title&#34;:&#34;Casos confirmados en Colombia&#34;,&#34;uid&#34;:&#34;este&#34;}">
-                Compartir
-            </button>
-        </div>
-    </a>
-</div>
-        
-      </div>
-    </section>
-  </main>
-
-    
-  <script src='/js/share.js'></script>
-  <script src='/js/main.js'></script>
-
-    
-
-<footer style="background: #333333; color: #cccccc">
-  <div class="footer-inner text-center">
-    Todo el material en esta página es <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.
+      <p class="mt-4 w-64 font-pt-sans-narrow text-sm">Todo el material en esta página es <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.</p>
+    </div>
   </div>
 </footer>
 
