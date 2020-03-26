@@ -37,7 +37,7 @@
       <div class="section-content">
         {{ range where (.Site.Data.scopes) "uid" "world" }}
           {{ range .reads }}
-            <p>{{ .name }} - <a href="{{ .url }}">Leer</a></p>
+            {{ partial "read.html" . }}
           {{ end }}
         {{ end }}
       </div>

@@ -60,30 +60,42 @@ a {
 
 .section-content {
   padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 }
 
-#graphs .section-banner {
-  background-image: url(../images/banner-graphs.png);
+.card-title {
+  font-size: 1.25rem;
+  color: #232323;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-#graphs .section-title {
-  color: #283edd;
+.card-description {
+  color: #666;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-top: 0.85rem;
+  font-size: 1rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 300px;
 }
 
-#datasets .section-banner {
-  background-image: url(../images/banner-datasets.png);
+.card-source {
+  color: #ccc;
+  font-weight: initial;
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-top: 0.85rem;
+  width: 300px;
 }
 
-#datasets .section-title {
-  color: #5d3dfa;
-}
-
-#reads .section-banner {
-  background-image: url(../images/banner-reads.png);
-}
-
-#reads .section-title {
-  color: #ff0059;
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1rem;
 }
 
 .card-media {
@@ -117,8 +129,60 @@ a {
 }
 
 .card-actions {
-    padding: 0 1rem;
-    margin-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+#graphs .section-banner {
+  background-image: url(../images/banner-graphs.png);
+}
+
+#graphs .section-title {
+  color: #283edd;
+}
+
+#graphs .card h3 {
+  background-color: #232323;
+  color: #fff;
+  display: inline-block;
+  padding: 0.1rem 0.4rem 0rem 0.4rem;
+  text-transform: uppercase;
+  font-weight: initial;
+}
+
+#graphs .btn {
+  background-color: #0016ea;
+}
+
+#graphs .btn:hover, #datasets .btn:hover, #reads .btn:hover {
+  background-color: #232323;
+}
+
+#datasets .section-banner {
+  background-image: url(../images/banner-datasets.png);
+}
+
+#datasets .section-title {
+  color: #5d3dfa;
+}
+
+#datasets .btn {
+  background-color: #5d3dfa;
+}
+
+#reads .section-banner {
+  background-image: url(../images/banner-reads.png);
+}
+
+#reads .section-title {
+  color: #ff0059;
+}
+
+#reads .btn {
+  background-color: #ff0059;
+}
+
+#datasets .card-actions, #reads .card-actions {
+  padding-left: 1rem;
 }
 
 .charts,
@@ -135,31 +199,20 @@ a {
 }
 
 .btn {
-    background-color: #481796;
-    border: 0;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Contrail One', cursive;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    text-decoration: none;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Contrail One', cursive;
+  padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .dataset {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     padding-bottom: 1rem;
-}
-
-.dataset-title {
-    font-size: 1.25rem;
-}
-
-.dataset-description {
-    margin-top: 0.75rem;
-    font-size: 1rem;
-    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .iframe-container {
