@@ -7,6 +7,7 @@ scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia
 uid: col-ins-casos
+tags: recHxuEagQ0hw6cda
 viz:
 - uid: col-casos-por-sexo
   name: Casos por sexo

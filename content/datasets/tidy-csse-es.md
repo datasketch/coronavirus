@@ -8,6 +8,7 @@ scope: world
 datasource: csse
 name: Datos mundiales de coronavirus (confirmados, muertos, recuperados)
 uid: tidy-csse-es
+tags: recHxuEagQ0hw6cda
 viz: []
 scope_info:
 - uid: world

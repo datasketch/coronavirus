@@ -9,6 +9,7 @@ datasource: csse
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country names
   in multiple languages
 uid: tidy-csse-langs
+tags: recHxuEagQ0hw6cda
 viz: []
 scope_info:
 - uid: world
