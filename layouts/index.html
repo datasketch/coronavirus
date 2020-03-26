@@ -12,6 +12,9 @@
 {{ define "charts" }}
 <section id="graphs">
   <div class="section-banner">
+    <div class="text-right">
+      <a href="/viz" class="btn bg-white text-persian-blue">Ver todas</a>
+    </div>
     <h1 class="section-title">Gráficas</h1>
   </div>
   <div class="container py-12">
@@ -20,6 +23,9 @@
         {{ partial "chart.html" . }}
       {{ end }}
     </div>
+    <div class="text-center pt-12">
+      <a href="/viz" class="btn bg-persian-blue text-white text-2xl">Ver todas</a>
+    </div>
   </div>
 </section>
 {{ end }}
@@ -27,6 +33,9 @@
 {{ define "datasets" }}
 <section id="datasets">
   <div class="section-banner">
+    <div class="text-right">
+      <a href="/datasets" class="btn bg-white text-electric-violet">Ver todos</a>
+    </div>
     <h1 class="section-title">Datasets</h1>
   </div>
   <div class="container py-12">
@@ -35,6 +44,9 @@
         {{ partial "dataset.html" . }}
       {{ end }}
     </div>
+    <div class="text-center pt-12">
+      <a href="/datasets" class="btn bg-electric-violet text-white text-2xl">Ver todos</a>
+    </div>
   </div>
 </section>
 {{ end }}
@@ -42,6 +54,9 @@
 {{ define "reads" }}
 <section id="reads">
   <div class="section-banner">
+    <div class="text-right">
+      <a href="/reads" class="btn bg-white text-rose">Ver todos</a>
+    </div>
     <h1 class="section-title">Artículos</h1>
   </div>
   <div class="container py-12">
@@ -49,6 +64,51 @@
       {{ range index .Site.Data.home "reads" }}
         {{ partial "read.html" . }}
       {{ end }}
+    </div>
+    <div class="text-center pt-12">
+      <a href="/reads" class="btn bg-rose text-white text-2xl">Ver todos</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "dashboards" }}
+<section id="dashboards">
+  <div class="section-banner">
+    <div class="text-right">
+      <a href="/dashboards" class="btn bg-white text-persian-blue">Ver todos</a>
+    </div>
+    <h1 class="section-title">Dashboards</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range index .Site.Data.home "dashboards" }}
+        {{ partial "dashboard.html" . }}
+      {{ end }}
+    </div>
+    <div class="text-center pt-12">
+      <a href="/dashboards" class="btn bg-persian-blue text-white text-2xl">Ver todos</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "tools" }}
+<section id="tools">
+  <div class="section-banner">
+    <div class="text-right">
+      <a href="/tools" class="btn bg-white text-rose">Ver todos</a>
+    </div>
+    <h1 class="section-title">Recursos</h1>
+  </div>
+  <div class="container py-12">
+    <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {{ range index .Site.Data.home "tools" }}
+        {{ partial "tool.html" . }}
+      {{ end }}
+    </div>
+    <div class="text-center pt-12">
+      <a href="/viz" class="btn bg-rose text-white text-2xl">Ver todos</a>
     </div>
   </div>
 </section>

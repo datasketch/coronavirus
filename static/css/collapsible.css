@@ -1,6 +1,6 @@
 .collapsible {
   margin-right: 1rem;
-  width: 170px;
+  width: auto;
 }
 
 .collapsible-trigger {
@@ -57,8 +57,10 @@
   display: block;
   overflow: scroll;
   position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   height: 11rem;
-  width: 170px;
   text-transform: capitalize;
 }
 
