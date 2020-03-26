@@ -27,18 +27,47 @@
 /**
   * Header
   */
-.header {
-  @apply w-full h-16 fixed bg-transparent bg-cover bg-no-repeat bg-center;
+.nav {
+  @apply w-full h-auto fixed bg-transparent bg-cover bg-no-repeat bg-center flex flex-col py-4;
 }
 
-.header-page {
+.nav-page {
   @apply static;
   background-image: url(/images/banner-home.png);
 }
 
-.header.affix {
+.nav.affix {
   @apply z-10 shadow-xl;
   background-image: url(/images/banner-home.png);
+}
+
+.nav.opened .nav-content {
+  @apply flex flex-col;
+  background-color: rgba(255, 0, 89, 0.75);
+}
+
+.nav-content {
+  @apply hidden px-4 py-4;
+}
+
+.menu-close,
+.nav.opened .menu-open {
+  @apply hidden;
+}
+
+.menu-open,
+.nav.opened .menu-close {
+  @apply block;
+}
+
+@screen md {
+  .nav {
+    @apply h-16 justify-between items-center flex-row py-0;
+  }
+  .nav-content,
+  .nav.opened .nav-content {
+    @apply items-center flex flex-row py-0 bg-transparent;
+  }
 }
 
 /**

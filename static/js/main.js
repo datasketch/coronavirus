@@ -1,13 +1,18 @@
 const shareButtons = Array.from(document.querySelectorAll('.share-btn'));
 const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
-const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
+const menu = nav.querySelector('#menu');
 
 window.addEventListener('scroll', function() {
   if (window.pageYOffset > 100) {
-    header.classList.add('affix')
+    nav.classList.add('affix')
     return
   }
-  header.classList.remove('affix')
+  nav.classList.remove('affix')
+})
+
+menu.addEventListener('click', function () {
+  nav.classList.toggle('opened');
 })
 
 if (shareButtons) {
