@@ -4,7 +4,16 @@ datasources:
 - uid: ins-col
   name: INS - Coronavirus en Colombia
   url: https://coronaviruscolombia.gov.co/Covid19/index.html
+- uid: el-tiempo
+  name: Casos actualizados de Coronavirus en Colombia
+  url: https://www.eltiempo.com/datos/coronavirus-en-colombia-casos-actualizados-y-confirmados-471650
+- uid: el-colombiano
+  name: Coronavirus en Antioquia
+  url: https://www.elcolombiano.com/coronavirus-en-colombia-contra-el-miedo
 dashboard:
+- name: Número de camas hospitalarias / UCI en Colombia
+  url: https://app.powerbi.com/view?r=eyJrIjoiNDc5YzUyMzctZTI1MS00NzgxLTkxYTAtODY0ZTM4MDk5ZWFjIiwidCI6ImZjNTMxMjM3LTQzYzYtNDRkZS1hMWU4LWQzYmY2ZGM0MzZlMSIsImMiOjR9
+  type: Dashboard
 - name: Confirmed cases since first report
   url: https://public.tableau.com/profile/john.alexis.guerra.g.mez#!/vizhome/time_series_19-covid-Confirmed/Confirmedcaseslatam?publish=yes
   type: Single visualization
@@ -32,6 +41,8 @@ viz:
   name: Casos confirmados por departamento
 - uid: col-casos-por-atencion
   name: Casos por atencion
+- uid: col-casos-mapa
+  name: Mapa de casos por municipio
 - uid: col-casos-por-tipo
   name: Casos por tipo
 datasets_info:
