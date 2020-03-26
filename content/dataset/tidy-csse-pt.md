@@ -3,6 +3,7 @@ description: Casos de coronavirus en el mundo en portugués. Datos del CSSE de l
   Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse-pt
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/world/csse/tidy-csse-pt
 scope: world
 datasource: csse
 name: Dados mundiais de coronavirus

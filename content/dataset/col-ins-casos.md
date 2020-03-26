@@ -2,6 +2,7 @@
 description: Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.
 status: Published
 path: colombia/ins-col/col-ins-casos
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos
 scope: colombia
 datasource: ins-col
 name: Casos de coronavirus en Colombia

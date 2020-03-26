@@ -3,6 +3,7 @@ description: Casos de coronavirus en el mundo en inglés. Datos del CSSE de la u
   Johns Hopkins.
 status: Published
 path: world/csse/tidy-csse-en
+public_link: https://data.datasketch.co/datasketch/coronavirus/data/world/csse/tidy-csse-en
 scope: world
 datasource: csse
 name: Tidy world coronavirus cases (confirmed, death, recovered) with country codes
