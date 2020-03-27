@@ -2,7 +2,9 @@
   <div class="dropdown-select">
     <div class="dropdown-placeholder">
       {{ if eq .Context.Type "scope" }}
-        <span class="uppercase">{{ .Context.Params.uid }}</span>
+        <span>{{ .Context.Params.uid }}</span>
+      {{ else if .asQuery}}
+        <span class="dropdown-scope">Selecciona un país</span>
       {{ else }}
         Selecciona un país
       {{ end }}
