@@ -16,12 +16,12 @@ dfs <- map(tables, function(x){
 
 # Datasets
 datasets0 <- dfs[["datasets"]] %>% filter(!is.na(uid)) %>%
-  filter(status == "Published")
+  filter(status %in% c("Published","To Update"))
 # Dataources
 datasources0 <- dfs[["datasources"]] %>% filter(!is.na(uid))
 # Viz
 viz0 <- dfs[["viz"]] %>% filter(!is.na(uid)) %>%
-  filter(status == "Published")
+  filter(status %in% c("Published","To Update"))
 # Scopes
 scopes0 <- dfs[["scopes"]] %>% filter(!is.na(uid))
 # Datasources
