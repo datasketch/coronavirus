@@ -146,32 +146,7 @@
         "date_published": "2020-03-18"
       }
     ],
-    "viz": [
-      {
-        "uid": "col-casos-por-sexo",
-        "name": "Casos por sexo"
-      },
-      {
-        "uid": "col-casos-edad",
-        "name": "Casos por edad"
-      },
-      {
-        "uid": "col-casos-departamento",
-        "name": "Casos confirmados por departamento"
-      },
-      {
-        "uid": "col-casos-por-atencion",
-        "name": "Casos por atencion"
-      },
-      {
-        "uid": "col-casos-mapa",
-        "name": "Mapa de casos por municipio"
-      },
-      {
-        "uid": "col-casos-por-tipo",
-        "name": "Casos por tipo"
-      }
-    ],
+    "viz": [],
     "datasets_info": [
       {
         "uid": "col-ins-casos-municipio-fecha",
@@ -482,6 +457,12 @@
         "author": "Domo"
       },
       {
+        "name": "Coronavirus: Por qué Debemos Actuar Ya",
+        "url": "https://medium.com/tomas-pueyo/coronavirus-por-qu%C3%A9-debemos-actuar-ya-93079c61e200",
+        "type": "Visualizations",
+        "author": "Tomas Pueyo"
+      },
+      {
         "name": "Coronavirus Map",
         "url": "https://coronavirusdatamap.com/",
         "type": "Dashboard"
@@ -505,6 +486,12 @@
         "name": "Coronavirus Disease (COVID-19) – Statistics and Research",
         "url": "https://ourworldindata.org/coronavirus",
         "type": "Dashboard"
+      },
+      {
+        "name": "COVID-19 #Coronavirus Data Pack",
+        "url": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/",
+        "type": "Infographics",
+        "author": "Information is beautiful"
       },
       {
         "name": "COVID-19 Current World Situation",
