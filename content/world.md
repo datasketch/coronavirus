@@ -33,6 +33,10 @@ dashboard:
   url: https://www.domo.com/coronavirus-tracking
   type: Dashboard
   author: Domo
+- name: 'Coronavirus: Por qué Debemos Actuar Ya'
+  url: https://medium.com/tomas-pueyo/coronavirus-por-qu%C3%A9-debemos-actuar-ya-93079c61e200
+  type: Visualizations
+  author: Tomas Pueyo
 - name: Coronavirus Map
   url: https://coronavirusdatamap.com/
   type: Dashboard

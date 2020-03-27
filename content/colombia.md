@@ -40,7 +40,25 @@ reads:
   description: Esta es una coyuntura que demuestra que estamos pensando la salud tal
     vez de una forma menos antropocentrista.
   date_published: '2020-03-18'
-viz: []
+viz:
+- uid: col-casos-sexo-acumulado
+  name: Casos confirmados (acumulado) por sexo
+- uid: col-casos-por-sexo
+  name: Casos por sexo
+- uid: col-casos-edad
+  name: Casos por edad
+- uid: col-casos-departamento-acumulado
+  name: Casos confirmados (acumulado) por departamento
+- uid: col-casos-departamento
+  name: Casos confirmados por departamento
+- uid: col-casos-por-atencion
+  name: Casos por atencion
+- uid: col-casos-mapa
+  name: Mapa de casos por municipio
+- uid: col-casos-departamento-acumulado-spline
+  name: Casos confirmados (acumulado) por departamento
+- uid: col-casos-por-tipo
+  name: Casos por tipo
 datasets_info:
 - uid: col-ins-casos-municipio-fecha
   name: Casos de coronavirus en Colombia por municipios
