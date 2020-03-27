@@ -57,9 +57,9 @@
   {{ if .Params.reads }}
     <section id="reads">
       <div class="section-banner">
-        <div class="text-right">
+        <!-- <div class="text-right">
           <a href='{{ absURL "reads" }}' class="btn bg-white text-rose">Ver todos</a>
-        </div>
+        </div> -->
         <h1 class="section-title">Artículos</h1>
       </div>
       <div class="container py-12">
@@ -68,9 +68,9 @@
             {{ partial "read.html" . }}
           {{ end }}
         </div>
-        <div class="text-center pt-12">
+        <!-- <div class="text-center pt-12">
           <a href='{{ absURL "reads" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
-        </div>
+        </div> -->
       </div>
     </section>
   {{ end }}
@@ -80,9 +80,9 @@
   {{ if .Params.dashboard }}
     <section id="dashboards">
       <div class="section-banner">
-        <div class="text-right">
+        <!-- <div class="text-right">
           <a href='{{ absURL "dashboards" }}' class="btn bg-white text-persian-blue">Ver todos</a>
-        </div>
+        </div> -->
         <h1 class="section-title">Dashboards</h1>
       </div>
       <div class="container py-12">
@@ -91,9 +91,9 @@
             {{ partial "dashboard.html" . }}
           {{ end }}
         </div>
-        <div class="text-center pt-12">
+        <!-- <div class="text-center pt-12">
           <a href='{{ absURL "dashboards" }}' class="btn bg-persian-blue text-white text-2xl">Ver todos</a>
-        </div>
+        </div> -->
       </div>
     </section>
   {{ end }}
@@ -103,9 +103,9 @@
   {{ if .Params.tools }}
     <section id="tools">
       <div class="section-banner">
-        <div class="text-right">
+        <!-- <div class="text-right">
           <a href='{{ absURL "tools" }}' class="btn bg-white text-rose">Ver todos</a>
-        </div>
+        </div> -->
         <h1 class="section-title">Recursos</h1>
       </div>
       <div class="container py-12">
@@ -114,9 +114,9 @@
             {{ partial "tool.html" . }}
           {{ end }}
         </div>
-        <div class="text-center pt-12">
+        <!-- <div class="text-center pt-12">
           <a href='{{ absURL "tools" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
-        </div>
+        </div> -->
       </div>
     </section>
   {{ end }}
