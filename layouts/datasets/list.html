@@ -7,3 +7,8 @@
     </div>
   </div>
 {{ end }}
+
+{{ define "script" }}
+  {{ $datasets := resources.Get "js/datasets.js" | minify }}
+  <script src="{{ $datasets.Permalink }}"></script>
+{{ end }}

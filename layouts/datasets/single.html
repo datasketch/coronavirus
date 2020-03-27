@@ -1,5 +1,5 @@
 {{ define "main" }}
-	{{ $image_path := printf "https://s3.amazonaws.com/data.datasketch.co/datasketch/coronavirus/data/%s.png" .Params.path }}
+	{{ $image_path := printf "https://data.datasketch.co/datasketch/coronavirus/data/%s.png" .Params.path }}
 	<div class="container py-12">
 		<h3 class="text-center text-3xl mb-6">{{ .Params.name}}</h3>
 		<img src='{{ $image_path }}' class="mx-auto max-w-full"></img>

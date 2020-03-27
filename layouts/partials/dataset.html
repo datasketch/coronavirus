@@ -1,4 +1,4 @@
-<div class="card dataset">
+<div class="card dataset" {{if .scope}}data-scope="{{.scope}}"{{end}}>
   <div class="card-body">
     <p class="card-title">{{ .name }}</p>
     {{ if .description }}
