@@ -3,14 +3,6 @@ const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
 const nav = document.querySelector('.nav');
 const menu = nav.querySelector('#menu');
 
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 100) {
-    nav.classList.add('affix')
-    return
-  }
-  nav.classList.remove('affix')
-})
-
 menu.addEventListener('click', function () {
   nav.classList.toggle('opened');
 })
@@ -44,3 +36,11 @@ if (dropdowns) {
     });
   });
 }
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 100) {
+    nav.classList.add('affix')
+    return
+  }
+  nav.classList.remove('affix')
+})

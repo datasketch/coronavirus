@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="hero" id="header">
-  <div class="hero-inner pt-12">
+  <div class="hero-inner pt-24 pb-16">
     <h2 class="text-rose bg-white uppercase text-6xl leading-none px-4 pt-2 pb-1">{{ .Params.uid }}</h2>
   </div>
 </div>
@@ -12,7 +12,8 @@
     <section id="graphs">
       <div class="section-banner">
         <div class="text-right">
-          <a href='{{ absURL "viz" }}' class="btn bg-white text-persian-blue">Ver todos</a>
+          {{ $query := safeURL (querify "scope" .Params.uid) }}
+          <a href='{{ relURL (printf "viz?%s" $query) }}' class="btn bg-white text-persian-blue">Ver todos</a>
         </div>
         <h1 class="section-title">Gráficas</h1>
       </div>
@@ -35,7 +36,8 @@
       <section id="datasets">
         <div class="section-banner">
           <div class="text-right">
-            <a href='{{ absURL "datasets" }}' class="btn bg-white text-electric-violet">Ver todos</a>
+            {{ $query := safeURL (querify "scope" .Params.uid) }}
+            <a href='{{ relURL (printf "datasets?%s" $query) }}' class="btn bg-white text-electric-violet">Ver todos</a>
           </div>
           <h1 class="section-title">Datasets</h1>
         </div>
@@ -64,7 +66,7 @@
       </div>
       <div class="container py-12">
         <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          {{ range index .Site.Data.home "reads" }}
+          {{ range .Params.reads }}
             {{ partial "read.html" . }}
           {{ end }}
         </div>

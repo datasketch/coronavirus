@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $filename := (printf "https://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/viz/%s.html" .File.BaseFileName) }}
+  {{ $filename := (printf "https://s3.amazonaws.com/data.datasketch.co/datasketch/coronavirus/viz/%s.html" .File.BaseFileName) }}
   <div class="container py-12">
     <div class="iframe-container">
       <iframe src='{{ $filename }}' width="100%" height="500px"
