@@ -26,7 +26,7 @@
     <!-- <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/reads">
       Artículos
     </a> -->
-    {{ partial "dropdown.html" . }}
+    {{ partial "dropdown.html" (dict "Context" .) }}
     <div class="flex mt-2 md:mt-0">
       <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
         <img src='{{ "images/tw.svg" | absURL }}' alt="">

@@ -1,8 +1,8 @@
-<div class="dropdown mr-4">
+<div class="dropdown mr-4 shadow">
   <div class="dropdown-select">
     <div class="dropdown-placeholder">
-      {{ if eq .Type "scope" }}
-        <span class="uppercase">{{ .Params.uid }}</span>
+      {{ if eq .Context.Type "scope" }}
+        <span class="uppercase">{{ .Context.Params.uid }}</span>
       {{ else }}
         Selecciona un país
       {{ end }}
@@ -12,8 +12,14 @@
     </svg>
   </div>
   <ul class="dropdown-options">
-    {{ range sort (index .Site.Data "all-scopes") }}
-      <li class="dropdown-option"><a href="{{ . | absURL }}">{{ . }}</a></li>
+    {{ range sort (index .Context.Site.Data "all-scopes") }}
+      {{ if $.asQuery }}
+        {{ $scope := querify "scope" . }}
+        {{ $query := printf "?%s" $scope }}
+        <li class="dropdown-option"><a href="{{ $query }}">{{ . }}</a></li>
+      {{ else }}
+        <li class="dropdown-option"><a href="{{ . | absURL }}">{{ . }}</a></li>
+      {{ end }}
     {{ end }}
   </ul>
 </div>
