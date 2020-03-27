@@ -12,7 +12,7 @@
     </svg>
   </div>
   <ul class="dropdown-options">
-    {{ range (index .Site.Data "all-scopes") }}
+    {{ range sort (index .Site.Data "all-scopes") }}
       <li class="dropdown-option"><a href="{{ . | absURL }}">{{ . }}</a></li>
     {{ end }}
   </ul>
