@@ -9,11 +9,12 @@
 
 {{ define "charts" }}
   {{ if .Params.viz }}
+    {{ $query := safeURL (querify "scope" .Params.uid) }}
+    {{ $path := relURL (printf "viz?%s" $query) }}
     <section id="graphs">
       <div class="section-banner">
         <div class="text-right">
-          {{ $query := safeURL (querify "scope" .Params.uid) }}
-          <a href='{{ relURL (printf "viz?%s" $query) }}' class="btn bg-white text-persian-blue">Ver todos</a>
+          <a href='{{ $path }}' class="btn bg-white text-persian-blue">Ver todos</a>
         </div>
         <h1 class="section-title">Gráficas</h1>
       </div>
@@ -24,7 +25,7 @@
           {{ end }}
         </div>
         <div class="text-center pt-12">
-          <a href='{{ absURL "viz" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+          <a href='{{ $path }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
         </div>
       </div>
     </section>
@@ -33,11 +34,13 @@
 
 {{ define "datasets" }}
     {{ if .Params.datasets_info }}
+    {{ $query := safeURL (querify "scope" .Params.uid) }}
+    {{ $path := relURL (printf "datasets?%s" $query) }}
       <section id="datasets">
         <div class="section-banner">
           <div class="text-right">
-            {{ $query := safeURL (querify "scope" .Params.uid) }}
-            <a href='{{ relURL (printf "datasets?%s" $query) }}' class="btn bg-white text-electric-violet">Ver todos</a>
+            <a href='{{ $path }}' class="btn 
+            bg-white text-electric-violet">Ver todos</a>
           </div>
           <h1 class="section-title">Datasets</h1>
         </div>
@@ -48,7 +51,7 @@
             {{ end }}
           </div>
           <div class="text-center pt-12">
-            <a href='{{ absURL "datasets" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+            <a href='{{ $path }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
           </div>
         </div>
       </section>
