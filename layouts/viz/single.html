@@ -1,11 +1,18 @@
 {{ define "main" }}
   {{ $filename := (printf "https://s3.amazonaws.com/data.datasketch.co/datasketch/coronavirus/viz/%s.html" .File.BaseFileName) }}
   <div class="container py-12">
+    <div class="flex justify-end">
+      <input type="hidden" name="embed" value="{{ $filename }}" id="embed" tabindex="-1">
+      <button class="btn share-btn bg-persian-blue mr-2" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{.Params.uid}}" }'>Compartir</button>
+      <button class="btn bg-persian-blue relative focus:outline-none" onclick="copy()">
+        <svg class="w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 10c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2v-8zm2 0v8h8v-8h-2V8H8v2H6zm3-6.17V16h2V3.83l3.07 3.07 1.42-1.41L10 0l-.7.7-4.8 4.8 1.42 1.4L9 3.84z"/></svg>
+        <span class="embed-copy-message">¡Copiado!</span>
+      </button>
+    </div>
     <div class="iframe-container">
       <iframe src='{{ $filename }}' width="100%" height="500px"
       frameborder="0" class="iframe-embed"></iframe>
     </div>
-    <button class="btn share-btn bg-persian-blue" data-chart='{ "title": "{{.Title}}", "text": "{{.Title}}", "uid": "{{.Params.uid}}" }'>Compartir</button>
     {{ if .Params.recommended_viz }}
       <div class="mt-6">
         <h3 class="text-2xl text-rose">Visualizaciones recomendadas</h3>
@@ -14,7 +21,25 @@
             {{ partial "chart.html" . }}
           {{ end }}
         </div>
+        <iframe src="" frameborder="0"></iframe>
       </div>
     {{ end }}
   </div>
+{{ end }}
+
+{{ define "script" }}
+  <script>
+    const embed = document.getElementById('embed');
+    const embedValue = embed.value;
+    const iframe = `<iframe src="${embedValue}" width="100%" height="500px" frameborder="0"></iframe>`
+    const embedMessage = document.querySelector('.embed-copy-message');
+    function copy() {
+      navigator.clipboard.writeText(iframe).then(function() {
+        embedMessage.classList.add('show')
+        setTimeout(function() {
+          embedMessage.classList.remove('show')
+        }, 1000)
+      })
+    }
+  </script>
 {{ end }}
