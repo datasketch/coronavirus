@@ -1,9 +1,17 @@
 {{ define "main" }}
   <div class="container py-12">
+    <div class="w-64 mb-12">
+      {{ partial "dropdown.html" (dict "Context" . "asQuery" true) }}
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
       {{ range .Site.Data.viz }}
         {{ partial "chart_short.html" . }}
       {{ end }}
     </div>
   </div>
+{{ end }}
+
+{{ define "script" }}
+  {{ $viz := resources.Get "js/viz.js" | minify }}
+  <script src="{{ $viz.Permalink }}"></script>
 {{ end }}

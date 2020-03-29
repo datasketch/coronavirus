@@ -1,8 +1,10 @@
 {{ define "main" }}
-	{{ $image_path := printf "https://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/%s.png" .Params.path }}
+	{{ $image_path := printf "https://data.datasketch.co/datasketch/coronavirus/data/%s.png" .Params.path }}
 	<div class="container py-12">
 		<h3 class="text-center text-3xl mb-6">{{ .Params.name}}</h3>
-		<img src='{{ $image_path }}' class="mx-auto max-w-full"></img>
+		<div class="overflow-x-auto">
+			<img src='{{ $image_path }}' class="w-auto max-w-none mx-auto"></img>
+		</div>
 		<div class="mt-4 flex items-center justify-center">
 			<a class="btn bg-electric-violet mr-4" href="{{ .Params.public_link }}">
 				Descargar

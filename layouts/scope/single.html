@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="hero" id="header">
-  <div class="hero-inner pt-12">
+  <div class="hero-inner pt-24 pb-16">
     <h2 class="text-rose bg-white uppercase text-6xl leading-none px-4 pt-2 pb-1">{{ .Params.uid }}</h2>
   </div>
 </div>
@@ -9,10 +9,12 @@
 
 {{ define "charts" }}
   {{ if .Params.viz }}
+    {{ $query := safeURL (querify "scope" .Params.uid) }}
+    {{ $path := relURL (printf "viz?%s" $query) }}
     <section id="graphs">
       <div class="section-banner">
         <div class="text-right">
-          <a href='{{ absURL "viz" }}' class="btn bg-white text-persian-blue">Ver todos</a>
+          <a href='{{ $path }}' class="btn bg-white text-persian-blue">Ver todos</a>
         </div>
         <h1 class="section-title">Gráficas</h1>
       </div>
@@ -23,7 +25,7 @@
           {{ end }}
         </div>
         <div class="text-center pt-12">
-          <a href='{{ absURL "viz" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+          <a href='{{ $path }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
         </div>
       </div>
     </section>
@@ -32,10 +34,13 @@
 
 {{ define "datasets" }}
     {{ if .Params.datasets_info }}
+    {{ $query := safeURL (querify "scope" .Params.uid) }}
+    {{ $path := relURL (printf "datasets?%s" $query) }}
       <section id="datasets">
         <div class="section-banner">
           <div class="text-right">
-            <a href='{{ absURL "datasets" }}' class="btn bg-white text-electric-violet">Ver todos</a>
+            <a href='{{ $path }}' class="btn 
+            bg-white text-electric-violet">Ver todos</a>
           </div>
           <h1 class="section-title">Datasets</h1>
         </div>
@@ -46,7 +51,7 @@
             {{ end }}
           </div>
           <div class="text-center pt-12">
-            <a href='{{ absURL "datasets" }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
+            <a href='{{ $path }}' class="btn bg-rose text-white text-2xl">Ver todos</a>
           </div>
         </div>
       </section>
@@ -64,7 +69,7 @@
       </div>
       <div class="container py-12">
         <div class="grid gap-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          {{ range index .Site.Data.home "reads" }}
+          {{ range .Params.reads }}
             {{ partial "read.html" . }}
           {{ end }}
         </div>

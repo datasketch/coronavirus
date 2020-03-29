@@ -22,7 +22,8 @@
   </main>
   {{ partial "footer.html" . }}
   <script src='{{ "js/share.js" | absURL }}'></script>
-  <script src='{{ "js/main.js" | absURL }}'></script>
+  {{ $main := resources.Get "js/main.js" | minify }}
+  <script src='{{ $main.Permalink }}'></script>
   {{ block "script" . }}{{ end }}
 </body>
 

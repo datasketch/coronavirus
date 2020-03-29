@@ -37,7 +37,7 @@
 }
 
 .nav.affix {
-  @apply z-10 shadow-xl;
+  @apply z-20 shadow-xl;
   background-image: url(/images/banner-home.png);
 }
 
@@ -209,7 +209,7 @@
 }
 
 .dropdown-options {
-  @apply bg-white absolute left-0 m-0 h-0 p-0 overflow-hidden list-none w-full z-10 shadow;
+  @apply bg-white absolute left-0 m-0 h-0 p-0 overflow-hidden list-none w-full z-20 shadow;
   top: 100%;
 }
 
@@ -223,6 +223,37 @@
 
 .dropdown-option:hover {
   @apply text-electric-violet;
+}
+
+/**
+  * Embed
+  */
+
+.embed-copy-message {
+  @apply absolute text-mine-shaft inline-block font-pt-sans-narrow lowercase tracking-wide right-0 bottom-0 opacity-0;
+}
+
+.embed-copy-message.show {
+  animation: fade-out 1s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  25% {
+    opacity: 0.5;
+    bottom: -1rem;
+  }
+  50% {
+    opacity: 1;
+    bottom: -1.5rem;
+  }
+  100% {
+    opacity: 0;
+    bottom: -1.5rem;
+  }
 }
 
 

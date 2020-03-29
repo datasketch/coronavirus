@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" data-scope="{{ .scope }}">
     {{ $thumbnail := printf "https://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/viz/%s.png" .uid }}
     <h3 class="font-pt-sans-narrow mb-4 text-xl text-center tracking-wide font-bold">{{ .name }}</h3>
     <div class="card-media">

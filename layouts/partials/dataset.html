@@ -1,4 +1,4 @@
-<div class="card dataset">
+<div class="card dataset" {{if .scope}} data-scope="{{.scope}}" {{end}}>
     {{ $thumbnail := printf "http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/%s.png" .path }}
     <div class="card-body">
         <p class="card-title">{{ .name }}</p>

@@ -697,7 +697,7 @@ video {
 }
 
 .nav.affix {
-  z-index: 10;
+  z-index: 20;
   -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
           box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   background-image: url(/images/banner-home.png);
@@ -998,7 +998,7 @@ video {
   overflow: hidden;
   list-style-type: none;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   top: 100%;
@@ -1018,6 +1018,71 @@ video {
 
 .dropdown-option:hover {
   color: #5d3dfa;
+}
+
+/**
+  * Embed
+  */
+
+.embed-copy-message {
+  position: absolute;
+  color: #232323;
+  display: inline-block;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 0.025em;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.embed-copy-message.show {
+  -webkit-animation: fade-out 1s forwards;
+          animation: fade-out 1s forwards;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+    bottom: -1rem;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: -1.5rem;
+  }
+
+  100% {
+    opacity: 0;
+    bottom: -1.5rem;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+    bottom: -1rem;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: -1.5rem;
+  }
+
+  100% {
+    opacity: 0;
+    bottom: -1.5rem;
+  }
 }
 
 .sr-only {
