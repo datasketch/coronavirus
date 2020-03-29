@@ -41,6 +41,11 @@
     "uid": "usa",
     "datasources": [
       {
+        "uid": "elucd",
+        "name": "US Coronavirus Attitudes Tracker",
+        "url": "https://elucd.com/covid19/usa-coronavirus-preparedness"
+      },
+      {
         "uid": "cdc",
         "name": "Coronavirus Disease 2019 (COVID-19)",
         "url": "https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html"
@@ -58,6 +63,22 @@
     ],
     "dashboard": [],
     "name": "United States of America",
+    "tools": [],
+    "datasets": [],
+    "reads": [],
+    "viz": [],
+    "datasets_info": []
+  },
+  {
+    "uid": "taiwan",
+    "datasources": [],
+    "dashboard": [
+      {
+        "name": "COVID-19",
+        "url": "https://sites.google.com/cdc.gov.tw/2019ncov/global?authuser=0",
+        "type": "Dashboard"
+      }
+    ],
     "tools": [],
     "datasets": [],
     "reads": [],
@@ -378,22 +399,6 @@
     "datasets_info": []
   },
   {
-    "uid": "hong-kong",
-    "datasources": [],
-    "dashboard": [
-      {
-        "name": "Latest Situation of Coronavirus Disease (COVID-19) in Hong Kong",
-        "url": "https://chp-dashboard.geodata.gov.hk/covid-19/en.html",
-        "type": "Dashboard"
-      }
-    ],
-    "tools": [],
-    "datasets": [],
-    "reads": [],
-    "viz": [],
-    "datasets_info": []
-  },
-  {
     "uid": "iran",
     "datasources": [],
     "dashboard": [
@@ -461,6 +466,11 @@
         "url": "https://bnonews.com/index.php/2020/01/timeline-coronavirus-epidemic/"
       },
       {
+        "uid": "poynter",
+        "name": "Access the CoronaVirusFacts/DatosCoronaVirus Alliance Database",
+        "url": "https://www.poynter.org/ifcn-covid-19-misinformation/?covid_countries=0&covid_rating=0&covid_fact_checkers=0"
+      },
+      {
         "uid": "ecdc",
         "name": "Distribución geográfica de los casos de COVID-19",
         "url": "https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide"
@@ -484,6 +494,16 @@
         "uid": "who",
         "name": "Novel Coronavirus (COVID-19) Situation",
         "url": "https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd"
+      },
+      {
+        "uid": "adb",
+        "name": "COVID-19 Economic Impact Assessment Template",
+        "url": "https://data.adb.org/dataset/covid-19-economic-impact-assessment-template"
+      },
+      {
+        "uid": "datahub",
+        "name": "Novel Coronavirus 2019",
+        "url": "https://datahub.io/core/covid-19"
       }
     ],
     "dashboard": [
@@ -510,11 +530,6 @@
         "type": "Dashboard"
       },
       {
-        "name": " COVID-19 Global Cases by CSSE Johns Hopkins University",
-        "url": "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
-        "type": "Dashboard"
-      },
-      {
         "name": "Number of novel coronavirus (COVID-19) cases worldwide as of March 26, 2020, by country*",
         "url": "https://www.statista.com/statistics/1043366/novel-coronavirus-2019ncov-cases-worldwide-by-country/",
         "type": "Single visualization"
@@ -529,6 +544,11 @@
         "url": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/",
         "type": "Infographics",
         "author": "Information is beautiful"
+      },
+      {
+        "name": "COVID-19",
+        "url": "https://sites.google.com/cdc.gov.tw/2019ncov/global?authuser=0",
+        "type": "Dashboard"
       },
       {
         "name": "COVID-19 Current World Situation",
@@ -547,11 +567,6 @@
         "url": "https://bnonews.com/index.php/2020/03/tracking-coronavirus-real-time-visualizations/",
         "type": "Visualizations",
         "author": "James Valles"
-      },
-      {
-        "name": "Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)",
-        "url": "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
-        "type": "Dashboard"
       },
       {
         "name": "Real time COVID-19 Coronavirus Pandemic",
@@ -574,6 +589,12 @@
         "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jmv.25689?af=R",
         "description": "To help health workers and the public recognize and deal with the 2019 novel coronavirus quickly, effectively, and calmly with an updated understanding.",
         "date_published": "2020-01-29"
+      },
+      {
+        "name": "The Coronavirus and Ethanol Demand Destruction",
+        "url": "https://farmdocdaily.illinois.edu/2020/03/the-coronavirus-and-ethanol-demand-destruction.html?utm_source=farmdoc+daily+and+Farm+Policy+News+Updates&utm_campaign=8f5962f0f7-FDD_RSS_EMAIL_CAMPAIGN&utm_medium=email&utm_term=0_2caf2f9764-8f5962f0f7-173690889",
+        "description": "Extraordinary restrictions have been put in place in an attempt to slow the spread of the coronavirus in the U.S. and many other nations. The restrictions range from shelter-in-place orders to milder social distancing guidelines.",
+        "date_published": "2020-03-26"
       },
       {
         "name": "The 1957 pandemic.",

@@ -21,27 +21,32 @@
     {
       "uid": "tidy-csse-es",
       "name": "Datos mundiales de coronavirus (confirmados, muertos, recuperados)",
-      "description": "Casos de coronavirus en el mundo en español. Datos del CSSE de la universidad Johns Hopkins."
+      "description": "Casos de coronavirus en el mundo en español. Datos del CSSE de la universidad Johns Hopkins.",
+      "path": "world/csse/tidy-csse-es"
     },
     {
       "uid": "col-ins-reportes",
       "name": "Reportes de casos de coronavirus en Colombia",
-      "description": "Reportes de casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."
+      "description": "Reportes de casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.",
+      "path": "colombia/ins-col/col-ins-reportes"
     },
     {
       "uid": "tidy-csse-langs",
       "name": "Tidy world coronavirus cases (confirmed, death, recovered) with country names in multiple languages",
-      "description": "Casos de coronavirus en el mundo con nombre de país en diferentes idiomas. Datos del CSSE de la universidad Johns Hopkins."
+      "description": "Casos de coronavirus en el mundo con nombre de país en diferentes idiomas. Datos del CSSE de la universidad Johns Hopkins.",
+      "path": "world/csse/tidy-csse-langs"
     },
     {
       "uid": "tidy-csse",
       "name": "Tidy world coronavirus cases (confirmed, death, recovered) with country codes",
-      "description": "Casos de coronavirus en el mundo con código de país. Datos del CSSE de la universidad Johns Hopkins."
+      "description": "Casos de coronavirus en el mundo con código de país. Datos del CSSE de la universidad Johns Hopkins.",
+      "path": "world/csse/tidy-csse"
     },
     {
       "uid": "col-ins-casos",
       "name": "Casos de coronavirus en Colombia",
-      "description": "Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud."
+      "description": "Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.",
+      "path": "colombia/ins-col/col-ins-casos"
     }
   ],
   "reads": [

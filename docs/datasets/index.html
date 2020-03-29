@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coronavirus · Datasketch</title>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-66152192-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+  <link rel="stylesheet" href="/css/tailwind.css">
+</head>
+
+<body class="font-contrail-one flex flex-col min-h-screen">
+  <nav
+  class='nav nav-page'
+>
+  <div
+    class="flex justify-between px-4 pb-4 items-center w-full h-full md:w-auto md:h-auto md:pb-0"
+  >
+    <a href="/" class="inline-block">
+      <img class="h-full w-auto" src='/images/logo.svg' alt="Datasketch">
+    </a>
+    <button class="text-white md:hidden" id="menu">
+      <svg class="w-6 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        
+        <path class="menu-close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        
+        <path class="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div class="nav-content">
+    <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/viz">
+      Gráficas
+    </a>
+    <a class="text-white mr-4 uppercase text-lg tracking-wider  px-2 py-1 hover:bg-mine-shaft" href="/datasets">
+      Datasets
+    </a>
+    
+    <div class="dropdown mr-4">
+  <div class="dropdown-select">
+    <div class="dropdown-placeholder">
+      
+        Selecciona un país
+      
+    </div>
+    <svg class="w-2" class="collapsible-state-icon" fill="#5d3dfa" viewBox="0 0 11.25 5.231">
+      <polygon points="5.625 5.231 11.25 0 0 0 5.625 5.231"/>
+    </svg>
+  </div>
+  <ul class="dropdown-options">
+    
+      <li class="dropdown-option"><a href="/america">america</a></li>
+    
+      <li class="dropdown-option"><a href="/argentina">argentina</a></li>
+    
+      <li class="dropdown-option"><a href="/australia">australia</a></li>
+    
+      <li class="dropdown-option"><a href="/belgium">belgium</a></li>
+    
+      <li class="dropdown-option"><a href="/brasil">brasil</a></li>
+    
+      <li class="dropdown-option"><a href="/canada">canada</a></li>
+    
+      <li class="dropdown-option"><a href="/chile">chile</a></li>
+    
+      <li class="dropdown-option"><a href="/china">china</a></li>
+    
+      <li class="dropdown-option"><a href="/colombia">colombia</a></li>
+    
+      <li class="dropdown-option"><a href="/costa-rica">costa-rica</a></li>
+    
+      <li class="dropdown-option"><a href="/cyprus">cyprus</a></li>
+    
+      <li class="dropdown-option"><a href="/denmark">denmark</a></li>
+    
+      <li class="dropdown-option"><a href="/el-salvador">el-salvador</a></li>
+    
+      <li class="dropdown-option"><a href="/espana">espana</a></li>
+    
+      <li class="dropdown-option"><a href="/europe">europe</a></li>
+    
+      <li class="dropdown-option"><a href="/france">france</a></li>
+    
+      <li class="dropdown-option"><a href="/germany">germany</a></li>
+    
+      <li class="dropdown-option"><a href="/hong-kong">hong-kong</a></li>
+    
+      <li class="dropdown-option"><a href="/india">india</a></li>
+    
+      <li class="dropdown-option"><a href="/iran">iran</a></li>
+    
+      <li class="dropdown-option"><a href="/iraq">iraq</a></li>
+    
+      <li class="dropdown-option"><a href="/italy">italy</a></li>
+    
+      <li class="dropdown-option"><a href="/japan">japan</a></li>
+    
+      <li class="dropdown-option"><a href="/jordan">jordan</a></li>
+    
+      <li class="dropdown-option"><a href="/korea">korea</a></li>
+    
+      <li class="dropdown-option"><a href="/kuwait">kuwait</a></li>
+    
+      <li class="dropdown-option"><a href="/latam">latam</a></li>
+    
+      <li class="dropdown-option"><a href="/lebanon">lebanon</a></li>
+    
+      <li class="dropdown-option"><a href="/malaysia">malaysia</a></li>
+    
+      <li class="dropdown-option"><a href="/mexico">mexico</a></li>
+    
+      <li class="dropdown-option"><a href="/morocco">morocco</a></li>
+    
+      <li class="dropdown-option"><a href="/new-zealand">new-zealand</a></li>
+    
+      <li class="dropdown-option"><a href="/norway">norway</a></li>
+    
+      <li class="dropdown-option"><a href="/paraguay">paraguay</a></li>
+    
+      <li class="dropdown-option"><a href="/peru">peru</a></li>
+    
+      <li class="dropdown-option"><a href="/singapore">singapore</a></li>
+    
+      <li class="dropdown-option"><a href="/south-africa">south-africa</a></li>
+    
+      <li class="dropdown-option"><a href="/south-korea">south-korea</a></li>
+    
+      <li class="dropdown-option"><a href="/taiwan">taiwan</a></li>
+    
+      <li class="dropdown-option"><a href="/tunisia">tunisia</a></li>
+    
+      <li class="dropdown-option"><a href="/uk">uk</a></li>
+    
+      <li class="dropdown-option"><a href="/usa">usa</a></li>
+    
+      <li class="dropdown-option"><a href="/venezuela">venezuela</a></li>
+    
+      <li class="dropdown-option"><a href="/world">world</a></li>
+    
+  </ul>
+</div>
+    <div class="flex mt-2 md:mt-0">
+      <a class="text-white mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+        <img src='/images/tw.svg' alt="">
+      </a>
+      <a class="text-white mr-4" href="mailto:info@datasketch.co">
+        <img src='/images/mail.svg' alt="">
+      </a>
+      <a class="text-white mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+        <img src='/images/fb.svg' alt="">
+      </a>
+    </div>
+  </div>
+</nav>
+
+  <main class="flex-grow">
+    
+  <div class="container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Datos mundiales de coronavirus (confirmados, muertos, recuperados)</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/world/csse/tidy-csse-es.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en el mundo en español. Datos del CSSE de la universidad Johns Hopkins.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/tidy-csse-es">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Casos de coronavirus en Colombia por municipios</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-municipio-fecha.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en Colombia, agrupados por municipio y fecha. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-casos-municipio-fecha">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-reportes.png' height="100px">
+        </div>
+        
+        <p class="card-description">Reportes de casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-reportes">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country codes</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/world/csse/tidy-csse-en.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en el mundo en inglés. Datos del CSSE de la universidad Johns Hopkins.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/tidy-csse-en">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country names in multiple languages</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/world/csse/tidy-csse-langs.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en el mundo con nombre de país en diferentes idiomas. Datos del CSSE de la universidad Johns Hopkins.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/tidy-csse-langs">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Tidy world coronavirus cases (confirmed, death, recovered) with country codes</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/world/csse/tidy-csse.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en el mundo con código de país. Datos del CSSE de la universidad Johns Hopkins.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/tidy-csse">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Casos de coronavirus en Colombia</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en Colombia. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-casos">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Dados mundiais de coronavirus</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/world/csse/tidy-csse-pt.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en el mundo en portugués. Datos del CSSE de la universidad Johns Hopkins.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/tidy-csse-pt">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Casos de coronavirus en Colombia por municipios</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-municipio.png' height="100px">
+        </div>
+        
+        <p class="card-description">Casos de coronavirus en Colombia, agrupados por municipio. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-casos-municipio">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-departamento-fecha.png' height="100px">
+        </div>
+        
+        <p class="card-description">Reportes de casos de coronavirus en Colombia, agrupados por departamento y fecha. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-casos-departamento-fecha">Ver</a>
+    </div>
+</div>
+      
+        <div class="card dataset">
+    
+    <div class="card-body">
+        <p class="card-title">Reportes de casos de coronavirus en Colombia</p>
+        <div class="card-media">
+            <img src='http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/colombia/ins-col/col-ins-casos-departamento.png' height="100px">
+        </div>
+        
+        <p class="card-description">Reportes de casos de coronavirus en Colombia, agrupados por departamento. Datos del Instituto Nacional de Salud.</p>
+        
+    </div>
+    <div class="card-actions">
+        
+        <a class="btn bg-electric-violet" href="/datasets/col-ins-casos-departamento">Ver</a>
+    </div>
+</div>
+      
+    </div>
+  </div>
+
+    
+    
+    
+    
+    
+  </main>
+  <footer>
+  <div class="h-4 bg-no-repeat bg-cover bg-center" style='background-image: url(/images/footer.png);'></div>
+  
+  <div class="flex flex-wrap items-center bg-mine-shaft px-16 py-12">
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <img src='/images/logo_vertical.svg' alt="Datasketch">
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <p class="uppercase text-xl">Comparte</p>
+      <div class="flex items-center mt-4">
+        <a class="mr-4" href="https://twitter.com/datasketch" target="_blank" rel="noopener noreferrer">
+          <img src='/images/tw.svg' alt="">
+        </a>
+        <a class="mr-4" href="mailto:info@datasketch.co">
+          <img src='/images/mail.svg' alt="">
+        </a>
+        <a class="mr-0" href="https://es-la.facebook.com/datasketch/" target="_blank" rel="noopener noreferrer">
+          <img src='/images/fb.svg' alt="">
+        </a>
+      </div>
+    </div>
+    <div class="w-full md:w-1/3 flex flex-col items-center text-white">
+      <div class="flex items-center">
+        <img class="mr-4" src='/images/cc.svg'>
+        <img class="mr-4" src='/images/by.svg'>
+        <img class="mr-0" src='/images/sa.svg'>
+      </div>
+      <p class="mt-4 w-64 font-pt-sans-narrow text-sm">Todo el material en esta página es <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src='/js/share.js'></script>
+  <script src='/js/main.js'></script>
+  
+</body>
+
+</html>

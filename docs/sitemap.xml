@@ -23,47 +23,47 @@
   </url>
   
   <url>
-    <loc>/dataset/col-ins-casos-departamento-fecha/</loc>
+    <loc>/datasets/col-ins-casos-departamento-fecha/</loc>
   </url>
   
   <url>
-    <loc>/dataset/col-ins-casos-departamento/</loc>
+    <loc>/datasets/col-ins-casos-departamento/</loc>
   </url>
   
   <url>
-    <loc>/dataset/col-ins-casos-municipio-fecha/</loc>
+    <loc>/datasets/col-ins-casos-municipio-fecha/</loc>
   </url>
   
   <url>
-    <loc>/dataset/col-ins-casos-municipio/</loc>
+    <loc>/datasets/col-ins-casos-municipio/</loc>
   </url>
   
   <url>
-    <loc>/dataset/col-ins-casos/</loc>
+    <loc>/datasets/col-ins-casos/</loc>
   </url>
   
   <url>
-    <loc>/dataset/col-ins-reportes/</loc>
+    <loc>/datasets/col-ins-reportes/</loc>
   </url>
   
   <url>
-    <loc>/dataset/tidy-csse-en/</loc>
+    <loc>/datasets/tidy-csse-en/</loc>
   </url>
   
   <url>
-    <loc>/dataset/tidy-csse-es/</loc>
+    <loc>/datasets/tidy-csse-es/</loc>
   </url>
   
   <url>
-    <loc>/dataset/tidy-csse-langs/</loc>
+    <loc>/datasets/tidy-csse-langs/</loc>
   </url>
   
   <url>
-    <loc>/dataset/tidy-csse-pt/</loc>
+    <loc>/datasets/tidy-csse-pt/</loc>
   </url>
   
   <url>
-    <loc>/dataset/tidy-csse/</loc>
+    <loc>/datasets/tidy-csse/</loc>
   </url>
   
   <url>
@@ -111,11 +111,23 @@
   </url>
   
   <url>
+    <loc>/viz/col-casos-departamento-acumulado-spline/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-departamento-acumulado/</loc>
+  </url>
+  
+  <url>
     <loc>/viz/col-casos-departamento/</loc>
   </url>
   
   <url>
     <loc>/viz/col-casos-edad/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-mapa/</loc>
   </url>
   
   <url>
@@ -128,6 +140,10 @@
   
   <url>
     <loc>/viz/col-casos-por-tipo/</loc>
+  </url>
+  
+  <url>
+    <loc>/viz/col-casos-sexo-acumulado/</loc>
   </url>
   
   <url>
@@ -147,7 +163,11 @@
   </url>
   
   <url>
-    <loc>/dataset/</loc>
+    <loc>/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/highlight/</loc>
   </url>
   
   <url>

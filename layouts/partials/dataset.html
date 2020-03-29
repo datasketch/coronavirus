@@ -1,12 +1,16 @@
 <div class="card dataset">
-  <div class="card-body">
-    <p class="card-title">{{ .name }}</p>
-    {{ if .description }}
-      <p class="card-description">{{ .description }}</p>
-    {{ end }}
-  </div>
-  <div class="card-actions">
-    {{ $pathname := path.Join "datasets" .uid }}
-    <a class="btn bg-electric-violet" href="{{ absURL $pathname }}">Ver</a>
-  </div>
+    {{ $thumbnail := printf "http://data.datasketch.co.s3.amazonaws.com/datasketch/coronavirus/data/%s.png" .path }}
+    <div class="card-body">
+        <p class="card-title">{{ .name }}</p>
+        <div class="card-media">
+            <img src='{{ absURL $thumbnail }}' height="100px">
+        </div>
+        {{ if .description }}
+        <p class="card-description">{{ .description }}</p>
+        {{ end }}
+    </div>
+    <div class="card-actions">
+        {{ $pathname := path.Join "datasets" .uid }}
+        <a class="btn bg-electric-violet" href="{{ absURL $pathname }}">Ver</a>
+    </div>
 </div>

@@ -163,7 +163,7 @@ reads$tags_info <- map(reads0$tags, function(x){
 home <- list(
   viz = viz %>% filter(tags == "highlight") %>% select(uid, name),
   datasets = datasets %>% filter(tags == "highlight") %>%
-    select(uid, name, description),
+    select(uid, name, description, path),
   reads = reads %>% filter(tags == "highlight") %>%
     select(name, description, url)
 )
